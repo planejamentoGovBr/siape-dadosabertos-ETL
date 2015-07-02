@@ -1,0 +1,933 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<talendfile:ProcessType xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.talend.org/mapper" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" xmi:id="_liCqs0AdEeSuoJy_45zbow" defaultContext="Desenvolvimento">
+  <context xmi:id="_liCqtEAdEeSuoJy_45zbow" confirmationNeeded="false" name="Desenvolvimento">
+    <contextParameter xmi:id="_liCqtUAdEeSuoJy_45zbow" comment="" name="count" prompt="count?" promptNeeded="false" type="id_Integer" value=""/>
+    <contextParameter xmi:id="_liCqtkAdEeSuoJy_45zbow" comment="" name="anomes_ref_siape" prompt="anomes_ref_siape?" promptNeeded="false" repositoryContextId="_jHBocEfVEeO9SI78O_JkJA" type="id_Integer" value=""/>
+    <contextParameter xmi:id="_liCqt0AdEeSuoJy_45zbow" comment="" name="con_base-de-dados_rh_Database" prompt="con_base-de-dados_rh_Database?" promptNeeded="false" repositoryContextId="_1TAOgNd4EeK9hOB4LuISCg" type="id_String" value="base-de-dados"/>
+    <contextParameter xmi:id="_liCquEAdEeSuoJy_45zbow" comment="" name="con_base-de-dados_rh_Login" prompt="con_base-de-dados_rh_Login?" promptNeeded="false" repositoryContextId="_1TAOgNd4EeK9hOB4LuISCg" type="id_String" value="login"/>
+    <contextParameter xmi:id="_liCquUAdEeSuoJy_45zbow" comment="" name="con_base-de-dados_rh_Password" prompt="con_base-de-dados_rh_Password?" promptNeeded="false" repositoryContextId="_1TAOgNd4EeK9hOB4LuISCg" type="id_Password" value="KVHdxy7ZsTQKIlkN2bprSOnsvlnMmx+p"/>
+    <contextParameter xmi:id="_liCqukAdEeSuoJy_45zbow" comment="" name="con_base-de-dados_rh_Port" prompt="con_base-de-dados_rh_Port?" promptNeeded="false" repositoryContextId="_1TAOgNd4EeK9hOB4LuISCg" type="id_String" value="porta"/>
+    <contextParameter xmi:id="_liCqu0AdEeSuoJy_45zbow" comment="" name="con_base-de-dados_rh_Schema" prompt="con_base-de-dados_rh_Schema?" promptNeeded="false" repositoryContextId="_1TAOgNd4EeK9hOB4LuISCg" type="id_String" value="rh"/>
+    <contextParameter xmi:id="_liCqvEAdEeSuoJy_45zbow" comment="" name="con_base-de-dados_rh_Server" prompt="con_base-de-dados_rh_Server?" promptNeeded="false" repositoryContextId="_1TAOgNd4EeK9hOB4LuISCg" type="id_String" value="ip-servidor"/>
+    <contextParameter xmi:id="_liCqvUAdEeSuoJy_45zbow" comment="" name="con_siape_servidor_extrato_Database" prompt="con_siape_servidor_extrato_Database?" promptNeeded="false" repositoryContextId="_NWt4sLv6EeKe-ZTKUDJ14Q" type="id_String" value="base-de-dados"/>
+    <contextParameter xmi:id="_liCqvkAdEeSuoJy_45zbow" comment="" name="con_siape_servidor_extrato_Login" prompt="con_siape_servidor_extrato_Login?" promptNeeded="false" repositoryContextId="_NWt4sLv6EeKe-ZTKUDJ14Q" type="id_String" value="login"/>
+    <contextParameter xmi:id="_liCqv0AdEeSuoJy_45zbow" comment="" name="con_siape_servidor_extrato_Password" prompt="con_siape_servidor_extrato_Password?" promptNeeded="false" repositoryContextId="_NWt4sLv6EeKe-ZTKUDJ14Q" type="id_Password" value="KVHdxy7ZsTQKIlkN2bprSOnsvlnMmx+p"/>
+    <contextParameter xmi:id="_liCqwEAdEeSuoJy_45zbow" comment="" name="con_siape_servidor_extrato_Port" prompt="con_siape_servidor_extrato_Port?" promptNeeded="false" repositoryContextId="_NWt4sLv6EeKe-ZTKUDJ14Q" type="id_String" value="porta"/>
+    <contextParameter xmi:id="_liCqwUAdEeSuoJy_45zbow" comment="" name="con_siape_servidor_extrato_Schema" prompt="con_siape_servidor_extrato_Schema?" promptNeeded="false" repositoryContextId="_NWt4sLv6EeKe-ZTKUDJ14Q" type="id_String" value="siape"/>
+    <contextParameter xmi:id="_liCqwkAdEeSuoJy_45zbow" comment="" name="con_siape_servidor_extrato_Server" prompt="con_siape_servidor_extrato_Server?" promptNeeded="false" repositoryContextId="_NWt4sLv6EeKe-ZTKUDJ14Q" type="id_String" value="ip-servidor"/>
+    <contextParameter xmi:id="_liCqw0AdEeSuoJy_45zbow" comment="" name="con_base-de-dados_siape_Database" prompt="con_base-de-dados_siape_Database?" promptNeeded="false" repositoryContextId="_edeVEC3wEeSaXa4Px3A38g" type="id_String" value="base-de-dados"/>
+    <contextParameter xmi:id="_liCqxEAdEeSuoJy_45zbow" comment="" name="con_base-de-dados_siape_Password" prompt="con_base-de-dados_siape_Password?" promptNeeded="false" repositoryContextId="_edeVEC3wEeSaXa4Px3A38g" type="id_Password" value="eIxHCG/BsaAoHUN6ER8BU65TP2OLlq3p"/>
+    <contextParameter xmi:id="_liCqxUAdEeSuoJy_45zbow" comment="" name="con_base-de-dados_siape_Login" prompt="con_base-de-dados_siape_Login?" promptNeeded="false" repositoryContextId="_edeVEC3wEeSaXa4Px3A38g" type="id_String" value="login"/>
+    <contextParameter xmi:id="_liCqxkAdEeSuoJy_45zbow" comment="" name="con_base-de-dados_siape_Schema" prompt="con_base-de-dados_siape_Schema?" promptNeeded="false" repositoryContextId="_edeVEC3wEeSaXa4Px3A38g" type="id_String" value="siape"/>
+    <contextParameter xmi:id="_liCqx0AdEeSuoJy_45zbow" comment="" name="con_base-de-dados_siape_Server" prompt="con_base-de-dados_siape_Server?" promptNeeded="false" repositoryContextId="_edeVEC3wEeSaXa4Px3A38g" type="id_String" value="ip-servidor"/>
+    <contextParameter xmi:id="_liCqyEAdEeSuoJy_45zbow" comment="" name="con_base-de-dados_siape_Port" prompt="con_base-de-dados_siape_Port?" promptNeeded="false" repositoryContextId="_edeVEC3wEeSaXa4Px3A38g" type="id_String" value="porta"/>
+    <contextParameter xmi:id="_liCqyUAdEeSuoJy_45zbow" comment="" name="con_base-de-dados_base-de-dados_database" prompt="con_base-de-dados_base-de-dados_database?" promptNeeded="false" type="id_String" value="teste"/>
+    <contextParameter xmi:id="_liCqykAdEeSuoJy_45zbow" comment="" name="con_base-de-dados_base-de-dados_login" prompt="con_base-de-dados_base-de-dados_login?" promptNeeded="false" type="id_String" value="login"/>
+    <contextParameter xmi:id="_liCqy0AdEeSuoJy_45zbow" comment="" name="con_base-de-dados_base-de-dados_parametros" prompt="con_base-de-dados_base-de-dados_parametros?" promptNeeded="false" type="id_String" value="noDatetimeStringSync=true"/>
+    <contextParameter xmi:id="_liCqzEAdEeSuoJy_45zbow" comment="" name="con_base-de-dados_base-de-dados_password" prompt="con_base-de-dados_base-de-dados_password?" promptNeeded="false" type="id_Password" value="96DdeSfs/6k="/>
+    <contextParameter xmi:id="_liCqzUAdEeSuoJy_45zbow" comment="" name="con_base-de-dados_base-de-dados_port" prompt="con_base-de-dados_base-de-dados_port?" promptNeeded="false" type="id_String" value="porta"/>
+    <contextParameter xmi:id="_liCqzkAdEeSuoJy_45zbow" comment="" name="con_base-de-dados_base-de-dados_server" prompt="con_base-de-dados_base-de-dados_server?" promptNeeded="false" type="id_String" value="ip-servidor"/>
+    <contextParameter xmi:id="_liCqz0AdEeSuoJy_45zbow" comment="" name="dir_entrada" prompt="dir_entrada?" promptNeeded="false" type="id_String" value="C:/entrada/dwconv/"/>
+    <contextParameter xmi:id="_liCq0EAdEeSuoJy_45zbow" comment="" name="dir_log" prompt="dir_log?" promptNeeded="false" type="id_String" value="C:/processo_etl/log/dwconv/"/>
+    <contextParameter xmi:id="_liCq0UAdEeSuoJy_45zbow" comment="" name="dir_saida" prompt="dir_saida?" promptNeeded="false" type="id_String" value="C:/saida/dwconv/"/>
+    <contextParameter xmi:id="_liCq0kAdEeSuoJy_45zbow" comment="" name="dir_work" prompt="dir_work?" promptNeeded="false" type="id_String" value="null"/>
+  </context>
+  <context xmi:id="_liCq00AdEeSuoJy_45zbow" confirmationNeeded="false" name="Homologacao">
+    <contextParameter xmi:id="_liCq1EAdEeSuoJy_45zbow" comment="" name="count" prompt="count?" promptNeeded="false" type="id_Integer" value=""/>
+    <contextParameter xmi:id="_liCq1UAdEeSuoJy_45zbow" comment="" name="anomes_ref_siape" prompt="anomes_ref_siape?" promptNeeded="false" repositoryContextId="_jHBocEfVEeO9SI78O_JkJA" type="id_Integer" value=""/>
+    <contextParameter xmi:id="_liCq1kAdEeSuoJy_45zbow" comment="" name="con_base-de-dados_rh_Database" prompt="con_base-de-dados_rh_Database?" promptNeeded="false" repositoryContextId="_1TAOgNd4EeK9hOB4LuISCg" type="id_String" value="base-de-dados"/>
+    <contextParameter xmi:id="_liCq10AdEeSuoJy_45zbow" comment="" name="con_base-de-dados_rh_Login" prompt="con_base-de-dados_rh_Login?" promptNeeded="false" repositoryContextId="_1TAOgNd4EeK9hOB4LuISCg" type="id_String" value="login"/>
+    <contextParameter xmi:id="_liCq2EAdEeSuoJy_45zbow" comment="" name="con_base-de-dados_rh_Password" prompt="con_base-de-dados_rh_Password?" promptNeeded="false" repositoryContextId="_1TAOgNd4EeK9hOB4LuISCg" type="id_Password" value="KVHdxy7ZsTQKIlkN2bprSOnsvlnMmx+p"/>
+    <contextParameter xmi:id="_liCq2UAdEeSuoJy_45zbow" comment="" name="con_base-de-dados_rh_Port" prompt="con_base-de-dados_rh_Port?" promptNeeded="false" repositoryContextId="_1TAOgNd4EeK9hOB4LuISCg" type="id_String" value="porta"/>
+    <contextParameter xmi:id="_liCq2kAdEeSuoJy_45zbow" comment="" name="con_base-de-dados_rh_Schema" prompt="con_base-de-dados_rh_Schema?" promptNeeded="false" repositoryContextId="_1TAOgNd4EeK9hOB4LuISCg" type="id_String" value="rh"/>
+    <contextParameter xmi:id="_liCq20AdEeSuoJy_45zbow" comment="" name="con_base-de-dados_rh_Server" prompt="con_base-de-dados_rh_Server?" promptNeeded="false" repositoryContextId="_1TAOgNd4EeK9hOB4LuISCg" type="id_String" value="ip-servidor"/>
+    <contextParameter xmi:id="_liCq3EAdEeSuoJy_45zbow" comment="" name="con_siape_servidor_extrato_Database" prompt="con_siape_servidor_extrato_Database?" promptNeeded="false" repositoryContextId="_NWt4sLv6EeKe-ZTKUDJ14Q" type="id_String" value="base-de-dados"/>
+    <contextParameter xmi:id="_liCq3UAdEeSuoJy_45zbow" comment="" name="con_siape_servidor_extrato_Login" prompt="con_siape_servidor_extrato_Login?" promptNeeded="false" repositoryContextId="_NWt4sLv6EeKe-ZTKUDJ14Q" type="id_String" value="login"/>
+    <contextParameter xmi:id="_liCq3kAdEeSuoJy_45zbow" comment="" name="con_siape_servidor_extrato_Password" prompt="con_siape_servidor_extrato_Password?" promptNeeded="false" repositoryContextId="_NWt4sLv6EeKe-ZTKUDJ14Q" type="id_Password" value="KVHdxy7ZsTQKIlkN2bprSOnsvlnMmx+p"/>
+    <contextParameter xmi:id="_liCq30AdEeSuoJy_45zbow" comment="" name="con_siape_servidor_extrato_Port" prompt="con_siape_servidor_extrato_Port?" promptNeeded="false" repositoryContextId="_NWt4sLv6EeKe-ZTKUDJ14Q" type="id_String" value="porta"/>
+    <contextParameter xmi:id="_liCq4EAdEeSuoJy_45zbow" comment="" name="con_siape_servidor_extrato_Schema" prompt="con_siape_servidor_extrato_Schema?" promptNeeded="false" repositoryContextId="_NWt4sLv6EeKe-ZTKUDJ14Q" type="id_String" value="siape"/>
+    <contextParameter xmi:id="_liCq4UAdEeSuoJy_45zbow" comment="" name="con_siape_servidor_extrato_Server" prompt="con_siape_servidor_extrato_Server?" promptNeeded="false" repositoryContextId="_NWt4sLv6EeKe-ZTKUDJ14Q" type="id_String" value="ip-servidor"/>
+    <contextParameter xmi:id="_liCq4kAdEeSuoJy_45zbow" comment="" name="con_base-de-dados_siape_Database" prompt="con_base-de-dados_siape_Database?" promptNeeded="false" repositoryContextId="_edeVEC3wEeSaXa4Px3A38g" type="id_String" value="base-de-dados"/>
+    <contextParameter xmi:id="_liCq40AdEeSuoJy_45zbow" comment="" name="con_base-de-dados_siape_Password" prompt="con_base-de-dados_siape_Password?" promptNeeded="false" repositoryContextId="_edeVEC3wEeSaXa4Px3A38g" type="id_Password" value="eIxHCG/BsaAoHUN6ER8BU65TP2OLlq3p"/>
+    <contextParameter xmi:id="_liCq5EAdEeSuoJy_45zbow" comment="" name="con_base-de-dados_siape_Login" prompt="con_base-de-dados_siape_Login?" promptNeeded="false" repositoryContextId="_edeVEC3wEeSaXa4Px3A38g" type="id_String" value="login"/>
+    <contextParameter xmi:id="_liCq5UAdEeSuoJy_45zbow" comment="" name="con_base-de-dados_siape_Schema" prompt="con_base-de-dados_siape_Schema?" promptNeeded="false" repositoryContextId="_edeVEC3wEeSaXa4Px3A38g" type="id_String" value="siape"/>
+    <contextParameter xmi:id="_liCq5kAdEeSuoJy_45zbow" comment="" name="con_base-de-dados_siape_Server" prompt="con_base-de-dados_siape_Server?" promptNeeded="false" repositoryContextId="_edeVEC3wEeSaXa4Px3A38g" type="id_String" value="ip-servidor"/>
+    <contextParameter xmi:id="_liCq50AdEeSuoJy_45zbow" comment="" name="con_base-de-dados_siape_Port" prompt="con_base-de-dados_siape_Port?" promptNeeded="false" repositoryContextId="_edeVEC3wEeSaXa4Px3A38g" type="id_String" value="porta"/>
+    <contextParameter xmi:id="_liCq6EAdEeSuoJy_45zbow" comment="" name="con_base-de-dados_base-de-dados_database" prompt="con_base-de-dados_base-de-dados_database?" promptNeeded="false" type="id_String" value="base-de-dados"/>
+    <contextParameter xmi:id="_liCq6UAdEeSuoJy_45zbow" comment="" name="con_base-de-dados_base-de-dados_login" prompt="con_base-de-dados_base-de-dados_login?" promptNeeded="false" type="id_String" value="login"/>
+    <contextParameter xmi:id="_liCq6kAdEeSuoJy_45zbow" comment="" name="con_base-de-dados_base-de-dados_parametros" prompt="con_base-de-dados_base-de-dados_parametros?" promptNeeded="false" type="id_String" value="noDatetimeStringSync=true"/>
+    <contextParameter xmi:id="_liCq60AdEeSuoJy_45zbow" comment="" name="con_base-de-dados_base-de-dados_password" prompt="con_base-de-dados_base-de-dados_password?" promptNeeded="false" type="id_Password" value="Ao15Vsj6d/p/KwPwJosW6A=="/>
+    <contextParameter xmi:id="_liCq7EAdEeSuoJy_45zbow" comment="" name="con_base-de-dados_base-de-dados_port" prompt="con_base-de-dados_base-de-dados_port?" promptNeeded="false" type="id_String" value="porta"/>
+    <contextParameter xmi:id="_liCq7UAdEeSuoJy_45zbow" comment="" name="con_base-de-dados_base-de-dados_server" prompt="con_base-de-dados_base-de-dados_server?" promptNeeded="false" type="id_String" value="ip-servidor"/>
+    <contextParameter xmi:id="_liCq7kAdEeSuoJy_45zbow" comment="" name="dir_entrada" prompt="dir_entrada?" promptNeeded="false" type="id_String" value="/entrada/dwconv/"/>
+    <contextParameter xmi:id="_liCq70AdEeSuoJy_45zbow" comment="" name="dir_log" prompt="dir_log?" promptNeeded="false" type="id_String" value="/saida/temp/dwconv/"/>
+    <contextParameter xmi:id="_liCq8EAdEeSuoJy_45zbow" comment="" name="dir_saida" prompt="dir_saida?" promptNeeded="false" type="id_String" value="/saida/temp/dwconv/"/>
+    <contextParameter xmi:id="_liCq8UAdEeSuoJy_45zbow" comment="" name="dir_work" prompt="dir_work?" promptNeeded="false" type="id_String" value="/work/"/>
+  </context>
+  <context xmi:id="_liCq8kAdEeSuoJy_45zbow" confirmationNeeded="false" name="Producao">
+    <contextParameter xmi:id="_liCq80AdEeSuoJy_45zbow" comment="" name="count" prompt="count?" promptNeeded="false" type="id_Integer" value=""/>
+    <contextParameter xmi:id="_liCq9EAdEeSuoJy_45zbow" comment="" name="anomes_ref_siape" prompt="anomes_ref_siape?" promptNeeded="false" repositoryContextId="_jHBocEfVEeO9SI78O_JkJA" type="id_Integer" value=""/>
+    <contextParameter xmi:id="_liCq9UAdEeSuoJy_45zbow" comment="" name="con_base-de-dados_rh_Database" prompt="con_base-de-dados_rh_Database?" promptNeeded="false" repositoryContextId="_1TAOgNd4EeK9hOB4LuISCg" type="id_String" value="base-de-dados"/>
+    <contextParameter xmi:id="_liCq9kAdEeSuoJy_45zbow" comment="" name="con_base-de-dados_rh_Login" prompt="con_base-de-dados_rh_Login?" promptNeeded="false" repositoryContextId="_1TAOgNd4EeK9hOB4LuISCg" type="id_String" value="login"/>
+    <contextParameter xmi:id="_liCq90AdEeSuoJy_45zbow" comment="" name="con_base-de-dados_rh_Password" prompt="con_base-de-dados_rh_Password?" promptNeeded="false" repositoryContextId="_1TAOgNd4EeK9hOB4LuISCg" type="id_Password" value="eIxHCG/BsaAoHUN6ER8BU65TP2OLlq3p"/>
+    <contextParameter xmi:id="_liCq-EAdEeSuoJy_45zbow" comment="" name="con_base-de-dados_rh_Port" prompt="con_base-de-dados_rh_Port?" promptNeeded="false" repositoryContextId="_1TAOgNd4EeK9hOB4LuISCg" type="id_String" value="porta"/>
+    <contextParameter xmi:id="_liCq-UAdEeSuoJy_45zbow" comment="" name="con_base-de-dados_rh_Schema" prompt="con_base-de-dados_rh_Schema?" promptNeeded="false" repositoryContextId="_1TAOgNd4EeK9hOB4LuISCg" type="id_String" value="rh"/>
+    <contextParameter xmi:id="_liCq-kAdEeSuoJy_45zbow" comment="" name="con_base-de-dados_rh_Server" prompt="con_base-de-dados_rh_Server?" promptNeeded="false" repositoryContextId="_1TAOgNd4EeK9hOB4LuISCg" type="id_String" value="ip-servidor"/>
+    <contextParameter xmi:id="_liCq-0AdEeSuoJy_45zbow" comment="" name="con_siape_servidor_extrato_Database" prompt="con_siape_servidor_extrato_Database?" promptNeeded="false" repositoryContextId="_NWt4sLv6EeKe-ZTKUDJ14Q" type="id_String" value="base-de-dados"/>
+    <contextParameter xmi:id="_liCq_EAdEeSuoJy_45zbow" comment="" name="con_siape_servidor_extrato_Login" prompt="con_siape_servidor_extrato_Login?" promptNeeded="false" repositoryContextId="_NWt4sLv6EeKe-ZTKUDJ14Q" type="id_String" value="login"/>
+    <contextParameter xmi:id="_liCq_UAdEeSuoJy_45zbow" comment="" name="con_siape_servidor_extrato_Password" prompt="con_siape_servidor_extrato_Password?" promptNeeded="false" repositoryContextId="_NWt4sLv6EeKe-ZTKUDJ14Q" type="id_Password" value="eIxHCG/BsaAoHUN6ER8BU65TP2OLlq3p"/>
+    <contextParameter xmi:id="_liCq_kAdEeSuoJy_45zbow" comment="" name="con_siape_servidor_extrato_Port" prompt="con_siape_servidor_extrato_Port?" promptNeeded="false" repositoryContextId="_NWt4sLv6EeKe-ZTKUDJ14Q" type="id_String" value="porta"/>
+    <contextParameter xmi:id="_liCq_0AdEeSuoJy_45zbow" comment="" name="con_siape_servidor_extrato_Schema" prompt="con_siape_servidor_extrato_Schema?" promptNeeded="false" repositoryContextId="_NWt4sLv6EeKe-ZTKUDJ14Q" type="id_String" value="siape"/>
+    <contextParameter xmi:id="_liCrAEAdEeSuoJy_45zbow" comment="" name="con_siape_servidor_extrato_Server" prompt="con_siape_servidor_extrato_Server?" promptNeeded="false" repositoryContextId="_NWt4sLv6EeKe-ZTKUDJ14Q" type="id_String" value="ip-servidor"/>
+    <contextParameter xmi:id="_liCrAUAdEeSuoJy_45zbow" comment="" name="con_base-de-dados_siape_Database" prompt="con_base-de-dados_siape_Database?" promptNeeded="false" repositoryContextId="_edeVEC3wEeSaXa4Px3A38g" type="id_String" value="base-de-dados"/>
+    <contextParameter xmi:id="_liCrAkAdEeSuoJy_45zbow" comment="" name="con_base-de-dados_siape_Password" prompt="con_base-de-dados_siape_Password?" promptNeeded="false" repositoryContextId="_edeVEC3wEeSaXa4Px3A38g" type="id_Password" value="eIxHCG/BsaAoHUN6ER8BU65TP2OLlq3p"/>
+    <contextParameter xmi:id="_liCrA0AdEeSuoJy_45zbow" comment="" name="con_base-de-dados_siape_Login" prompt="con_base-de-dados_siape_Login?" promptNeeded="false" repositoryContextId="_edeVEC3wEeSaXa4Px3A38g" type="id_String" value="login"/>
+    <contextParameter xmi:id="_liCrBEAdEeSuoJy_45zbow" comment="" name="con_base-de-dados_siape_Schema" prompt="con_base-de-dados_siape_Schema?" promptNeeded="false" repositoryContextId="_edeVEC3wEeSaXa4Px3A38g" type="id_String" value="siape"/>
+    <contextParameter xmi:id="_liCrBUAdEeSuoJy_45zbow" comment="" name="con_base-de-dados_siape_Server" prompt="con_base-de-dados_siape_Server?" promptNeeded="false" repositoryContextId="_edeVEC3wEeSaXa4Px3A38g" type="id_String" value="ip-servidor"/>
+    <contextParameter xmi:id="_liCrBkAdEeSuoJy_45zbow" comment="" name="con_base-de-dados_siape_Port" prompt="con_base-de-dados_siape_Port?" promptNeeded="false" repositoryContextId="_edeVEC3wEeSaXa4Px3A38g" type="id_String" value="porta"/>
+    <contextParameter xmi:id="_liCrB0AdEeSuoJy_45zbow" comment="" name="con_base-de-dados_base-de-dados_database" prompt="con_base-de-dados_base-de-dados_database?" promptNeeded="false" type="id_String" value="base-de-dados"/>
+    <contextParameter xmi:id="_liCrCEAdEeSuoJy_45zbow" comment="" name="con_base-de-dados_base-de-dados_login" prompt="con_base-de-dados_base-de-dados_login?" promptNeeded="false" type="id_String" value="login"/>
+    <contextParameter xmi:id="_liCrCUAdEeSuoJy_45zbow" comment="" name="con_base-de-dados_base-de-dados_parametros" prompt="con_base-de-dados_base-de-dados_parametros?" promptNeeded="false" type="id_String" value="noDatetimeStringSync=true"/>
+    <contextParameter xmi:id="_liCrCkAdEeSuoJy_45zbow" comment="" name="con_base-de-dados_base-de-dados_password" prompt="con_base-de-dados_base-de-dados_password?" promptNeeded="false" type="id_Password" value="Ao15Vsj6d/p/KwPwJosW6A=="/>
+    <contextParameter xmi:id="_liCrC0AdEeSuoJy_45zbow" comment="" name="con_base-de-dados_base-de-dados_port" prompt="con_base-de-dados_base-de-dados_port?" promptNeeded="false" type="id_String" value="porta"/>
+    <contextParameter xmi:id="_liCrDEAdEeSuoJy_45zbow" comment="" name="con_base-de-dados_base-de-dados_server" prompt="con_base-de-dados_base-de-dados_server?" promptNeeded="false" type="id_String" value="ip-servidor"/>
+    <contextParameter xmi:id="_liCrDUAdEeSuoJy_45zbow" comment="" name="dir_entrada" prompt="dir_entrada?" promptNeeded="false" type="id_String" value="/entrada/dwconv/"/>
+    <contextParameter xmi:id="_liCrDkAdEeSuoJy_45zbow" comment="" name="dir_log" prompt="dir_log?" promptNeeded="false" type="id_String" value="/processo_etl/log/siconv/"/>
+    <contextParameter xmi:id="_liCrD0AdEeSuoJy_45zbow" comment="" name="dir_saida" prompt="dir_saida?" promptNeeded="false" type="id_String" value="/processo_etl/cbi/siconv/"/>
+    <contextParameter xmi:id="_liCrEEAdEeSuoJy_45zbow" comment="" name="dir_work" prompt="dir_work?" promptNeeded="false" type="id_String" value="/work/dwconv/"/>
+  </context>
+  <parameters xmi:id="_liCrEUAdEeSuoJy_45zbow">
+    <elementParameter xmi:id="_liCrEkAdEeSuoJy_45zbow" field="TEXT" name="JOB_RUN_VM_ARGUMENTS" value=" -Xms256M -Xmx1024M"/>
+    <elementParameter xmi:id="_liCrE0AdEeSuoJy_45zbow" field="CHECK" name="JOB_RUN_VM_ARGUMENTS_OPTION" value="false"/>
+    <elementParameter xmi:id="_liCrFEAdEeSuoJy_45zbow" field="TEXT" name="SCREEN_OFFSET_X" value="0"/>
+    <elementParameter xmi:id="_liCrFUAdEeSuoJy_45zbow" field="TEXT" name="SCREEN_OFFSET_Y" value="160"/>
+    <elementParameter xmi:id="_liCrFkAdEeSuoJy_45zbow" field="TEXT" name="SCHEMA_OPTIONS" value="none"/>
+    <elementParameter xmi:id="_liCrF0AdEeSuoJy_45zbow" field="TEXT" name="OEM_CUSTOM_ATTRIBUTE" value=""/>
+    <elementParameter xmi:id="_liCrGEAdEeSuoJy_45zbow" field="CHECK" name="IMPLICITCONTEXT_USE_PROJECT_SETTINGS" value="true"/>
+    <elementParameter xmi:id="_liCrGUAdEeSuoJy_45zbow" field="CHECK" name="STATANDLOG_USE_PROJECT_SETTINGS" value="true"/>
+    <elementParameter xmi:id="_liCrGkAdEeSuoJy_45zbow" field="FILE" name="IMPLICIT_TCONTEXTLOAD_FILE" value="&quot;&quot;"/>
+    <elementParameter xmi:id="_liCrG0AdEeSuoJy_45zbow" field="TEXT" name="FIELDSEPARATOR" value="&quot;&quot;"/>
+    <elementParameter xmi:id="_liCrHEAdEeSuoJy_45zbow" field="CLOSED_LIST" name="DB_VERSION_IMPLICIT_CONTEXT" value=""/>
+    <elementParameter xmi:id="_liCrHUAdEeSuoJy_45zbow" field="CHECK" name="DISABLE_WARNINGS" value="false"/>
+    <elementParameter xmi:id="_liCrHkAdEeSuoJy_45zbow" field="CHECK" name="DISABLE_INFO" value="false"/>
+    <elementParameter xmi:id="_liCrH0AdEeSuoJy_45zbow" field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter xmi:id="_liCrIEAdEeSuoJy_45zbow" field="CLOSED_LIST" name="DB_VERSION" value="ojdbc14-10g.jar"/>
+    <routinesParameter xmi:id="_liCrIUAdEeSuoJy_45zbow" id="_nm6ksNdGEeK9hOB4LuISCg" name="DQTechnical"/>
+    <routinesParameter xmi:id="_liCrIkAdEeSuoJy_45zbow" id="_niOR8NdGEeK9hOB4LuISCg" name="DataOperation"/>
+    <routinesParameter xmi:id="_liCrI0AdEeSuoJy_45zbow" id="_nmef0NdGEeK9hOB4LuISCg" name="DataQuality"/>
+    <routinesParameter xmi:id="_liCrJEAdEeSuoJy_45zbow" id="_nmwzsNdGEeK9hOB4LuISCg" name="DqStringHandling"/>
+    <routinesParameter xmi:id="_liCrJUAdEeSuoJy_45zbow" id="_nlUpQNdGEeK9hOB4LuISCg" name="Mathematical"/>
+    <routinesParameter xmi:id="_liCrJkAdEeSuoJy_45zbow" id="_nldMINdGEeK9hOB4LuISCg" name="Numeric"/>
+    <routinesParameter xmi:id="_liCrJ0AdEeSuoJy_45zbow" id="_nlfoYNdGEeK9hOB4LuISCg" name="Relational"/>
+    <routinesParameter xmi:id="_liCrKEAdEeSuoJy_45zbow" id="_nnDHkNdGEeK9hOB4LuISCg" name="SQLike"/>
+    <routinesParameter xmi:id="_liCrKUAdEeSuoJy_45zbow" id="_nltq0NdGEeK9hOB4LuISCg" name="StringHandling"/>
+    <routinesParameter xmi:id="_liCrKkAdEeSuoJy_45zbow" id="_nl_-sNdGEeK9hOB4LuISCg" name="TalendDataGenerator"/>
+    <routinesParameter xmi:id="_liCrK0AdEeSuoJy_45zbow" id="_nmNaENdGEeK9hOB4LuISCg" name="TalendDate"/>
+    <routinesParameter xmi:id="_liCrLEAdEeSuoJy_45zbow" id="_nmWkANdGEeK9hOB4LuISCg" name="TalendString"/>
+    <routinesParameter xmi:id="_liCrLUAdEeSuoJy_45zbow" id="_AntRMS-bEeSx3JA33D57rA" name="ano_mes_ref"/>
+    <routinesParameter xmi:id="_liCrLkAdEeSuoJy_45zbow" id="_AntRMC-bEeSx3JA33D57rA" name="data_referencia"/>
+    <routinesParameter xmi:id="_liCrL0AdEeSuoJy_45zbow" id="_iE3UQLV0Ed-jS_ykRTUezQ" name="Conversie"/>
+  </parameters>
+  <node xmi:id="_liCrMEAdEeSuoJy_45zbow" componentName="tPobase-de-dadosresqlInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="128" posY="160">
+    <elementParameter xmi:id="_liCrMUAdEeSuoJy_45zbow" field="TEXT" name="UNIQUE_NAME" value="tPobase-de-dadosresqlInput_1"/>
+    <elementParameter xmi:id="_liCrMkAdEeSuoJy_45zbow" field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY"/>
+    <elementParameter xmi:id="_liCrM0AdEeSuoJy_45zbow" field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" value="_N3viILv6EeKe-ZTKUDJ14Q"/>
+    <elementParameter xmi:id="_liCrNEAdEeSuoJy_45zbow" field="CHECK" name="USE_EXISTING_CONNECTION" value="false"/>
+    <elementParameter xmi:id="_liCrNUAdEeSuoJy_45zbow" field="COMPONENT_LIST" name="CONNECTION" value=""/>
+    <elementParameter xmi:id="_liCrNkAdEeSuoJy_45zbow" field="TEXT" name="HOST" value="context.con_base-de-dados_siape_Server"/>
+    <elementParameter xmi:id="_liCrN0AdEeSuoJy_45zbow" field="TEXT" name="TYPE" value="PObase-de-dadosRESQL"/>
+    <elementParameter xmi:id="_liCrOEAdEeSuoJy_45zbow" field="TEXT" name="PORT" value="context.con_base-de-dados_siape_Port"/>
+    <elementParameter xmi:id="_liCrOUAdEeSuoJy_45zbow" field="TEXT" name="DBNAME" value="context.con_base-de-dados_siape_Database"/>
+    <elementParameter xmi:id="_liCrOkAdEeSuoJy_45zbow" field="TEXT" name="SCHEMA_DB" value="context.con_base-de-dados_siape_Schema"/>
+    <elementParameter xmi:id="_liCrO0AdEeSuoJy_45zbow" field="TEXT" name="USER" value="context.con_base-de-dados_siape_Login"/>
+    <elementParameter xmi:id="_liCrPEAdEeSuoJy_45zbow" field="TEXT" name="PASS" value="context.con_base-de-dados_siape_Password"/>
+    <elementParameter xmi:id="_liCrPUAdEeSuoJy_45zbow" field="DBTABLE" name="TABLE" value="&quot;siape_orgao_base&quot;"/>
+    <elementParameter xmi:id="_liCrPkAdEeSuoJy_45zbow" field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
+    <elementParameter xmi:id="_liCrP0AdEeSuoJy_45zbow" field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" value=""/>
+    <elementParameter xmi:id="_liCrQEAdEeSuoJy_45zbow" field="TECHNICAL" name="QUERYSTORE:QUERYSTORE_TYPE" value="BUILT_IN"/>
+    <elementParameter xmi:id="_liCrQUAdEeSuoJy_45zbow" field="GUESS_SCHEMA" name="GUESS_SCHEMA" value="&quot;&quot;"/>
+    <elementParameter xmi:id="_liCrQkAdEeSuoJy_45zbow" field="MEMO_SQL" name="QUERY" value="&quot;SELECT &#xD;&#xA;  \&quot;&quot;+context.con_siape_servidor_extrato_Database+&quot;\&quot;.\&quot;&quot;+context.con_siape_servidor_extrato_Schema+&quot;\&quot;.\&quot;siape_orgao_base\&quot;.\&quot;it_co_orgao\&quot;, &#xD;&#xA;  \&quot;&quot;+context.con_siape_servidor_extrato_Database+&quot;\&quot;.\&quot;&quot;+context.con_siape_servidor_extrato_Schema+&quot;\&quot;.\&quot;siape_orgao_base\&quot;.\&quot;it_no_orgao\&quot;, &#xD;&#xA;  \&quot;&quot;+context.con_siape_servidor_extrato_Database+&quot;\&quot;.\&quot;&quot;+context.con_siape_servidor_extrato_Schema+&quot;\&quot;.\&quot;siape_orgao_base\&quot;.\&quot;it_co_orgao_vinculacao\&quot;, &#xD;&#xA;  \&quot;&quot;+context.con_siape_servidor_extrato_Database+&quot;\&quot;.\&quot;&quot;+context.con_siape_servidor_extrato_Schema+&quot;\&quot;.\&quot;siape_orgao_base\&quot;.\&quot;it_sg_uf_crh\&quot;, &#xD;&#xA;  \&quot;&quot;+context.con_siape_servidor_extrato_Database+&quot;\&quot;.\&quot;&quot;+context.con_siape_servidor_extrato_Schema+&quot;\&quot;.\&quot;siape_orgao_base\&quot;.\&quot;it_sg_orgao\&quot;, &#xD;&#xA;  \&quot;&quot;+context.con_siape_servidor_extrato_Database+&quot;\&quot;.\&quot;&quot;+context.con_siape_servidor_extrato_Schema+&quot;\&quot;.\&quot;siape_orgao_base\&quot;.\&quot;it_co_natureza_juridica\&quot;&#xD;&#xA;FROM \&quot;&quot;+context.con_siape_servidor_extrato_Database+&quot;\&quot;.\&quot;&quot;+context.con_siape_servidor_extrato_Schema+&quot;\&quot;.\&quot;siape_orgao_base\&quot;&#xD;&#xA;where &#xD;&#xA;  \&quot;&quot;+context.con_siape_servidor_extrato_Database+&quot;\&quot;.\&quot;&quot;+context.con_siape_servidor_extrato_Schema+&quot;\&quot;.\&quot;siape_orgao_base\&quot;.\&quot;anomes_ref\&quot; = &quot; + context.anomes_ref_siape + &quot;&#xD;&#xA;order by 1&quot;"/>
+    <elementParameter xmi:id="_liCrQ0AdEeSuoJy_45zbow" field="MAPPING_TYPE" name="MAPPING" value="pobase-de-dadosres_id"/>
+    <elementParameter xmi:id="_liCrREAdEeSuoJy_45zbow" field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;"/>
+    <elementParameter xmi:id="_liCrRUAdEeSuoJy_45zbow" field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter xmi:id="_liCrRkAdEeSuoJy_45zbow" field="CHECK" name="USE_CURSOR" value="true"/>
+    <elementParameter xmi:id="_liCrR0AdEeSuoJy_45zbow" field="TEXT" name="CURSOR_SIZE" value="1000"/>
+    <elementParameter xmi:id="_liCrSEAdEeSuoJy_45zbow" field="CHECK" name="TRIM_ALL_COLUMN" value="false"/>
+    <elementParameter xmi:id="_liCrSUAdEeSuoJy_45zbow" field="TABLE" name="TRIM_COLUMN">
+      <elementValue xmi:id="_liCrSkAdEeSuoJy_45zbow" elementRef="SCHEMA_COLUMN" value="it_co_orgao"/>
+      <elementValue xmi:id="_liCrS0AdEeSuoJy_45zbow" elementRef="TRIM" value="false"/>
+      <elementValue xmi:id="_liCrTEAdEeSuoJy_45zbow" elementRef="SCHEMA_COLUMN" value="it_no_orgao"/>
+      <elementValue xmi:id="_liCrTUAdEeSuoJy_45zbow" elementRef="TRIM" value="false"/>
+      <elementValue xmi:id="_liCrTkAdEeSuoJy_45zbow" elementRef="SCHEMA_COLUMN" value="it_co_orgao_vinculacao"/>
+      <elementValue xmi:id="_liCrT0AdEeSuoJy_45zbow" elementRef="TRIM" value="false"/>
+      <elementValue xmi:id="_liCrUEAdEeSuoJy_45zbow" elementRef="SCHEMA_COLUMN" value="it_sg_uf_crh"/>
+      <elementValue xmi:id="_liCrUUAdEeSuoJy_45zbow" elementRef="TRIM" value="false"/>
+      <elementValue xmi:id="_liCrUkAdEeSuoJy_45zbow" elementRef="SCHEMA_COLUMN" value="it_sg_orgao"/>
+      <elementValue xmi:id="_liCrU0AdEeSuoJy_45zbow" elementRef="TRIM" value="false"/>
+      <elementValue xmi:id="_liCrVEAdEeSuoJy_45zbow" elementRef="SCHEMA_COLUMN" value="it_co_natureza_juridica"/>
+      <elementValue xmi:id="_liCrVUAdEeSuoJy_45zbow" elementRef="TRIM" value="false"/>
+    </elementParameter>
+    <elementParameter xmi:id="_liCrVkAdEeSuoJy_45zbow" field="TEXT" name="LABEL" value="Tabela__TABLE__"/>
+    <elementParameter xmi:id="_liCrV0AdEeSuoJy_45zbow" field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <elementParameter xmi:id="_liCrWEAdEeSuoJy_45zbow" field="CHECK" name="INFORMATION" value="true"/>
+    <elementParameter xmi:id="_liCrWUAdEeSuoJy_45zbow" field="MEMO" name="COMMENT" value="Componente responsável por recuperar os dados da tabela &quot;siape_orgao_base&quot;' base-de-dados.siape.siape_orgao_base'."/>
+    <elementParameter xmi:id="_liCrWkAdEeSuoJy_45zbow" field="CHECK" name="VALIDATION_RULES" value="false"/>
+    <metadata xmi:id="_liCrW0AdEeSuoJy_45zbow" connector="FLOW" name="tPobase-de-dadosresqlInput_1">
+      <column xmi:id="_liCrXEAdEeSuoJy_45zbow" comment="" key="false" length="5" name="it_co_orgao" nullable="true" pattern="" precision="0" sourceType="" type="id_String"/>
+      <column xmi:id="_liCrXUAdEeSuoJy_45zbow" comment="" key="false" length="40" name="it_no_orgao" nullable="true" pattern="" precision="0" sourceType="" type="id_String"/>
+      <column xmi:id="_liCrXkAdEeSuoJy_45zbow" comment="" key="false" length="5" name="it_co_orgao_vinculacao" nullable="true" pattern="" precision="0" sourceType="" type="id_String"/>
+      <column xmi:id="_liCrX0AdEeSuoJy_45zbow" comment="" key="false" length="2" name="it_sg_uf_crh" nullable="true" pattern="" precision="0" sourceType="" type="id_String"/>
+      <column xmi:id="_liCrYEAdEeSuoJy_45zbow" comment="" key="false" length="10" name="it_sg_orgao" nullable="true" pattern="" precision="0" sourceType="" type="id_String"/>
+      <column xmi:id="_liCrYUAdEeSuoJy_45zbow" comment="" key="false" length="2" name="it_co_natureza_juridica" nullable="true" pattern="" precision="0" sourceType="" type="id_String"/>
+    </metadata>
+  </node>
+  <node xmi:id="_liCrYkAdEeSuoJy_45zbow" componentName="tMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="384" posY="160">
+    <elementParameter xmi:id="_liCrY0AdEeSuoJy_45zbow" field="TEXT" name="UNIQUE_NAME" value="tMap_1"/>
+    <elementParameter xmi:id="_liCrZEAdEeSuoJy_45zbow" field="EXTERNAL" name="MAP" value=""/>
+    <elementParameter xmi:id="_liCrZUAdEeSuoJy_45zbow" field="CLOSED_LIST" name="LINK_STYLE" value="AUTO"/>
+    <elementParameter xmi:id="_liCrZkAdEeSuoJy_45zbow" field="DIRECTORY" name="TEMPORARY_DATA_DIRECTORY" value=""/>
+    <elementParameter xmi:id="_liCrZ0AdEeSuoJy_45zbow" field="IMAGE" name="PREVIEW" value="_Nl8CEAm6EeOVNr7FOcA84g-tMap_1-PREVIEW.bmp"/>
+    <elementParameter xmi:id="_liCraEAdEeSuoJy_45zbow" field="CHECK" name="DIE_ON_ERROR" value="true"/>
+    <elementParameter xmi:id="_liCraUAdEeSuoJy_45zbow" field="CHECK" name="LKUP_PARALLELIZE" value="false"/>
+    <elementParameter xmi:id="_liCrakAdEeSuoJy_45zbow" field="TEXT" name="ROWS_BUFFER_SIZE" value="2000000"/>
+    <elementParameter xmi:id="_liCra0AdEeSuoJy_45zbow" field="TEXT" name="LABEL" value="Mapeamento"/>
+    <elementParameter xmi:id="_liCrbEAdEeSuoJy_45zbow" field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <elementParameter xmi:id="_liCrbUAdEeSuoJy_45zbow" field="CHECK" name="INFORMATION" value="false"/>
+    <elementParameter xmi:id="_liCrbkAdEeSuoJy_45zbow" field="MEMO" name="COMMENT" value=""/>
+    <elementParameter xmi:id="_liCrb0AdEeSuoJy_45zbow" field="CHECK" name="VALIDATION_RULES" value="false"/>
+    <metadata xmi:id="_liCrcEAdEeSuoJy_45zbow" connector="FLOW" name="Dados">
+      <column xmi:id="_liCrcUAdEeSuoJy_45zbow" comment="" key="false" length="5" name="co_orgao_siape_superior" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_Integer"/>
+      <column xmi:id="_liCrckAdEeSuoJy_45zbow" comment="" key="false" length="40" name="no_orgao_siape_superior" nullable="true" pattern="" precision="0" sourceType="" type="id_String"/>
+      <column xmi:id="_liCrc0AdEeSuoJy_45zbow" comment="" key="false" length="10" name="sg_orgao_siape_superior" nullable="true" pattern="" precision="0" sourceType="" type="id_String"/>
+      <column xmi:id="_liCrdEAdEeSuoJy_45zbow" comment="" key="false" length="2" name="sg_uf_orgao_siape_superior" nullable="true" pattern="" precision="0" sourceType="" type="id_String"/>
+      <column xmi:id="_liCrdUAdEeSuoJy_45zbow" comment="" key="false" length="2" name="co_natureza_juridica_orgao_siape_superior" nullable="true" pattern="" precision="0" sourceType="" type="id_Integer"/>
+      <column xmi:id="_liCrdkAdEeSuoJy_45zbow" comment="" key="false" length="30" name="no_natureza_juridica_orgao_siape_superior" nullable="true" pattern="" precision="0" sourceType="" type="id_String"/>
+      <column xmi:id="_liCrd0AdEeSuoJy_45zbow" comment="" key="false" length="5" name="co_orgao_siape" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_Integer"/>
+      <column xmi:id="_liCreEAdEeSuoJy_45zbow" comment="" key="false" length="40" name="no_orgao_siape" nullable="true" pattern="" precision="0" sourceType="" type="id_String"/>
+      <column xmi:id="_liCreUAdEeSuoJy_45zbow" comment="" key="false" length="10" name="sg_orgao_siape" nullable="true" pattern="" precision="0" sourceType="" type="id_String"/>
+      <column xmi:id="_liCrekAdEeSuoJy_45zbow" comment="" key="false" length="2" name="sg_uf_orgao_siape" nullable="true" pattern="" precision="0" sourceType="" type="id_String"/>
+      <column xmi:id="_liCre0AdEeSuoJy_45zbow" comment="" key="false" length="2" name="co_natureza_juridica_orgao_siape" nullable="true" pattern="" precision="0" sourceType="" type="id_Integer"/>
+      <column xmi:id="_liCrfEAdEeSuoJy_45zbow" comment="" key="false" length="30" name="no_natureza_juridica_orgao_siape" nullable="true" pattern="" precision="0" sourceType="" type="id_String"/>
+    </metadata>
+    <nodeData xsi:type="MapperData" xmi:id="_liCrfUAdEeSuoJy_45zbow">
+      <uiProperties xmi:id="_liCrfkAdEeSuoJy_45zbow"/>
+      <varTables xmi:id="_liCrf0AdEeSuoJy_45zbow" sizeState="INTERMEDIATE" name="Var" minimized="true"/>
+      <outputTables xmi:id="_liCrgEAdEeSuoJy_45zbow" sizeState="INTERMEDIATE" name="Dados">
+        <mapperTableEntries xmi:id="_liCrgUAdEeSuoJy_45zbow" name="co_orgao_siape_superior" expression="Integer.parseInt(siape_orgao_base2.it_co_orgao) " type="id_Integer" nullable="true"/>
+        <mapperTableEntries xmi:id="_liCrgkAdEeSuoJy_45zbow" name="no_orgao_siape_superior" expression="siape_orgao_base2.it_no_orgao " type="id_String" nullable="true"/>
+        <mapperTableEntries xmi:id="_liCrg0AdEeSuoJy_45zbow" name="sg_orgao_siape_superior" expression="siape_orgao_base2.it_sg_orgao " type="id_String" nullable="true"/>
+        <mapperTableEntries xmi:id="_liCrhEAdEeSuoJy_45zbow" name="sg_uf_orgao_siape_superior" expression="siape_orgao_base2.it_sg_uf_crh " type="id_String" nullable="true"/>
+        <mapperTableEntries xmi:id="_liCrhUAdEeSuoJy_45zbow" name="co_natureza_juridica_orgao_siape_superior" expression="Relational.ISNULL(siape_orgao_base2.it_co_natureza_juridica) || siape_orgao_base2.it_co_natureza_juridica.trim().equals(&quot;&quot;) ? null :&#xD;&#xA;Integer.parseInt(siape_orgao_base2.it_co_natureza_juridica)    " type="id_Integer" nullable="true"/>
+        <mapperTableEntries xmi:id="_liCrhkAdEeSuoJy_45zbow" name="no_natureza_juridica_orgao_siape_superior" expression="siape_natureza_juridica.it_no_natureza_juridica " type="id_String" nullable="true"/>
+        <mapperTableEntries xmi:id="_liCrh0AdEeSuoJy_45zbow" name="co_orgao_siape" expression="Integer.parseInt(siape_orgao_base.it_co_orgao) " type="id_Integer" nullable="true"/>
+        <mapperTableEntries xmi:id="_liCriEAdEeSuoJy_45zbow" name="no_orgao_siape" expression="siape_orgao_base.it_no_orgao " type="id_String" nullable="true"/>
+        <mapperTableEntries xmi:id="_liCriUAdEeSuoJy_45zbow" name="sg_orgao_siape" expression="siape_orgao_base.it_sg_orgao " type="id_String" nullable="true"/>
+        <mapperTableEntries xmi:id="_liCrikAdEeSuoJy_45zbow" name="sg_uf_orgao_siape" expression="siape_orgao_base.it_sg_uf_crh " type="id_String" nullable="true"/>
+        <mapperTableEntries xmi:id="_liCri0AdEeSuoJy_45zbow" name="co_natureza_juridica_orgao_siape" expression="Relational.ISNULL(siape_orgao_base.it_co_natureza_juridica) || siape_orgao_base.it_co_natureza_juridica.trim().equals(&quot;&quot;) ? null :&#xD;&#xA;Integer.parseInt(siape_orgao_base.it_co_natureza_juridica)    " type="id_Integer" nullable="true"/>
+        <mapperTableEntries xmi:id="_liCrjEAdEeSuoJy_45zbow" name="no_natureza_juridica_orgao_siape" expression="row4.it_no_natureza_juridica " type="id_String" nullable="true"/>
+      </outputTables>
+      <inputTables xmi:id="_liCrjUAdEeSuoJy_45zbow" sizeState="INTERMEDIATE" name="siape_orgao_base" matchingMode="UNIQUE_MATCH" lookupMode="LOAD_ONCE">
+        <mapperTableEntries xmi:id="_liCrjkAdEeSuoJy_45zbow" name="it_co_orgao" type="id_String" nullable="true"/>
+        <mapperTableEntries xmi:id="_liCrj0AdEeSuoJy_45zbow" name="it_no_orgao" type="id_String" nullable="true"/>
+        <mapperTableEntries xmi:id="_liCrkEAdEeSuoJy_45zbow" name="it_co_orgao_vinculacao" type="id_String" nullable="true"/>
+        <mapperTableEntries xmi:id="_liCrkUAdEeSuoJy_45zbow" name="it_sg_uf_crh" type="id_String" nullable="true"/>
+        <mapperTableEntries xmi:id="_liCrkkAdEeSuoJy_45zbow" name="it_sg_orgao" type="id_String" nullable="true"/>
+        <mapperTableEntries xmi:id="_liCrk0AdEeSuoJy_45zbow" name="it_co_natureza_juridica" type="id_String" nullable="true"/>
+      </inputTables>
+      <inputTables xmi:id="_liCrlEAdEeSuoJy_45zbow" sizeState="INTERMEDIATE" name="siape_orgao_base2" matchingMode="UNIQUE_MATCH" lookupMode="LOAD_ONCE">
+        <mapperTableEntries xmi:id="_liCrlUAdEeSuoJy_45zbow" name="it_co_orgao" expression="siape_orgao_base.it_co_orgao_vinculacao.equals(&quot;00000&quot;) ? &#xD;&#xA;siape_orgao_base.it_co_orgao : siape_orgao_base.it_co_orgao_vinculacao  " type="id_String" nullable="true"/>
+        <mapperTableEntries xmi:id="_liCrlkAdEeSuoJy_45zbow" name="it_no_orgao" type="id_String" nullable="true"/>
+        <mapperTableEntries xmi:id="_liCrl0AdEeSuoJy_45zbow" name="it_sg_uf_crh" type="id_String" nullable="true"/>
+        <mapperTableEntries xmi:id="_liCrmEAdEeSuoJy_45zbow" name="it_sg_orgao" type="id_String" nullable="true"/>
+        <mapperTableEntries xmi:id="_liCrmUAdEeSuoJy_45zbow" name="it_co_natureza_juridica" type="id_String" nullable="true"/>
+      </inputTables>
+      <inputTables xmi:id="_liCrmkAdEeSuoJy_45zbow" sizeState="INTERMEDIATE" name="siape_natureza_juridica" matchingMode="UNIQUE_MATCH" lookupMode="LOAD_ONCE">
+        <mapperTableEntries xmi:id="_liCrm0AdEeSuoJy_45zbow" name="co_natureza_juridica" expression="siape_orgao_base2.it_co_natureza_juridica " type="id_String" nullable="true" operator="="/>
+        <mapperTableEntries xmi:id="_liCrnEAdEeSuoJy_45zbow" name="it_no_natureza_juridica" type="id_String" nullable="true"/>
+      </inputTables>
+      <inputTables xmi:id="_liCrnUAdEeSuoJy_45zbow" sizeState="INTERMEDIATE" name="row4" matchingMode="UNIQUE_MATCH" lookupMode="LOAD_ONCE">
+        <mapperTableEntries xmi:id="_liCrnkAdEeSuoJy_45zbow" name="co_natureza_juridica" expression="siape_orgao_base.it_co_natureza_juridica " type="id_String" nullable="true" operator="="/>
+        <mapperTableEntries xmi:id="_liCrn0AdEeSuoJy_45zbow" name="it_no_natureza_juridica" type="id_String" nullable="true"/>
+      </inputTables>
+    </nodeData>
+  </node>
+  <node xmi:id="_liCroEAdEeSuoJy_45zbow" componentName="tPobase-de-dadosresqlInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="192" posY="32">
+    <elementParameter xmi:id="_liCroUAdEeSuoJy_45zbow" field="TEXT" name="UNIQUE_NAME" value="tPobase-de-dadosresqlInput_2"/>
+    <elementParameter xmi:id="_liCrokAdEeSuoJy_45zbow" field="CHECK" name="USE_EXISTING_CONNECTION" value="false"/>
+    <elementParameter xmi:id="_liCro0AdEeSuoJy_45zbow" field="COMPONENT_LIST" name="CONNECTION" value=""/>
+    <elementParameter xmi:id="_liCrpEAdEeSuoJy_45zbow" field="TEXT" name="HOST" value="context.con_siape_servidor_extrato_Server"/>
+    <elementParameter xmi:id="_liCrpUAdEeSuoJy_45zbow" field="TEXT" name="TYPE" value="PObase-de-dadosRESQL"/>
+    <elementParameter xmi:id="_liCrpkAdEeSuoJy_45zbow" field="TEXT" name="PORT" value="context.con_siape_servidor_extrato_Port"/>
+    <elementParameter xmi:id="_liCrp0AdEeSuoJy_45zbow" field="TEXT" name="DBNAME" value="context.con_siape_servidor_extrato_Database"/>
+    <elementParameter xmi:id="_liCrqEAdEeSuoJy_45zbow" field="TEXT" name="SCHEMA_DB" value="context.con_siape_servidor_extrato_Schema"/>
+    <elementParameter xmi:id="_liCrqUAdEeSuoJy_45zbow" field="TEXT" name="USER" value="context.con_siape_servidor_extrato_Login"/>
+    <elementParameter xmi:id="_liCrqkAdEeSuoJy_45zbow" field="TEXT" name="PASS" value="context.con_siape_servidor_extrato_Password"/>
+    <elementParameter xmi:id="_liCrq0AdEeSuoJy_45zbow" field="DBTABLE" name="TABLE" value="&quot;siape_orgao_base&quot;"/>
+    <elementParameter xmi:id="_liCrrEAdEeSuoJy_45zbow" field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
+    <elementParameter xmi:id="_liCrrUAdEeSuoJy_45zbow" field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" value=""/>
+    <elementParameter xmi:id="_liCrrkAdEeSuoJy_45zbow" field="TECHNICAL" name="QUERYSTORE:QUERYSTORE_TYPE" value="BUILT_IN"/>
+    <elementParameter xmi:id="_liCrr0AdEeSuoJy_45zbow" field="GUESS_SCHEMA" name="GUESS_SCHEMA" value="&quot;&quot;"/>
+    <elementParameter xmi:id="_liCrsEAdEeSuoJy_45zbow" field="MEMO_SQL" name="QUERY" value="&quot;SELECT &#xD;&#xA;  \&quot;&quot;+context.con_siape_servidor_extrato_Database+&quot;\&quot;.\&quot;&quot;+context.con_siape_servidor_extrato_Schema+&quot;\&quot;.\&quot;siape_orgao_base\&quot;.\&quot;it_co_orgao\&quot;, &#xD;&#xA;  \&quot;&quot;+context.con_siape_servidor_extrato_Database+&quot;\&quot;.\&quot;&quot;+context.con_siape_servidor_extrato_Schema+&quot;\&quot;.\&quot;siape_orgao_base\&quot;.\&quot;it_no_orgao\&quot;, &#xD;&#xA;  \&quot;&quot;+context.con_siape_servidor_extrato_Database+&quot;\&quot;.\&quot;&quot;+context.con_siape_servidor_extrato_Schema+&quot;\&quot;.\&quot;siape_orgao_base\&quot;.\&quot;it_sg_uf_crh\&quot;, &#xD;&#xA;  \&quot;&quot;+context.con_siape_servidor_extrato_Database+&quot;\&quot;.\&quot;&quot;+context.con_siape_servidor_extrato_Schema+&quot;\&quot;.\&quot;siape_orgao_base\&quot;.\&quot;it_sg_orgao\&quot;, &#xD;&#xA;  \&quot;&quot;+context.con_siape_servidor_extrato_Database+&quot;\&quot;.\&quot;&quot;+context.con_siape_servidor_extrato_Schema+&quot;\&quot;.\&quot;siape_orgao_base\&quot;.\&quot;it_co_natureza_juridica\&quot;&#xD;&#xA;FROM \&quot;&quot;+context.con_siape_servidor_extrato_Database+&quot;\&quot;.\&quot;&quot;+context.con_siape_servidor_extrato_Schema+&quot;\&quot;.\&quot;siape_orgao_base\&quot;&#xD;&#xA;where &#xD;&#xA;  \&quot;&quot;+context.con_siape_servidor_extrato_Database+&quot;\&quot;.\&quot;&quot;+context.con_siape_servidor_extrato_Schema+&quot;\&quot;.\&quot;siape_orgao_base\&quot;.\&quot;anomes_ref\&quot; = &quot; + context.anomes_ref_siape + &quot;&#xD;&#xA;order by 1&#xD;&#xA;&quot;"/>
+    <elementParameter xmi:id="_liCrsUAdEeSuoJy_45zbow" field="MAPPING_TYPE" name="MAPPING" value="pobase-de-dadosres_id"/>
+    <elementParameter xmi:id="_liCrskAdEeSuoJy_45zbow" field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;"/>
+    <elementParameter xmi:id="_liCrs0AdEeSuoJy_45zbow" field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter xmi:id="_liCrtEAdEeSuoJy_45zbow" field="CHECK" name="USE_CURSOR" value="true"/>
+    <elementParameter xmi:id="_liCrtUAdEeSuoJy_45zbow" field="TEXT" name="CURSOR_SIZE" value="1000"/>
+    <elementParameter xmi:id="_liCrtkAdEeSuoJy_45zbow" field="CHECK" name="TRIM_ALL_COLUMN" value="false"/>
+    <elementParameter xmi:id="_liCrt0AdEeSuoJy_45zbow" field="TABLE" name="TRIM_COLUMN">
+      <elementValue xmi:id="_liCruEAdEeSuoJy_45zbow" elementRef="SCHEMA_COLUMN" value="it_co_orgao"/>
+      <elementValue xmi:id="_liCruUAdEeSuoJy_45zbow" elementRef="TRIM" value="false"/>
+      <elementValue xmi:id="_liCrukAdEeSuoJy_45zbow" elementRef="SCHEMA_COLUMN" value="it_no_orgao"/>
+      <elementValue xmi:id="_liCru0AdEeSuoJy_45zbow" elementRef="TRIM" value="false"/>
+      <elementValue xmi:id="_liCrvEAdEeSuoJy_45zbow" elementRef="SCHEMA_COLUMN" value="it_sg_uf_crh"/>
+      <elementValue xmi:id="_liCrvUAdEeSuoJy_45zbow" elementRef="TRIM" value="false"/>
+      <elementValue xmi:id="_liCrvkAdEeSuoJy_45zbow" elementRef="SCHEMA_COLUMN" value="it_sg_orgao"/>
+      <elementValue xmi:id="_liCrv0AdEeSuoJy_45zbow" elementRef="TRIM" value="false"/>
+      <elementValue xmi:id="_liCrwEAdEeSuoJy_45zbow" elementRef="SCHEMA_COLUMN" value="it_co_natureza_juridica"/>
+      <elementValue xmi:id="_liCrwUAdEeSuoJy_45zbow" elementRef="TRIM" value="false"/>
+    </elementParameter>
+    <elementParameter xmi:id="_liCrwkAdEeSuoJy_45zbow" field="TEXT" name="LABEL" value="Tabela __TABLE__"/>
+    <elementParameter xmi:id="_liCrw0AdEeSuoJy_45zbow" field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <elementParameter xmi:id="_liCrxEAdEeSuoJy_45zbow" field="CHECK" name="INFORMATION" value="true"/>
+    <elementParameter xmi:id="_liCrxUAdEeSuoJy_45zbow" field="MEMO" name="COMMENT" value="Componente responsável por recuperar os dados da tabela &quot;siape_orgao_base&quot;' base-de-dados.siape.siape_orgao_base'."/>
+    <elementParameter xmi:id="_liCrxkAdEeSuoJy_45zbow" field="CHECK" name="VALIDATION_RULES" value="false"/>
+    <metadata xmi:id="_liCrx0AdEeSuoJy_45zbow" connector="FLOW" name="tPobase-de-dadosresqlInput_2">
+      <column xmi:id="_liCryEAdEeSuoJy_45zbow" comment="" key="false" length="5" name="it_co_orgao" nullable="true" pattern="" precision="0" sourceType="" type="id_String"/>
+      <column xmi:id="_liCryUAdEeSuoJy_45zbow" comment="" key="false" length="40" name="it_no_orgao" nullable="true" pattern="" precision="0" sourceType="" type="id_String"/>
+      <column xmi:id="_liCrykAdEeSuoJy_45zbow" comment="" key="false" length="2" name="it_sg_uf_crh" nullable="true" pattern="" precision="0" sourceType="" type="id_String"/>
+      <column xmi:id="_liCry0AdEeSuoJy_45zbow" comment="" key="false" length="10" name="it_sg_orgao" nullable="true" pattern="" precision="0" sourceType="" type="id_String"/>
+      <column xmi:id="_liCrzEAdEeSuoJy_45zbow" comment="" key="false" length="2" name="it_co_natureza_juridica" nullable="true" pattern="" precision="0" sourceType="" type="id_String"/>
+    </metadata>
+  </node>
+  <node xmi:id="_liCrzUAdEeSuoJy_45zbow" componentName="tPobase-de-dadosresqlInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="384" posY="0">
+    <elementParameter xmi:id="_liCrzkAdEeSuoJy_45zbow" field="TEXT" name="UNIQUE_NAME" value="tPobase-de-dadosresqlInput_3"/>
+    <elementParameter xmi:id="_liCrz0AdEeSuoJy_45zbow" field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY"/>
+    <elementParameter xmi:id="_liCr0EAdEeSuoJy_45zbow" field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" value="_N3viILv6EeKe-ZTKUDJ14Q"/>
+    <elementParameter xmi:id="_liCr0UAdEeSuoJy_45zbow" field="CHECK" name="USE_EXISTING_CONNECTION" value="false"/>
+    <elementParameter xmi:id="_liCr0kAdEeSuoJy_45zbow" field="COMPONENT_LIST" name="CONNECTION" value=""/>
+    <elementParameter xmi:id="_liCr00AdEeSuoJy_45zbow" field="TEXT" name="HOST" value="context.con_base-de-dados_siape_Server"/>
+    <elementParameter xmi:id="_liCr1EAdEeSuoJy_45zbow" field="TEXT" name="TYPE" value="PObase-de-dadosRESQL"/>
+    <elementParameter xmi:id="_liCr1UAdEeSuoJy_45zbow" field="TEXT" name="PORT" value="context.con_base-de-dados_siape_Port"/>
+    <elementParameter xmi:id="_liCr1kAdEeSuoJy_45zbow" field="TEXT" name="DBNAME" value="context.con_base-de-dados_siape_Database"/>
+    <elementParameter xmi:id="_liCr10AdEeSuoJy_45zbow" field="TEXT" name="SCHEMA_DB" value="context.con_base-de-dados_siape_Schema"/>
+    <elementParameter xmi:id="_liCr2EAdEeSuoJy_45zbow" field="TEXT" name="USER" value="context.con_base-de-dados_siape_Login"/>
+    <elementParameter xmi:id="_liCr2UAdEeSuoJy_45zbow" field="TEXT" name="PASS" value="context.con_base-de-dados_siape_Password"/>
+    <elementParameter xmi:id="_liCr2kAdEeSuoJy_45zbow" field="DBTABLE" name="TABLE" value="&quot;siape_natureza_juridica&quot;"/>
+    <elementParameter xmi:id="_liDRwEAdEeSuoJy_45zbow" field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
+    <elementParameter xmi:id="_liDRwUAdEeSuoJy_45zbow" field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" value=""/>
+    <elementParameter xmi:id="_liDRwkAdEeSuoJy_45zbow" field="TECHNICAL" name="QUERYSTORE:QUERYSTORE_TYPE" value="BUILT_IN"/>
+    <elementParameter xmi:id="_liDRw0AdEeSuoJy_45zbow" field="GUESS_SCHEMA" name="GUESS_SCHEMA" value="&quot;&quot;"/>
+    <elementParameter xmi:id="_liDRxEAdEeSuoJy_45zbow" field="MEMO_SQL" name="QUERY" value="&quot;SELECT DISTINCT substring(gr_natureza_juridica_hist,1,2) as co_natureza_juridica ,&#xD;&#xA;  it_no_natureza_juridica&#xD;&#xA;  FROM siape.siape_natureza_juridica&#xD;&#xA;  where it_in_averbacao_nat_jur = 'S'&#xD;&#xA;AND  anomes_ref  = 201303&quot;"/>
+    <elementParameter xmi:id="_liDRxUAdEeSuoJy_45zbow" field="MAPPING_TYPE" name="MAPPING" value="pobase-de-dadosres_id"/>
+    <elementParameter xmi:id="_liDRxkAdEeSuoJy_45zbow" field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;"/>
+    <elementParameter xmi:id="_liDRx0AdEeSuoJy_45zbow" field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter xmi:id="_liDRyEAdEeSuoJy_45zbow" field="CHECK" name="USE_CURSOR" value="false"/>
+    <elementParameter xmi:id="_liDRyUAdEeSuoJy_45zbow" field="TEXT" name="CURSOR_SIZE" value="1000"/>
+    <elementParameter xmi:id="_liDRykAdEeSuoJy_45zbow" field="CHECK" name="TRIM_ALL_COLUMN" value="false"/>
+    <elementParameter xmi:id="_liDRy0AdEeSuoJy_45zbow" field="TABLE" name="TRIM_COLUMN">
+      <elementValue xmi:id="_liDRzEAdEeSuoJy_45zbow" elementRef="SCHEMA_COLUMN" value="co_natureza_juridica"/>
+      <elementValue xmi:id="_liDRzUAdEeSuoJy_45zbow" elementRef="TRIM" value="false"/>
+      <elementValue xmi:id="_liDRzkAdEeSuoJy_45zbow" elementRef="SCHEMA_COLUMN" value="it_no_natureza_juridica"/>
+      <elementValue xmi:id="_liDRz0AdEeSuoJy_45zbow" elementRef="TRIM" value="false"/>
+    </elementParameter>
+    <elementParameter xmi:id="_liDR0EAdEeSuoJy_45zbow" field="TEXT" name="LABEL" value="Tabela__TABLE__"/>
+    <elementParameter xmi:id="_liDR0UAdEeSuoJy_45zbow" field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <elementParameter xmi:id="_liDR0kAdEeSuoJy_45zbow" field="CHECK" name="INFORMATION" value="true"/>
+    <elementParameter xmi:id="_liDR00AdEeSuoJy_45zbow" field="MEMO" name="COMMENT" value="Componente responsável por recuperar os dados da tabela &quot;siape_natureza_juridica&quot; ' base-de-dados.siape.siape_natureza_juridica'."/>
+    <elementParameter xmi:id="_liDR1EAdEeSuoJy_45zbow" field="CHECK" name="VALIDATION_RULES" value="false"/>
+    <metadata xmi:id="_liDR1UAdEeSuoJy_45zbow" connector="FLOW" name="tPobase-de-dadosresqlInput_3">
+      <column xmi:id="_liDR1kAdEeSuoJy_45zbow" comment="" key="false" length="0" name="co_natureza_juridica" nullable="true" pattern="" precision="0" sourceType="" type="id_String"/>
+      <column xmi:id="_liDR10AdEeSuoJy_45zbow" comment="" key="false" length="30" name="it_no_natureza_juridica" nullable="true" pattern="" precision="0" sourceType="" type="id_String"/>
+    </metadata>
+  </node>
+  <node xmi:id="_liDR2EAdEeSuoJy_45zbow" componentName="tPobase-de-dadosresqlInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="576" posY="32">
+    <elementParameter xmi:id="_liDR2UAdEeSuoJy_45zbow" field="TEXT" name="UNIQUE_NAME" value="tPobase-de-dadosresqlInput_4"/>
+    <elementParameter xmi:id="_liDR2kAdEeSuoJy_45zbow" field="CHECK" name="USE_EXISTING_CONNECTION" value="false"/>
+    <elementParameter xmi:id="_liDR20AdEeSuoJy_45zbow" field="COMPONENT_LIST" name="CONNECTION" value=""/>
+    <elementParameter xmi:id="_liDR3EAdEeSuoJy_45zbow" field="TEXT" name="HOST" value="context.con_siape_servidor_extrato_Server"/>
+    <elementParameter xmi:id="_liDR3UAdEeSuoJy_45zbow" field="TEXT" name="TYPE" value="PObase-de-dadosRESQL"/>
+    <elementParameter xmi:id="_liDR3kAdEeSuoJy_45zbow" field="TEXT" name="PORT" value="context.con_siape_servidor_extrato_Port"/>
+    <elementParameter xmi:id="_liDR30AdEeSuoJy_45zbow" field="TEXT" name="DBNAME" value="context.con_siape_servidor_extrato_Database"/>
+    <elementParameter xmi:id="_liDR4EAdEeSuoJy_45zbow" field="TEXT" name="SCHEMA_DB" value="context.con_siape_servidor_extrato_Schema"/>
+    <elementParameter xmi:id="_liDR4UAdEeSuoJy_45zbow" field="TEXT" name="USER" value="context.con_siape_servidor_extrato_Login"/>
+    <elementParameter xmi:id="_liDR4kAdEeSuoJy_45zbow" field="TEXT" name="PASS" value="context.con_siape_servidor_extrato_Password"/>
+    <elementParameter xmi:id="_liDR40AdEeSuoJy_45zbow" field="DBTABLE" name="TABLE" value="&quot;siape_natureza_juridica&quot;"/>
+    <elementParameter xmi:id="_liDR5EAdEeSuoJy_45zbow" field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
+    <elementParameter xmi:id="_liDR5UAdEeSuoJy_45zbow" field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" value=""/>
+    <elementParameter xmi:id="_liDR5kAdEeSuoJy_45zbow" field="TECHNICAL" name="QUERYSTORE:QUERYSTORE_TYPE" value="BUILT_IN"/>
+    <elementParameter xmi:id="_liDR50AdEeSuoJy_45zbow" field="GUESS_SCHEMA" name="GUESS_SCHEMA" value="&quot;&quot;"/>
+    <elementParameter xmi:id="_liDR6EAdEeSuoJy_45zbow" field="MEMO_SQL" name="QUERY" value="&quot;SELECT DISTINCT substring(gr_natureza_juridica_hist,1,2) as co_natureza_juridica ,&#xD;&#xA;  it_no_natureza_juridica&#xD;&#xA;  FROM siape.siape_natureza_juridica&#xD;&#xA;  where it_in_averbacao_nat_jur = 'S'&#xD;&#xA;AND  anomes_ref  = 201303&quot;"/>
+    <elementParameter xmi:id="_liDR6UAdEeSuoJy_45zbow" field="MAPPING_TYPE" name="MAPPING" value="pobase-de-dadosres_id"/>
+    <elementParameter xmi:id="_liDR6kAdEeSuoJy_45zbow" field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;"/>
+    <elementParameter xmi:id="_liDR60AdEeSuoJy_45zbow" field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter xmi:id="_liDR7EAdEeSuoJy_45zbow" field="CHECK" name="USE_CURSOR" value="true"/>
+    <elementParameter xmi:id="_liDR7UAdEeSuoJy_45zbow" field="TEXT" name="CURSOR_SIZE" value="1000"/>
+    <elementParameter xmi:id="_liDR7kAdEeSuoJy_45zbow" field="CHECK" name="TRIM_ALL_COLUMN" value="false"/>
+    <elementParameter xmi:id="_liDR70AdEeSuoJy_45zbow" field="TABLE" name="TRIM_COLUMN">
+      <elementValue xmi:id="_liDR8EAdEeSuoJy_45zbow" elementRef="SCHEMA_COLUMN" value="co_natureza_juridica"/>
+      <elementValue xmi:id="_liDR8UAdEeSuoJy_45zbow" elementRef="TRIM" value="false"/>
+      <elementValue xmi:id="_liDR8kAdEeSuoJy_45zbow" elementRef="SCHEMA_COLUMN" value="it_no_natureza_juridica"/>
+      <elementValue xmi:id="_liDR80AdEeSuoJy_45zbow" elementRef="TRIM" value="false"/>
+    </elementParameter>
+    <elementParameter xmi:id="_liDR9EAdEeSuoJy_45zbow" field="TEXT" name="LABEL" value="siape_natureza_juridica2"/>
+    <elementParameter xmi:id="_liDR9UAdEeSuoJy_45zbow" field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <elementParameter xmi:id="_liDR9kAdEeSuoJy_45zbow" field="CHECK" name="INFORMATION" value="true"/>
+    <elementParameter xmi:id="_liDR90AdEeSuoJy_45zbow" field="MEMO" name="COMMENT" value="Componente responsável por recuperar os dados da tabela &quot;siape_natureza_juridica&quot; ' base-de-dados.siape.siape_natureza_juridica'."/>
+    <elementParameter xmi:id="_liDR-EAdEeSuoJy_45zbow" field="CHECK" name="VALIDATION_RULES" value="false"/>
+    <metadata xmi:id="_liDR-UAdEeSuoJy_45zbow" connector="FLOW" name="tPobase-de-dadosresqlInput_4">
+      <column xmi:id="_liDR-kAdEeSuoJy_45zbow" comment="" key="false" length="0" name="co_natureza_juridica" nullable="true" pattern="" precision="0" sourceType="" type="id_String"/>
+      <column xmi:id="_liDR-0AdEeSuoJy_45zbow" comment="" key="false" length="30" name="it_no_natureza_juridica" nullable="true" pattern="" precision="0" sourceType="" type="id_String"/>
+    </metadata>
+  </node>
+  <node xmi:id="_liDR_EAdEeSuoJy_45zbow" componentName="tPobase-de-dadosresqlSCD" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="608" posY="160">
+    <elementParameter xmi:id="_liDR_UAdEeSuoJy_45zbow" field="TEXT" name="UNIQUE_NAME" value="tPobase-de-dadosresqlSCD_1"/>
+    <elementParameter xmi:id="_liDR_kAdEeSuoJy_45zbow" field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY"/>
+    <elementParameter xmi:id="_liDR_0AdEeSuoJy_45zbow" field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" value="_2Me0MNd4EeK9hOB4LuISCg"/>
+    <elementParameter xmi:id="_liDSAEAdEeSuoJy_45zbow" field="CHECK" name="USE_EXISTING_CONNECTION" value="false"/>
+    <elementParameter xmi:id="_liDSAUAdEeSuoJy_45zbow" field="COMPONENT_LIST" name="CONNECTION" value=""/>
+    <elementParameter xmi:id="_liDSAkAdEeSuoJy_45zbow" field="TEXT" name="HOST" value="context.con_base-de-dados_rh_Server"/>
+    <elementParameter xmi:id="_liDSA0AdEeSuoJy_45zbow" field="TEXT" name="PORT" value="context.con_base-de-dados_rh_Port"/>
+    <elementParameter xmi:id="_liDSBEAdEeSuoJy_45zbow" field="TEXT" name="DBNAME" value="context.con_base-de-dados_rh_Database"/>
+    <elementParameter xmi:id="_liDSBUAdEeSuoJy_45zbow" field="TEXT" name="SCHEMA_DB" value="context.con_base-de-dados_rh_Schema"/>
+    <elementParameter xmi:id="_liDSBkAdEeSuoJy_45zbow" field="TEXT" name="TYPE" value="PObase-de-dadosRESQL"/>
+    <elementParameter xmi:id="_liDSB0AdEeSuoJy_45zbow" field="TEXT" name="USER" value="context.con_base-de-dados_rh_Login"/>
+    <elementParameter xmi:id="_liDSCEAdEeSuoJy_45zbow" field="TEXT" name="PASS" value="context.con_base-de-dados_rh_Password"/>
+    <elementParameter xmi:id="_liDSCUAdEeSuoJy_45zbow" field="DBTABLE" name="TABLE" value="&quot;dm_orgao_siape&quot;"/>
+    <elementParameter xmi:id="_liDSCkAdEeSuoJy_45zbow" field="EXTERNAL" name="MAP" value=""/>
+    <elementParameter xmi:id="_liDSC0AdEeSuoJy_45zbow" field="COLUMN_LIST" name="SURROGATE_KEY" value="sk_orgao_siape"/>
+    <elementParameter xmi:id="_liDSDEAdEeSuoJy_45zbow" field="CLOSED_LIST" name="SK_CREATION" value="TABLE_MAX"/>
+    <elementParameter xmi:id="_liDSDUAdEeSuoJy_45zbow" field="TEXT" name="SK_DB_SEQUENCE" value="&quot;&quot;"/>
+    <elementParameter xmi:id="_liDSDkAdEeSuoJy_45zbow" field="PREV_COLUMN_LIST" name="SK_INPUT_FIELD" value="co_orgao_siape_superior"/>
+    <elementParameter xmi:id="_liDSD0AdEeSuoJy_45zbow" field="TEXT" name="SK_ROUTINE" value="Numeric.sequence(&quot;seq&quot;, 1, 1)"/>
+    <elementParameter xmi:id="_liDSEEAdEeSuoJy_45zbow" field="TABLE" name="SOURCE_KEYS">
+      <elementValue xmi:id="_liDSEUAdEeSuoJy_45zbow" elementRef="NAME" value="co_orgao_siape"/>
+      <elementValue xmi:id="_liDSEkAdEeSuoJy_45zbow" elementRef="NAME" value="co_orgao_siape_superior"/>
+    </elementParameter>
+    <elementParameter xmi:id="_liDSE0AdEeSuoJy_45zbow" field="CHECK" name="USE_SAVE_MEM_MODE" value="false"/>
+    <elementParameter xmi:id="_liDSFEAdEeSuoJy_45zbow" field="CHECK" name="USE_L0" value="false"/>
+    <elementParameter xmi:id="_liDSFUAdEeSuoJy_45zbow" field="TABLE" name="L0_FIELDS"/>
+    <elementParameter xmi:id="_liDSFkAdEeSuoJy_45zbow" field="CHECK" name="USE_L1" value="true"/>
+    <elementParameter xmi:id="_liDSF0AdEeSuoJy_45zbow" field="TABLE" name="L1_FIELDS">
+      <elementValue xmi:id="_liDSGEAdEeSuoJy_45zbow" elementRef="NAME" value="co_natureza_juridica_orgao_siape"/>
+      <elementValue xmi:id="_liDSGUAdEeSuoJy_45zbow" elementRef="NAME" value="co_natureza_juridica_orgao_siape_superior"/>
+      <elementValue xmi:id="_liDSGkAdEeSuoJy_45zbow" elementRef="NAME" value="no_natureza_juridica_orgao_siape"/>
+      <elementValue xmi:id="_liDSG0AdEeSuoJy_45zbow" elementRef="NAME" value="no_natureza_juridica_orgao_siape_superior"/>
+      <elementValue xmi:id="_liDSHEAdEeSuoJy_45zbow" elementRef="NAME" value="sg_orgao_siape"/>
+      <elementValue xmi:id="_liDSHUAdEeSuoJy_45zbow" elementRef="NAME" value="sg_orgao_siape_superior"/>
+      <elementValue xmi:id="_liDSHkAdEeSuoJy_45zbow" elementRef="NAME" value="sg_uf_orgao_siape"/>
+      <elementValue xmi:id="_liDSH0AdEeSuoJy_45zbow" elementRef="NAME" value="sg_uf_orgao_siape_superior"/>
+    </elementParameter>
+    <elementParameter xmi:id="_liDSIEAdEeSuoJy_45zbow" field="CHECK" name="ONLY_UPDATE_ACTIVE" value="false"/>
+    <elementParameter xmi:id="_liDSIUAdEeSuoJy_45zbow" field="CHECK" name="USE_L2" value="true"/>
+    <elementParameter xmi:id="_liDSIkAdEeSuoJy_45zbow" field="TABLE" name="L2_FIELDS">
+      <elementValue xmi:id="_liDSI0AdEeSuoJy_45zbow" elementRef="NAME" value="no_orgao_siape"/>
+      <elementValue xmi:id="_liDSJEAdEeSuoJy_45zbow" elementRef="NAME" value="no_orgao_siape_superior"/>
+    </elementParameter>
+    <elementParameter xmi:id="_liDSJUAdEeSuoJy_45zbow" field="COLUMN_LIST" name="L2_STARTDATE_FIELD" value="dt_inicio"/>
+    <elementParameter xmi:id="_liDSJkAdEeSuoJy_45zbow" field="CLOSED_LIST" name="L2_STARTDATE_VALUE" value="JOB_START_TIME"/>
+    <elementParameter xmi:id="_liDSJ0AdEeSuoJy_45zbow" field="PREV_COLUMN_LIST" name="L2_STARTDATE_INPUT_FIELD" value="co_orgao_siape_superior"/>
+    <elementParameter xmi:id="_liDSKEAdEeSuoJy_45zbow" field="COLUMN_LIST" name="L2_ENDDATE_FIELD" value="dt_fim"/>
+    <elementParameter xmi:id="_liDSKUAdEeSuoJy_45zbow" field="CLOSED_LIST" name="L2_ENDDATE_VALUE" value="NULL_VALUE"/>
+    <elementParameter xmi:id="_liDSKkAdEeSuoJy_45zbow" field="TEXT" name="L2_ENDDATE_FIXED_VALUE" value="&quot;2500&quot;"/>
+    <elementParameter xmi:id="_liDSK0AdEeSuoJy_45zbow" field="CHECK" name="USE_L2_ACTIVE" value="true"/>
+    <elementParameter xmi:id="_liDSLEAdEeSuoJy_45zbow" field="COLUMN_LIST" name="L2_ACTIVE_FIELD" value="ic_status"/>
+    <elementParameter xmi:id="_liDSLUAdEeSuoJy_45zbow" field="CHECK" name="USE_L2_VERSION" value="true"/>
+    <elementParameter xmi:id="_liDSLkAdEeSuoJy_45zbow" field="COLUMN_LIST" name="L2_VERSION_FIELD" value="ic_versao"/>
+    <elementParameter xmi:id="_liDSL0AdEeSuoJy_45zbow" field="LABEL" name="NOTE" value="(Version must be an Integer)"/>
+    <elementParameter xmi:id="_liDSMEAdEeSuoJy_45zbow" field="CHECK" name="USE_L3" value="false"/>
+    <elementParameter xmi:id="_liDSMUAdEeSuoJy_45zbow" field="TABLE" name="L3_FIELDS"/>
+    <elementParameter xmi:id="_liDSMkAdEeSuoJy_45zbow" field="CHECK" name="DIE_ON_ERROR" value="true"/>
+    <elementParameter xmi:id="_liDSM0AdEeSuoJy_45zbow" field="CHECK" name="DEBUG" value="false"/>
+    <elementParameter xmi:id="_liDSNEAdEeSuoJy_45zbow" field="TEXT" name="LABEL" value="Tabela &quot;dm_orgao_siape&quot;"/>
+    <elementParameter xmi:id="_liDSNUAdEeSuoJy_45zbow" field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <elementParameter xmi:id="_liDSNkAdEeSuoJy_45zbow" field="CHECK" name="INFORMATION" value="true"/>
+    <elementParameter xmi:id="_liDSN0AdEeSuoJy_45zbow" field="MEMO" name="COMMENT" value="Componente responsável por armazenar os registros sem informação do orgao  na tabela 'base-de-dados.rh.dm_orgao_siapeo'.&#xD;&#xA;&#xD;&#xA;"/>
+    <elementParameter xmi:id="_liDSOEAdEeSuoJy_45zbow" field="CHECK" name="VALIDATION_RULES" value="false"/>
+    <metadata xmi:id="_liDSOUAdEeSuoJy_45zbow" connector="FLOW" label="dm_orgao_siape" name="tPobase-de-dadosresqlSCD_1">
+      <column xmi:id="_liDSOkAdEeSuoJy_45zbow" comment="" key="false" length="10" name="co_natureza_juridica_orgao_siape" nullable="true" pattern="" precision="0" sourceType="INT4" type="id_Integer"/>
+      <column xmi:id="_liDSO0AdEeSuoJy_45zbow" comment="" key="false" length="10" name="co_natureza_juridica_orgao_siape_superior" nullable="true" pattern="" precision="0" sourceType="INT4" type="id_Integer"/>
+      <column xmi:id="_liDSPEAdEeSuoJy_45zbow" comment="" key="false" length="10" name="co_orgao_siape" nullable="true" pattern="" precision="0" sourceType="INT4" type="id_Integer"/>
+      <column xmi:id="_liDSPUAdEeSuoJy_45zbow" comment="" key="false" length="10" name="co_orgao_siape_superior" nullable="true" pattern="" precision="0" sourceType="INT4" type="id_Integer"/>
+      <column xmi:id="_liDSPkAdEeSuoJy_45zbow" comment="" key="false" length="13" name="dt_fim" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="TIMESTAMP" type="id_Date"/>
+      <column xmi:id="_liDSP0AdEeSuoJy_45zbow" comment="" key="false" length="13" name="dt_inicio" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="TIMESTAMP" type="id_Date"/>
+      <column xmi:id="_liDSQEAdEeSuoJy_45zbow" comment="" key="false" length="1" name="ic_status" nullable="true" pattern="" precision="0" sourceType="BOOL" type="id_Boolean"/>
+      <column xmi:id="_liDSQUAdEeSuoJy_45zbow" comment="" key="false" length="10" name="ic_versao" nullable="true" pattern="" precision="0" sourceType="INT4" type="id_Integer"/>
+      <column xmi:id="_liDSQkAdEeSuoJy_45zbow" comment="" key="false" length="30" name="no_natureza_juridica_orgao_siape" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String"/>
+      <column xmi:id="_liDSQ0AdEeSuoJy_45zbow" comment="" key="false" length="30" name="no_natureza_juridica_orgao_siape_superior" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String"/>
+      <column xmi:id="_liDSREAdEeSuoJy_45zbow" comment="" key="false" length="40" name="no_orgao_siape" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String"/>
+      <column xmi:id="_liDSRUAdEeSuoJy_45zbow" comment="" key="false" length="40" name="no_orgao_siape_superior" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String"/>
+      <column xmi:id="_liDSRkAdEeSuoJy_45zbow" comment="" key="false" length="10" name="sg_orgao_siape" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String"/>
+      <column xmi:id="_liDSR0AdEeSuoJy_45zbow" comment="" key="false" length="10" name="sg_orgao_siape_superior" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String"/>
+      <column xmi:id="_liDSSEAdEeSuoJy_45zbow" comment="" key="false" length="2" name="sg_uf_orgao_siape" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String"/>
+      <column xmi:id="_liDSSUAdEeSuoJy_45zbow" comment="" key="false" length="2" name="sg_uf_orgao_siape_superior" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String"/>
+      <column xmi:id="_liDSSkAdEeSuoJy_45zbow" comment="" key="true" length="10" name="sk_orgao_siape" nullable="false" pattern="" precision="0" sourceType="INT4" type="id_Integer"/>
+    </metadata>
+    <metadata xmi:id="_liDSS0AdEeSuoJy_45zbow" connector="REJECT" label="dm_orgao_siape" name="REJECT">
+      <column xmi:id="_liDSTEAdEeSuoJy_45zbow" comment="" key="false" length="10" name="co_natureza_juridica_orgao_siape" nullable="true" pattern="" precision="0" sourceType="INT4" type="id_Integer"/>
+      <column xmi:id="_liDSTUAdEeSuoJy_45zbow" comment="" key="false" length="10" name="co_natureza_juridica_orgao_siape_superior" nullable="true" pattern="" precision="0" sourceType="INT4" type="id_Integer"/>
+      <column xmi:id="_liDSTkAdEeSuoJy_45zbow" comment="" key="false" length="10" name="co_orgao_siape" nullable="true" pattern="" precision="0" sourceType="INT4" type="id_Integer"/>
+      <column xmi:id="_liDST0AdEeSuoJy_45zbow" comment="" key="false" length="10" name="co_orgao_siape_superior" nullable="true" pattern="" precision="0" sourceType="INT4" type="id_Integer"/>
+      <column xmi:id="_liDSUEAdEeSuoJy_45zbow" comment="" key="false" length="13" name="dt_fim" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="TIMESTAMP" type="id_Date"/>
+      <column xmi:id="_liDSUUAdEeSuoJy_45zbow" comment="" key="false" length="13" name="dt_inicio" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="TIMESTAMP" type="id_Date"/>
+      <column xmi:id="_liDSUkAdEeSuoJy_45zbow" comment="" key="false" length="1" name="ic_status" nullable="true" pattern="" precision="0" sourceType="BOOL" type="id_Boolean"/>
+      <column xmi:id="_liDSU0AdEeSuoJy_45zbow" comment="" key="false" length="10" name="ic_versao" nullable="true" pattern="" precision="0" sourceType="INT4" type="id_Integer"/>
+      <column xmi:id="_liDSVEAdEeSuoJy_45zbow" comment="" key="false" length="30" name="no_natureza_juridica_orgao_siape" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String"/>
+      <column xmi:id="_liDSVUAdEeSuoJy_45zbow" comment="" key="false" length="30" name="no_natureza_juridica_orgao_siape_superior" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String"/>
+      <column xmi:id="_liDSVkAdEeSuoJy_45zbow" comment="" key="false" length="40" name="no_orgao_siape" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String"/>
+      <column xmi:id="_liDSV0AdEeSuoJy_45zbow" comment="" key="false" length="40" name="no_orgao_siape_superior" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String"/>
+      <column xmi:id="_liDSWEAdEeSuoJy_45zbow" comment="" key="false" length="10" name="sg_orgao_siape" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String"/>
+      <column xmi:id="_liDSWUAdEeSuoJy_45zbow" comment="" key="false" length="10" name="sg_orgao_siape_superior" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String"/>
+      <column xmi:id="_liDSWkAdEeSuoJy_45zbow" comment="" key="false" length="2" name="sg_uf_orgao_siape" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String"/>
+      <column xmi:id="_liDSW0AdEeSuoJy_45zbow" comment="" key="false" length="2" name="sg_uf_orgao_siape_superior" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String"/>
+      <column xmi:id="_liDSXEAdEeSuoJy_45zbow" comment="" key="true" length="10" name="sk_orgao_siape" nullable="false" pattern="" precision="0" sourceType="INT4" type="id_Integer"/>
+      <column xmi:id="_liDSXUAdEeSuoJy_45zbow" defaultValue="" key="false" length="255" name="errorCode" nullable="true" precision="0" sourceType="" type="id_String"/>
+      <column xmi:id="_liDSXkAdEeSuoJy_45zbow" defaultValue="" key="false" length="255" name="errorMessage" nullable="true" precision="0" sourceType="" type="id_String"/>
+    </metadata>
+  </node>
+  <node xmi:id="_liDSX0AdEeSuoJy_45zbow" componentName="tJava" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="128" posY="-128">
+    <elementParameter xmi:id="_liDSYEAdEeSuoJy_45zbow" field="TEXT" name="UNIQUE_NAME" value="tJava_1"/>
+    <elementParameter xmi:id="_liDSYUAdEeSuoJy_45zbow" field="CHECK" name="START" value="true"/>
+    <elementParameter xmi:id="_liDSYkAdEeSuoJy_45zbow" field="MEMO_JAVA" name="CODE" value="System.out.println(&quot;\nProcesso de ETL &quot; + jobName + &quot; iniciado!!!  \n&quot;);"/>
+    <elementParameter xmi:id="_liDSY0AdEeSuoJy_45zbow" field="MEMO_IMPORT" name="IMPORT" value="//import java.util.List;"/>
+    <elementParameter xmi:id="_liDSZEAdEeSuoJy_45zbow" field="TEXT" name="LABEL" value="Inicio"/>
+    <elementParameter xmi:id="_liDSZUAdEeSuoJy_45zbow" field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <elementParameter xmi:id="_liDSZkAdEeSuoJy_45zbow" field="CHECK" name="INFORMATION" value="true"/>
+    <elementParameter xmi:id="_liDSZ0AdEeSuoJy_45zbow" field="MEMO" name="COMMENT" value="Componente responsável por imprimir a mensagem inicial de execução do processo ETL."/>
+    <elementParameter xmi:id="_liDSaEAdEeSuoJy_45zbow" field="CHECK" name="VALIDATION_RULES" value="false"/>
+    <metadata xmi:id="_liDSaUAdEeSuoJy_45zbow" connector="FLOW" name="tJava_1"/>
+  </node>
+  <node xmi:id="_liDSakAdEeSuoJy_45zbow" componentName="tPobase-de-dadosresqlInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="128" posY="288">
+    <elementParameter xmi:id="_liDSa0AdEeSuoJy_45zbow" field="TEXT" name="UNIQUE_NAME" value="tPobase-de-dadosresqlInput_5"/>
+    <elementParameter xmi:id="_liDSbEAdEeSuoJy_45zbow" field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY"/>
+    <elementParameter xmi:id="_liDSbUAdEeSuoJy_45zbow" field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" value="_2Me0MNd4EeK9hOB4LuISCg"/>
+    <elementParameter xmi:id="_liDSbkAdEeSuoJy_45zbow" field="CHECK" name="USE_EXISTING_CONNECTION" value="false"/>
+    <elementParameter xmi:id="_liDSb0AdEeSuoJy_45zbow" field="COMPONENT_LIST" name="CONNECTION" value=""/>
+    <elementParameter xmi:id="_liDScEAdEeSuoJy_45zbow" field="TEXT" name="HOST" value="context.con_base-de-dados_rh_Server"/>
+    <elementParameter xmi:id="_liDScUAdEeSuoJy_45zbow" field="TEXT" name="TYPE" value="PObase-de-dadosRESQL"/>
+    <elementParameter xmi:id="_liDSckAdEeSuoJy_45zbow" field="TEXT" name="PORT" value="context.con_base-de-dados_rh_Port"/>
+    <elementParameter xmi:id="_liDSc0AdEeSuoJy_45zbow" field="TEXT" name="DBNAME" value="context.con_base-de-dados_rh_Database"/>
+    <elementParameter xmi:id="_liDSdEAdEeSuoJy_45zbow" field="TEXT" name="SCHEMA_DB" value="context.con_base-de-dados_rh_Schema"/>
+    <elementParameter xmi:id="_liDSdUAdEeSuoJy_45zbow" field="TEXT" name="USER" value="context.con_base-de-dados_rh_Login"/>
+    <elementParameter xmi:id="_liDSdkAdEeSuoJy_45zbow" field="TEXT" name="PASS" value="context.con_base-de-dados_rh_Password"/>
+    <elementParameter xmi:id="_liDSd0AdEeSuoJy_45zbow" field="DBTABLE" name="TABLE" value="&quot;dm_orgao_siape&quot;"/>
+    <elementParameter xmi:id="_liDSeEAdEeSuoJy_45zbow" field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
+    <elementParameter xmi:id="_liDSeUAdEeSuoJy_45zbow" field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" value=""/>
+    <elementParameter xmi:id="_liDSekAdEeSuoJy_45zbow" field="TECHNICAL" name="QUERYSTORE:QUERYSTORE_TYPE" value="BUILT_IN"/>
+    <elementParameter xmi:id="_liDSe0AdEeSuoJy_45zbow" field="GUESS_SCHEMA" name="GUESS_SCHEMA" value="&quot;&quot;"/>
+    <elementParameter xmi:id="_liDSfEAdEeSuoJy_45zbow" field="MEMO_SQL" name="QUERY" value="&quot;SELECT COUNT(&#xD;&#xA;sk_orgao_siape)&#xD;&#xA;FROM rh.dm_orgao_siape&#xD;&#xA;WHERE sk_orgao_siape = 0&quot;"/>
+    <elementParameter xmi:id="_liDSfUAdEeSuoJy_45zbow" field="MAPPING_TYPE" name="MAPPING" value="pobase-de-dadosres_id"/>
+    <elementParameter xmi:id="_liDSfkAdEeSuoJy_45zbow" field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;"/>
+    <elementParameter xmi:id="_liDSf0AdEeSuoJy_45zbow" field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter xmi:id="_liDSgEAdEeSuoJy_45zbow" field="CHECK" name="USE_CURSOR" value="false"/>
+    <elementParameter xmi:id="_liDSgUAdEeSuoJy_45zbow" field="TEXT" name="CURSOR_SIZE" value="1000"/>
+    <elementParameter xmi:id="_liDSgkAdEeSuoJy_45zbow" field="CHECK" name="TRIM_ALL_COLUMN" value="false"/>
+    <elementParameter xmi:id="_liDSg0AdEeSuoJy_45zbow" field="TABLE" name="TRIM_COLUMN">
+      <elementValue xmi:id="_liDShEAdEeSuoJy_45zbow" elementRef="SCHEMA_COLUMN" value="count"/>
+      <elementValue xmi:id="_liDShUAdEeSuoJy_45zbow" elementRef="TRIM" value="false"/>
+    </elementParameter>
+    <elementParameter xmi:id="_liDShkAdEeSuoJy_45zbow" field="TEXT" name="LABEL" value="Tabela &quot;dm_orgao_siape&quot;"/>
+    <elementParameter xmi:id="_liDSh0AdEeSuoJy_45zbow" field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <elementParameter xmi:id="_liDSiEAdEeSuoJy_45zbow" field="CHECK" name="INFORMATION" value="true"/>
+    <elementParameter xmi:id="_liDSiUAdEeSuoJy_45zbow" field="MEMO" name="COMMENT" value="Componente responsável por verificar na tabela dimensão ''base-de-dados.rh.dm_orgao_siape''se já existe o  valor 'NAO INFORMADO'."/>
+    <elementParameter xmi:id="_liDSikAdEeSuoJy_45zbow" field="CHECK" name="VALIDATION_RULES" value="false"/>
+    <metadata xmi:id="_liDSi0AdEeSuoJy_45zbow" connector="FLOW" name="tPobase-de-dadosresqlInput_5">
+      <column xmi:id="_liDSjEAdEeSuoJy_45zbow" comment="" defaultValue="" key="false" length="19" name="count" nullable="true" pattern="" precision="0" sourceType="INT4" type="id_Integer"/>
+    </metadata>
+  </node>
+  <node xmi:id="_liDSjUAdEeSuoJy_45zbow" componentName="tJavaRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="320" posY="288">
+    <elementParameter xmi:id="_liDSjkAdEeSuoJy_45zbow" field="TEXT" name="UNIQUE_NAME" value="tJavaRow_1"/>
+    <elementParameter xmi:id="_liDSj0AdEeSuoJy_45zbow" field="MEMO_JAVA" name="CODE" value="context.count = input_row.count;"/>
+    <elementParameter xmi:id="_liDSkEAdEeSuoJy_45zbow" field="MEMO_IMPORT" name="IMPORT" value="//import java.util.List;"/>
+    <elementParameter xmi:id="_liDSkUAdEeSuoJy_45zbow" field="TEXT" name="LABEL" value="Salva Indicador NI"/>
+    <elementParameter xmi:id="_liDSkkAdEeSuoJy_45zbow" field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <elementParameter xmi:id="_liDSk0AdEeSuoJy_45zbow" field="CHECK" name="INFORMATION" value="true"/>
+    <elementParameter xmi:id="_liDSlEAdEeSuoJy_45zbow" field="MEMO" name="COMMENT" value="Componente responsável por armazenar na variável de context 'count' o valor que indica se a linha de 'NAO INFORMADO' já existe na tabela ou não.&#xD;&#xA;Retorno 1 = O valor 'NAO INFORMADO' já está inserido na tabela dm_orgao_siape&#xD;&#xA;Retorno 0 = O valor 'NAO INFORMADO' não está inserido na tabela dm_orgao_siape&#xD;&#xA;&#xD;&#xA;"/>
+    <elementParameter xmi:id="_liDSlUAdEeSuoJy_45zbow" field="CHECK" name="VALIDATION_RULES" value="false"/>
+    <metadata xmi:id="_liDSlkAdEeSuoJy_45zbow" connector="FLOW" name="tJavaRow_1">
+      <column xmi:id="_liDSl0AdEeSuoJy_45zbow" comment="" defaultValue="" key="false" length="19" name="count" nullable="true" pattern="" precision="0" sourceType="INT4" type="id_Integer"/>
+    </metadata>
+  </node>
+  <node xmi:id="_liDSmEAdEeSuoJy_45zbow" componentName="tPobase-de-dadosresqlRow" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="608" posY="288">
+    <elementParameter xmi:id="_liDSmUAdEeSuoJy_45zbow" field="TEXT" name="UNIQUE_NAME" value="tPobase-de-dadosresqlRow_1"/>
+    <elementParameter xmi:id="_liDSmkAdEeSuoJy_45zbow" field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY"/>
+    <elementParameter xmi:id="_liDSm0AdEeSuoJy_45zbow" field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" value="_2Me0MNd4EeK9hOB4LuISCg"/>
+    <elementParameter xmi:id="_liDSnEAdEeSuoJy_45zbow" field="CHECK" name="USE_EXISTING_CONNECTION" value="false"/>
+    <elementParameter xmi:id="_liDSnUAdEeSuoJy_45zbow" field="COMPONENT_LIST" name="CONNECTION" value=""/>
+    <elementParameter xmi:id="_liDSnkAdEeSuoJy_45zbow" field="TEXT" name="HOST" value="context.con_base-de-dados_rh_Server"/>
+    <elementParameter xmi:id="_liDSn0AdEeSuoJy_45zbow" field="TEXT" name="PORT" value="context.con_base-de-dados_rh_Port"/>
+    <elementParameter xmi:id="_liDSoEAdEeSuoJy_45zbow" field="TEXT" name="DBNAME" value="context.con_base-de-dados_rh_Database"/>
+    <elementParameter xmi:id="_liDSoUAdEeSuoJy_45zbow" field="TEXT" name="SCHEMA_DB" value="context.con_base-de-dados_rh_Schema"/>
+    <elementParameter xmi:id="_liDSokAdEeSuoJy_45zbow" field="TEXT" name="TYPE" value="PObase-de-dadosRESQL"/>
+    <elementParameter xmi:id="_liDSo0AdEeSuoJy_45zbow" field="TEXT" name="USER" value="context.con_base-de-dados_rh_Login"/>
+    <elementParameter xmi:id="_liDSpEAdEeSuoJy_45zbow" field="TEXT" name="PASS" value="context.con_base-de-dados_rh_Password"/>
+    <elementParameter xmi:id="_liDSpUAdEeSuoJy_45zbow" field="DBTABLE" name="TABLE" value="&quot;dm_orgao_siape&quot;"/>
+    <elementParameter xmi:id="_liDSpkAdEeSuoJy_45zbow" field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
+    <elementParameter xmi:id="_liDSp0AdEeSuoJy_45zbow" field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" value=""/>
+    <elementParameter xmi:id="_liDSqEAdEeSuoJy_45zbow" field="TECHNICAL" name="QUERYSTORE:QUERYSTORE_TYPE" value="BUILT_IN"/>
+    <elementParameter xmi:id="_liDSqUAdEeSuoJy_45zbow" field="MEMO_SQL" name="QUERY" value="&quot;INSERT INTO  rh.dm_orgao_siape(&#xD;&#xA;sk_orgao_siape,&#xD;&#xA;co_orgao_siape_superior ,&#xD;&#xA;no_orgao_siape_superior ,&#xD;&#xA;co_orgao_siape,&#xD;&#xA;no_orgao_siape)&#xD;&#xA;VALUES (0,'-1', 'NAO INFORMADO', '-1', 'NAO INFORMADO')&quot;"/>
+    <elementParameter xmi:id="_liDSqkAdEeSuoJy_45zbow" field="CHECK" name="DIE_ON_ERROR" value="true"/>
+    <elementParameter xmi:id="_liDSq0AdEeSuoJy_45zbow" field="CHECK" name="PROPAGATE_RECORD_SET" value="false"/>
+    <elementParameter xmi:id="_liDSrEAdEeSuoJy_45zbow" field="COLUMN_LIST" name="RECORD_SET_COLUMN" value=""/>
+    <elementParameter xmi:id="_liDSrUAdEeSuoJy_45zbow" field="CHECK" name="USE_PREPAREDSTATEMENT" value="false"/>
+    <elementParameter xmi:id="_liDSrkAdEeSuoJy_45zbow" field="TABLE" name="SET_PREPAREDSTATEMENT_PARAMETERS"/>
+    <elementParameter xmi:id="_liDSr0AdEeSuoJy_45zbow" field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;"/>
+    <elementParameter xmi:id="_liDSsEAdEeSuoJy_45zbow" field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter xmi:id="_liDSsUAdEeSuoJy_45zbow" field="TEXT" name="COMMIT_EVERY" value="10000"/>
+    <elementParameter xmi:id="_liDSskAdEeSuoJy_45zbow" field="TEXT" name="LABEL" value="Tabela &quot;dm_orgao_siape&quot;"/>
+    <elementParameter xmi:id="_liDSs0AdEeSuoJy_45zbow" field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <elementParameter xmi:id="_liDStEAdEeSuoJy_45zbow" field="CHECK" name="INFORMATION" value="true"/>
+    <elementParameter xmi:id="_liDStUAdEeSuoJy_45zbow" field="MEMO" name="COMMENT" value="Componente responsável por inserir na tabela ''base-de-dados.rh.dm_orgao_siape'' a linha referente ao valor 'NAO INFORMADO'.&#xD;&#xA;&#xD;&#xA;"/>
+    <elementParameter xmi:id="_liDStkAdEeSuoJy_45zbow" field="CHECK" name="VALIDATION_RULES" value="false"/>
+    <metadata xmi:id="_liDSt0AdEeSuoJy_45zbow" connector="FLOW" name="tPobase-de-dadosresqlRow_1"/>
+    <metadata xmi:id="_liDSuEAdEeSuoJy_45zbow" connector="REJECT" name="REJECT">
+      <column xmi:id="_liDSuUAdEeSuoJy_45zbow" defaultValue="" key="false" length="255" name="errorCode" nullable="true" precision="0" sourceType="" type="id_String"/>
+      <column xmi:id="_liDSukAdEeSuoJy_45zbow" defaultValue="" key="false" length="255" name="errorMessage" nullable="true" precision="0" sourceType="" type="id_String"/>
+    </metadata>
+  </node>
+  <node xmi:id="_liDSu0AdEeSuoJy_45zbow" componentName="tJava" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="128" posY="416">
+    <elementParameter xmi:id="_liDSvEAdEeSuoJy_45zbow" field="TEXT" name="UNIQUE_NAME" value="tJava_2"/>
+    <elementParameter xmi:id="_liDSvUAdEeSuoJy_45zbow" field="MEMO_JAVA" name="CODE" value="System.out.println(&quot;\nProcesso de ETL &quot; + jobName + &quot; finalizado com sucesso!!!  \n&quot;);"/>
+    <elementParameter xmi:id="_liDSvkAdEeSuoJy_45zbow" field="MEMO_IMPORT" name="IMPORT" value="//import java.util.List;"/>
+    <elementParameter xmi:id="_liDSv0AdEeSuoJy_45zbow" field="TEXT" name="LABEL" value="Fim"/>
+    <elementParameter xmi:id="_liDSwEAdEeSuoJy_45zbow" field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <elementParameter xmi:id="_liDSwUAdEeSuoJy_45zbow" field="CHECK" name="INFORMATION" value="true"/>
+    <elementParameter xmi:id="_liDSwkAdEeSuoJy_45zbow" field="MEMO" name="COMMENT" value="Componente responsável por imprimir a mensagem de término da execução do processo ETL."/>
+    <elementParameter xmi:id="_liDSw0AdEeSuoJy_45zbow" field="CHECK" name="VALIDATION_RULES" value="false"/>
+    <metadata xmi:id="_liDSxEAdEeSuoJy_45zbow" connector="FLOW" name="tJava_2"/>
+  </node>
+  <node xmi:id="_liDSxUAdEeSuoJy_45zbow" componentName="jbl_rh_log" componentVersion="1.0" offsetLabelX="0" offsetLabelY="0" posX="128" posY="544">
+    <elementParameter xmi:id="_liDSxkAdEeSuoJy_45zbow" field="TEXT" name="UNIQUE_NAME" value="jbl_rh_log_1"/>
+    <elementParameter xmi:id="_liDSx0AdEeSuoJy_45zbow" field="TEXT" name="FAMILY" value="Joblets"/>
+    <elementParameter xmi:id="_liDSyEAdEeSuoJy_45zbow" field="CHECK" name="ACTIVATE" value="true"/>
+    <elementParameter xmi:id="_liDSyUAdEeSuoJy_45zbow" field="CHECK" name="DUMMY" value="false"/>
+    <elementParameter xmi:id="_liDSykAdEeSuoJy_45zbow" field="CHECK" name="STARTABLE" value="true"/>
+    <elementParameter xmi:id="_liDSy0AdEeSuoJy_45zbow" field="CHECK" name="START" value="true"/>
+    <elementParameter xmi:id="_liDSzEAdEeSuoJy_45zbow" field="CLOSED_LIST" name="PROCESS_TYPE_VERSION" value="Latest"/>
+    <elementParameter xmi:id="_liDSzUAdEeSuoJy_45zbow" field="TEXT" name="LABEL" value="jbl_rh_log"/>
+    <elementParameter xmi:id="_liDSzkAdEeSuoJy_45zbow" field="TEXT" name="HINT" value="&lt;b>__UNIQUE_NAME__&lt;/b>&lt;br>__COMMENT__"/>
+    <elementParameter xmi:id="_liDSz0AdEeSuoJy_45zbow" field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <elementParameter xmi:id="_liDS0EAdEeSuoJy_45zbow" field="CHECK" name="INFORMATION" value="false"/>
+    <elementParameter xmi:id="_liDS0UAdEeSuoJy_45zbow" field="MEMO" name="COMMENT" value=""/>
+  </node>
+  <connection xmi:id="_liDS0kAdEeSuoJy_45zbow" connectorName="FLOW" label="siape_orgao_base" lineStyle="0" metaname="tPobase-de-dadosresqlInput_1" offsetLabelX="0" offsetLabelY="0" source="tPobase-de-dadosresqlInput_1" target="tMap_1">
+    <elementParameter xmi:id="_liDS00AdEeSuoJy_45zbow" field="CHECK" name="TRACES_CONNECTION_ENABLE" value="true"/>
+    <elementParameter xmi:id="_liDS1EAdEeSuoJy_45zbow" field="TABLE" name="TRACES_CONNECTION_FILTER">
+      <elementValue xmi:id="_liDS1UAdEeSuoJy_45zbow" elementRef="TRACE_COLUMN" value="it_co_orgao"/>
+      <elementValue xmi:id="_liDS1kAdEeSuoJy_45zbow" elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue xmi:id="_liDS10AdEeSuoJy_45zbow" elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue xmi:id="_liDS2EAdEeSuoJy_45zbow" elementRef="TRACE_COLUMN" value="it_no_orgao"/>
+      <elementValue xmi:id="_liDS2UAdEeSuoJy_45zbow" elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue xmi:id="_liDS2kAdEeSuoJy_45zbow" elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue xmi:id="_liDS20AdEeSuoJy_45zbow" elementRef="TRACE_COLUMN" value="it_co_orgao_vinculacao"/>
+      <elementValue xmi:id="_liDS3EAdEeSuoJy_45zbow" elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue xmi:id="_liDS3UAdEeSuoJy_45zbow" elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue xmi:id="_liDS3kAdEeSuoJy_45zbow" elementRef="TRACE_COLUMN" value="it_sg_uf_crh"/>
+      <elementValue xmi:id="_liDS30AdEeSuoJy_45zbow" elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue xmi:id="_liDS4EAdEeSuoJy_45zbow" elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue xmi:id="_liDS4UAdEeSuoJy_45zbow" elementRef="TRACE_COLUMN" value="it_sg_orgao"/>
+      <elementValue xmi:id="_liDS4kAdEeSuoJy_45zbow" elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue xmi:id="_liDS40AdEeSuoJy_45zbow" elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue xmi:id="_liDS5EAdEeSuoJy_45zbow" elementRef="TRACE_COLUMN" value="it_co_natureza_juridica"/>
+      <elementValue xmi:id="_liDS5UAdEeSuoJy_45zbow" elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue xmi:id="_liDS5kAdEeSuoJy_45zbow" elementRef="TRACE_COLUMN_CONDITION" value=""/>
+    </elementParameter>
+    <elementParameter xmi:id="_liDS50AdEeSuoJy_45zbow" field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter xmi:id="_liDS6EAdEeSuoJy_45zbow" field="CHECK" name="USEROWLABEL" value="true"/>
+    <elementParameter xmi:id="_liDS6UAdEeSuoJy_45zbow" field="TEXT" name="METTERLABEL" value="&quot;MyLabel&quot;"/>
+    <elementParameter xmi:id="_liDS6kAdEeSuoJy_45zbow" field="CLOSED_LIST" name="ABSOLUTE" value="Absolute"/>
+    <elementParameter xmi:id="_liDS60AdEeSuoJy_45zbow" field="CONNECTION_LIST" name="CONNECTIONS" value=""/>
+    <elementParameter xmi:id="_liDS7EAdEeSuoJy_45zbow" field="TABLE" name="THRESHLODS"/>
+    <elementParameter xmi:id="_liDS7UAdEeSuoJy_45zbow" field="CHECK" name="ACTIVATE" value="true"/>
+    <elementParameter xmi:id="_liDS7kAdEeSuoJy_45zbow" field="TEXT" name="UNIQUE_NAME" value="siape_orgao_base"/>
+    <elementParameter xmi:id="_liDS70AdEeSuoJy_45zbow" field="CHECK" name="RESUMING_CHECKPOINT" value="false"/>
+    <elementParameter xmi:id="_liDS8EAdEeSuoJy_45zbow" field="TEXT" name="RESUMLABEL" value=""/>
+    <elementParameter xmi:id="_liDS8UAdEeSuoJy_45zbow" field="MEMO" name="FAILURE_INSTRUCTIONS" value=""/>
+    <elementParameter xmi:id="_liDS8kAdEeSuoJy_45zbow" field="CHECK" name="ACTIVEBREAKPOINT" value="false"/>
+    <elementParameter xmi:id="_liDS80AdEeSuoJy_45zbow" field="CLOSED_LIST" name="LOGICAL_OP" value="&amp;&amp;"/>
+    <elementParameter xmi:id="_liDS9EAdEeSuoJy_45zbow" field="TABLE" name="CONDITIONS"/>
+    <elementParameter xmi:id="_liDS9UAdEeSuoJy_45zbow" field="CHECK" name="USE_ADVANCED" value="false"/>
+    <elementParameter xmi:id="_liDS9kAdEeSuoJy_45zbow" field="MEMO_JAVA" name="ADVANCED_COND" value="// code sample : use input_row to define the condition.&#xA;// input_row.columnName1.equals(&quot;foo&quot;) ||!(input_row.columnName2.equals(&quot;bar&quot;))&#xA;// replace the following expression by your own filter condition &#xA;input_row.columnName1.equals(input_row.columnName2)&#xA;&#x9;&#x9;&#x9;"/>
+  </connection>
+  <connection xmi:id="_liDS90AdEeSuoJy_45zbow" connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tPobase-de-dadosresqlInput_1" offsetLabelX="0" offsetLabelY="0" source="tPobase-de-dadosresqlInput_1" target="tPobase-de-dadosresqlInput_5">
+    <elementParameter xmi:id="_liDS-EAdEeSuoJy_45zbow" field="CHECK" name="ACTIVATE" value="true"/>
+    <elementParameter xmi:id="_liDS-UAdEeSuoJy_45zbow" field="TEXT" name="UNIQUE_NAME" value="OnSubjobOk2"/>
+    <elementParameter xmi:id="_liDS-kAdEeSuoJy_45zbow" field="CHECK" name="RESUMING_CHECKPOINT" value="false"/>
+    <elementParameter xmi:id="_liDS-0AdEeSuoJy_45zbow" field="TEXT" name="RESUMLABEL" value=""/>
+    <elementParameter xmi:id="_liDS_EAdEeSuoJy_45zbow" field="MEMO" name="FAILURE_INSTRUCTIONS" value=""/>
+  </connection>
+  <connection xmi:id="_liDS_UAdEeSuoJy_45zbow" connectorName="FLOW" label="Dados" lineStyle="0" metaname="Dados" offsetLabelX="0" offsetLabelY="0" source="tMap_1" target="tPobase-de-dadosresqlSCD_1">
+    <elementParameter xmi:id="_liDS_kAdEeSuoJy_45zbow" field="CHECK" name="TRACES_CONNECTION_ENABLE" value="true"/>
+    <elementParameter xmi:id="_liDS_0AdEeSuoJy_45zbow" field="TABLE" name="TRACES_CONNECTION_FILTER">
+      <elementValue xmi:id="_liDTAEAdEeSuoJy_45zbow" elementRef="TRACE_COLUMN" value="co_orgao_siape_superior"/>
+      <elementValue xmi:id="_liDTAUAdEeSuoJy_45zbow" elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue xmi:id="_liDTAkAdEeSuoJy_45zbow" elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue xmi:id="_liDTA0AdEeSuoJy_45zbow" elementRef="TRACE_COLUMN" value="no_orgao_siape_superior"/>
+      <elementValue xmi:id="_liDTBEAdEeSuoJy_45zbow" elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue xmi:id="_liDTBUAdEeSuoJy_45zbow" elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue xmi:id="_liDTBkAdEeSuoJy_45zbow" elementRef="TRACE_COLUMN" value="sg_orgao_siape_superior"/>
+      <elementValue xmi:id="_liDTB0AdEeSuoJy_45zbow" elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue xmi:id="_liDTCEAdEeSuoJy_45zbow" elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue xmi:id="_liDTCUAdEeSuoJy_45zbow" elementRef="TRACE_COLUMN" value="sg_uf_orgao_siape_superior"/>
+      <elementValue xmi:id="_liDTCkAdEeSuoJy_45zbow" elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue xmi:id="_liDTC0AdEeSuoJy_45zbow" elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue xmi:id="_liDTDEAdEeSuoJy_45zbow" elementRef="TRACE_COLUMN" value="co_natureza_juridica_orgao_siape_superior"/>
+      <elementValue xmi:id="_liDTDUAdEeSuoJy_45zbow" elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue xmi:id="_liDTDkAdEeSuoJy_45zbow" elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue xmi:id="_liDTD0AdEeSuoJy_45zbow" elementRef="TRACE_COLUMN" value="no_natureza_juridica_orgao_siape_superior"/>
+      <elementValue xmi:id="_liDTEEAdEeSuoJy_45zbow" elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue xmi:id="_liDTEUAdEeSuoJy_45zbow" elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue xmi:id="_liDTEkAdEeSuoJy_45zbow" elementRef="TRACE_COLUMN" value="co_orgao_siape"/>
+      <elementValue xmi:id="_liDTE0AdEeSuoJy_45zbow" elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue xmi:id="_liDTFEAdEeSuoJy_45zbow" elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue xmi:id="_liDTFUAdEeSuoJy_45zbow" elementRef="TRACE_COLUMN" value="no_orgao_siape"/>
+      <elementValue xmi:id="_liDTFkAdEeSuoJy_45zbow" elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue xmi:id="_liDTF0AdEeSuoJy_45zbow" elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue xmi:id="_liDTGEAdEeSuoJy_45zbow" elementRef="TRACE_COLUMN" value="sg_orgao_siape"/>
+      <elementValue xmi:id="_liDTGUAdEeSuoJy_45zbow" elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue xmi:id="_liDTGkAdEeSuoJy_45zbow" elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue xmi:id="_liDTG0AdEeSuoJy_45zbow" elementRef="TRACE_COLUMN" value="sg_uf_orgao_siape"/>
+      <elementValue xmi:id="_liDTHEAdEeSuoJy_45zbow" elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue xmi:id="_liDTHUAdEeSuoJy_45zbow" elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue xmi:id="_liDTHkAdEeSuoJy_45zbow" elementRef="TRACE_COLUMN" value="co_natureza_juridica_orgao_siape"/>
+      <elementValue xmi:id="_liDTH0AdEeSuoJy_45zbow" elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue xmi:id="_liDTIEAdEeSuoJy_45zbow" elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue xmi:id="_liDTIUAdEeSuoJy_45zbow" elementRef="TRACE_COLUMN" value="no_natureza_juridica_orgao_siape"/>
+      <elementValue xmi:id="_liDTIkAdEeSuoJy_45zbow" elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue xmi:id="_liDTI0AdEeSuoJy_45zbow" elementRef="TRACE_COLUMN_CONDITION" value=""/>
+    </elementParameter>
+    <elementParameter xmi:id="_liDTJEAdEeSuoJy_45zbow" field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter xmi:id="_liDTJUAdEeSuoJy_45zbow" field="CHECK" name="USEROWLABEL" value="true"/>
+    <elementParameter xmi:id="_liDTJkAdEeSuoJy_45zbow" field="TEXT" name="METTERLABEL" value="&quot;MyLabel&quot;"/>
+    <elementParameter xmi:id="_liDTJ0AdEeSuoJy_45zbow" field="CLOSED_LIST" name="ABSOLUTE" value="Absolute"/>
+    <elementParameter xmi:id="_liDTKEAdEeSuoJy_45zbow" field="CONNECTION_LIST" name="CONNECTIONS" value=""/>
+    <elementParameter xmi:id="_liDTKUAdEeSuoJy_45zbow" field="TABLE" name="THRESHLODS"/>
+    <elementParameter xmi:id="_liDTKkAdEeSuoJy_45zbow" field="CHECK" name="ACTIVATE" value="true"/>
+    <elementParameter xmi:id="_liDTK0AdEeSuoJy_45zbow" field="TEXT" name="UNIQUE_NAME" value="Dados"/>
+    <elementParameter xmi:id="_liDTLEAdEeSuoJy_45zbow" field="CHECK" name="RESUMING_CHECKPOINT" value="false"/>
+    <elementParameter xmi:id="_liDTLUAdEeSuoJy_45zbow" field="TEXT" name="RESUMLABEL" value=""/>
+    <elementParameter xmi:id="_liDTLkAdEeSuoJy_45zbow" field="MEMO" name="FAILURE_INSTRUCTIONS" value=""/>
+    <elementParameter xmi:id="_liDTL0AdEeSuoJy_45zbow" field="CHECK" name="ACTIVEBREAKPOINT" value="false"/>
+    <elementParameter xmi:id="_liDTMEAdEeSuoJy_45zbow" field="CLOSED_LIST" name="LOGICAL_OP" value="&amp;&amp;"/>
+    <elementParameter xmi:id="_liDTMUAdEeSuoJy_45zbow" field="TABLE" name="CONDITIONS"/>
+    <elementParameter xmi:id="_liDTMkAdEeSuoJy_45zbow" field="CHECK" name="USE_ADVANCED" value="false"/>
+    <elementParameter xmi:id="_liDTM0AdEeSuoJy_45zbow" field="MEMO_JAVA" name="ADVANCED_COND" value="// code sample : use input_row to define the condition.&#xA;// input_row.columnName1.equals(&quot;foo&quot;) ||!(input_row.columnName2.equals(&quot;bar&quot;))&#xA;// replace the following expression by your own filter condition &#xA;input_row.columnName1.equals(input_row.columnName2)&#xA;&#x9;&#x9;&#x9;"/>
+  </connection>
+  <connection xmi:id="_liDTNEAdEeSuoJy_45zbow" connectorName="FLOW" label="siape_orgao_base2" lineStyle="8" metaname="tPobase-de-dadosresqlInput_2" offsetLabelX="0" offsetLabelY="0" source="tPobase-de-dadosresqlInput_2" target="tMap_1">
+    <elementParameter xmi:id="_liDTNUAdEeSuoJy_45zbow" field="CHECK" name="TRACES_CONNECTION_ENABLE" value="true"/>
+    <elementParameter xmi:id="_liDTNkAdEeSuoJy_45zbow" field="TABLE" name="TRACES_CONNECTION_FILTER">
+      <elementValue xmi:id="_liDTN0AdEeSuoJy_45zbow" elementRef="TRACE_COLUMN" value="it_co_orgao"/>
+      <elementValue xmi:id="_liDTOEAdEeSuoJy_45zbow" elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue xmi:id="_liDTOUAdEeSuoJy_45zbow" elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue xmi:id="_liDTOkAdEeSuoJy_45zbow" elementRef="TRACE_COLUMN" value="it_no_orgao"/>
+      <elementValue xmi:id="_liDTO0AdEeSuoJy_45zbow" elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue xmi:id="_liDTPEAdEeSuoJy_45zbow" elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue xmi:id="_liDTPUAdEeSuoJy_45zbow" elementRef="TRACE_COLUMN" value="it_co_orgao_vinculacao"/>
+      <elementValue xmi:id="_liDTPkAdEeSuoJy_45zbow" elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue xmi:id="_liDTP0AdEeSuoJy_45zbow" elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue xmi:id="_liDTQEAdEeSuoJy_45zbow" elementRef="TRACE_COLUMN" value="it_sg_uf_crh"/>
+      <elementValue xmi:id="_liDTQUAdEeSuoJy_45zbow" elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue xmi:id="_liDTQkAdEeSuoJy_45zbow" elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue xmi:id="_liDTQ0AdEeSuoJy_45zbow" elementRef="TRACE_COLUMN" value="it_sg_orgao"/>
+      <elementValue xmi:id="_liDTREAdEeSuoJy_45zbow" elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue xmi:id="_liDTRUAdEeSuoJy_45zbow" elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue xmi:id="_liDTRkAdEeSuoJy_45zbow" elementRef="TRACE_COLUMN" value="it_co_natureza_juridica"/>
+      <elementValue xmi:id="_liDTR0AdEeSuoJy_45zbow" elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue xmi:id="_liDTSEAdEeSuoJy_45zbow" elementRef="TRACE_COLUMN_CONDITION" value=""/>
+    </elementParameter>
+    <elementParameter xmi:id="_liDTSUAdEeSuoJy_45zbow" field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter xmi:id="_liDTSkAdEeSuoJy_45zbow" field="CHECK" name="USEROWLABEL" value="true"/>
+    <elementParameter xmi:id="_liDTS0AdEeSuoJy_45zbow" field="TEXT" name="METTERLABEL" value="&quot;MyLabel&quot;"/>
+    <elementParameter xmi:id="_liDTTEAdEeSuoJy_45zbow" field="CLOSED_LIST" name="ABSOLUTE" value="Absolute"/>
+    <elementParameter xmi:id="_liDTTUAdEeSuoJy_45zbow" field="CONNECTION_LIST" name="CONNECTIONS" value=""/>
+    <elementParameter xmi:id="_liDTTkAdEeSuoJy_45zbow" field="TABLE" name="THRESHLODS"/>
+    <elementParameter xmi:id="_liDTT0AdEeSuoJy_45zbow" field="CHECK" name="ACTIVATE" value="true"/>
+    <elementParameter xmi:id="_liDTUEAdEeSuoJy_45zbow" field="TEXT" name="UNIQUE_NAME" value="siape_orgao_base2"/>
+    <elementParameter xmi:id="_liDTUUAdEeSuoJy_45zbow" field="CHECK" name="RESUMING_CHECKPOINT" value="false"/>
+    <elementParameter xmi:id="_liDTUkAdEeSuoJy_45zbow" field="TEXT" name="RESUMLABEL" value=""/>
+    <elementParameter xmi:id="_liDTU0AdEeSuoJy_45zbow" field="MEMO" name="FAILURE_INSTRUCTIONS" value=""/>
+    <elementParameter xmi:id="_liDTVEAdEeSuoJy_45zbow" field="CHECK" name="ACTIVEBREAKPOINT" value="false"/>
+    <elementParameter xmi:id="_liDTVUAdEeSuoJy_45zbow" field="CLOSED_LIST" name="LOGICAL_OP" value="&amp;&amp;"/>
+    <elementParameter xmi:id="_liDTVkAdEeSuoJy_45zbow" field="TABLE" name="CONDITIONS"/>
+    <elementParameter xmi:id="_liDTV0AdEeSuoJy_45zbow" field="CHECK" name="USE_ADVANCED" value="false"/>
+    <elementParameter xmi:id="_liDTWEAdEeSuoJy_45zbow" field="MEMO_JAVA" name="ADVANCED_COND" value="// code sample : use input_row to define the condition.&#xA;// input_row.columnName1.equals(&quot;foo&quot;) ||!(input_row.columnName2.equals(&quot;bar&quot;))&#xA;// replace the following expression by your own filter condition &#xA;input_row.columnName1.equals(input_row.columnName2)&#xA;&#x9;&#x9;&#x9;"/>
+  </connection>
+  <connection xmi:id="_liDTWUAdEeSuoJy_45zbow" connectorName="FLOW" label="siape_natureza_juridica" lineStyle="8" metaname="tPobase-de-dadosresqlInput_3" offsetLabelX="0" offsetLabelY="0" source="tPobase-de-dadosresqlInput_3" target="tMap_1">
+    <elementParameter xmi:id="_liDTWkAdEeSuoJy_45zbow" field="CHECK" name="TRACES_CONNECTION_ENABLE" value="true"/>
+    <elementParameter xmi:id="_liDTW0AdEeSuoJy_45zbow" field="TABLE" name="TRACES_CONNECTION_FILTER">
+      <elementValue xmi:id="_liDTXEAdEeSuoJy_45zbow" elementRef="TRACE_COLUMN" value="gr_natureza_juridica_hist"/>
+      <elementValue xmi:id="_liDTXUAdEeSuoJy_45zbow" elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue xmi:id="_liDTXkAdEeSuoJy_45zbow" elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue xmi:id="_liDTX0AdEeSuoJy_45zbow" elementRef="TRACE_COLUMN" value="it_no_natureza_juridica"/>
+      <elementValue xmi:id="_liDTYEAdEeSuoJy_45zbow" elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue xmi:id="_liDTYUAdEeSuoJy_45zbow" elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue xmi:id="_liDTYkAdEeSuoJy_45zbow" elementRef="TRACE_COLUMN" value="it_in_status_registro_tabela"/>
+      <elementValue xmi:id="_liDTY0AdEeSuoJy_45zbow" elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue xmi:id="_liDTZEAdEeSuoJy_45zbow" elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue xmi:id="_liDTZUAdEeSuoJy_45zbow" elementRef="TRACE_COLUMN" value="it_da_atua_anterior"/>
+      <elementValue xmi:id="_liDTZkAdEeSuoJy_45zbow" elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue xmi:id="_liDTZ0AdEeSuoJy_45zbow" elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue xmi:id="_liDTaEAdEeSuoJy_45zbow" elementRef="TRACE_COLUMN" value="it_de_natureza_juridica"/>
+      <elementValue xmi:id="_liDTaUAdEeSuoJy_45zbow" elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue xmi:id="_liDTakAdEeSuoJy_45zbow" elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue xmi:id="_liDTa0AdEeSuoJy_45zbow" elementRef="TRACE_COLUMN" value="it_in_averbacao_nat_jur"/>
+      <elementValue xmi:id="_liDTbEAdEeSuoJy_45zbow" elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue xmi:id="_liDTbUAdEeSuoJy_45zbow" elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue xmi:id="_liDTbkAdEeSuoJy_45zbow" elementRef="TRACE_COLUMN" value="it_co_rais_natjur"/>
+      <elementValue xmi:id="_liDTb0AdEeSuoJy_45zbow" elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue xmi:id="_liDTcEAdEeSuoJy_45zbow" elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue xmi:id="_liDTcUAdEeSuoJy_45zbow" elementRef="TRACE_COLUMN" value="anomes_ref"/>
+      <elementValue xmi:id="_liDTckAdEeSuoJy_45zbow" elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue xmi:id="_liDTc0AdEeSuoJy_45zbow" elementRef="TRACE_COLUMN_CONDITION" value=""/>
+    </elementParameter>
+    <elementParameter xmi:id="_liDTdEAdEeSuoJy_45zbow" field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter xmi:id="_liDTdUAdEeSuoJy_45zbow" field="CHECK" name="USEROWLABEL" value="true"/>
+    <elementParameter xmi:id="_liDTdkAdEeSuoJy_45zbow" field="TEXT" name="METTERLABEL" value="&quot;MyLabel&quot;"/>
+    <elementParameter xmi:id="_liDTd0AdEeSuoJy_45zbow" field="CLOSED_LIST" name="ABSOLUTE" value="Absolute"/>
+    <elementParameter xmi:id="_liDTeEAdEeSuoJy_45zbow" field="CONNECTION_LIST" name="CONNECTIONS" value=""/>
+    <elementParameter xmi:id="_liDTeUAdEeSuoJy_45zbow" field="TABLE" name="THRESHLODS"/>
+    <elementParameter xmi:id="_liDTekAdEeSuoJy_45zbow" field="CHECK" name="ACTIVATE" value="true"/>
+    <elementParameter xmi:id="_liDTe0AdEeSuoJy_45zbow" field="TEXT" name="UNIQUE_NAME" value="siape_natureza_juridica"/>
+    <elementParameter xmi:id="_liDTfEAdEeSuoJy_45zbow" field="CHECK" name="RESUMING_CHECKPOINT" value="false"/>
+    <elementParameter xmi:id="_liDTfUAdEeSuoJy_45zbow" field="TEXT" name="RESUMLABEL" value=""/>
+    <elementParameter xmi:id="_liDTfkAdEeSuoJy_45zbow" field="MEMO" name="FAILURE_INSTRUCTIONS" value=""/>
+    <elementParameter xmi:id="_liDTf0AdEeSuoJy_45zbow" field="CHECK" name="ACTIVEBREAKPOINT" value="false"/>
+    <elementParameter xmi:id="_liDTgEAdEeSuoJy_45zbow" field="CLOSED_LIST" name="LOGICAL_OP" value="&amp;&amp;"/>
+    <elementParameter xmi:id="_liDTgUAdEeSuoJy_45zbow" field="TABLE" name="CONDITIONS"/>
+    <elementParameter xmi:id="_liDTgkAdEeSuoJy_45zbow" field="CHECK" name="USE_ADVANCED" value="false"/>
+    <elementParameter xmi:id="_liDTg0AdEeSuoJy_45zbow" field="MEMO_JAVA" name="ADVANCED_COND" value="// code sample : use input_row to define the condition.&#xA;// input_row.columnName1.equals(&quot;foo&quot;) ||!(input_row.columnName2.equals(&quot;bar&quot;))&#xA;// replace the following expression by your own filter condition &#xA;input_row.columnName1.equals(input_row.columnName2)&#xA;&#x9;&#x9;&#x9;"/>
+  </connection>
+  <connection xmi:id="_liDThEAdEeSuoJy_45zbow" connectorName="FLOW" label="row4" lineStyle="8" metaname="tPobase-de-dadosresqlInput_4" offsetLabelX="0" offsetLabelY="0" source="tPobase-de-dadosresqlInput_4" target="tMap_1">
+    <elementParameter xmi:id="_liDThUAdEeSuoJy_45zbow" field="CHECK" name="TRACES_CONNECTION_ENABLE" value="true"/>
+    <elementParameter xmi:id="_liDThkAdEeSuoJy_45zbow" field="TABLE" name="TRACES_CONNECTION_FILTER">
+      <elementValue xmi:id="_liDTh0AdEeSuoJy_45zbow" elementRef="TRACE_COLUMN" value="gr_natureza_juridica_hist"/>
+      <elementValue xmi:id="_liDTiEAdEeSuoJy_45zbow" elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue xmi:id="_liDTiUAdEeSuoJy_45zbow" elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue xmi:id="_liDTikAdEeSuoJy_45zbow" elementRef="TRACE_COLUMN" value="it_no_natureza_juridica"/>
+      <elementValue xmi:id="_liDTi0AdEeSuoJy_45zbow" elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue xmi:id="_liDTjEAdEeSuoJy_45zbow" elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue xmi:id="_liDTjUAdEeSuoJy_45zbow" elementRef="TRACE_COLUMN" value="it_in_status_registro_tabela"/>
+      <elementValue xmi:id="_liDTjkAdEeSuoJy_45zbow" elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue xmi:id="_liDTj0AdEeSuoJy_45zbow" elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue xmi:id="_liDTkEAdEeSuoJy_45zbow" elementRef="TRACE_COLUMN" value="it_da_atua_anterior"/>
+      <elementValue xmi:id="_liDTkUAdEeSuoJy_45zbow" elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue xmi:id="_liDTkkAdEeSuoJy_45zbow" elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue xmi:id="_liDTk0AdEeSuoJy_45zbow" elementRef="TRACE_COLUMN" value="it_de_natureza_juridica"/>
+      <elementValue xmi:id="_liDTlEAdEeSuoJy_45zbow" elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue xmi:id="_liDTlUAdEeSuoJy_45zbow" elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue xmi:id="_liDTlkAdEeSuoJy_45zbow" elementRef="TRACE_COLUMN" value="it_in_averbacao_nat_jur"/>
+      <elementValue xmi:id="_liDTl0AdEeSuoJy_45zbow" elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue xmi:id="_liDTmEAdEeSuoJy_45zbow" elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue xmi:id="_liDTmUAdEeSuoJy_45zbow" elementRef="TRACE_COLUMN" value="it_co_rais_natjur"/>
+      <elementValue xmi:id="_liDTmkAdEeSuoJy_45zbow" elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue xmi:id="_liDTm0AdEeSuoJy_45zbow" elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue xmi:id="_liDTnEAdEeSuoJy_45zbow" elementRef="TRACE_COLUMN" value="anomes_ref"/>
+      <elementValue xmi:id="_liDTnUAdEeSuoJy_45zbow" elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue xmi:id="_liDTnkAdEeSuoJy_45zbow" elementRef="TRACE_COLUMN_CONDITION" value=""/>
+    </elementParameter>
+    <elementParameter xmi:id="_liDTn0AdEeSuoJy_45zbow" field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter xmi:id="_liDToEAdEeSuoJy_45zbow" field="CHECK" name="USEROWLABEL" value="true"/>
+    <elementParameter xmi:id="_liDToUAdEeSuoJy_45zbow" field="TEXT" name="METTERLABEL" value="&quot;MyLabel&quot;"/>
+    <elementParameter xmi:id="_liDTokAdEeSuoJy_45zbow" field="CLOSED_LIST" name="ABSOLUTE" value="Absolute"/>
+    <elementParameter xmi:id="_liDTo0AdEeSuoJy_45zbow" field="CONNECTION_LIST" name="CONNECTIONS" value=""/>
+    <elementParameter xmi:id="_liDTpEAdEeSuoJy_45zbow" field="TABLE" name="THRESHLODS"/>
+    <elementParameter xmi:id="_liDTpUAdEeSuoJy_45zbow" field="CHECK" name="ACTIVATE" value="true"/>
+    <elementParameter xmi:id="_liDTpkAdEeSuoJy_45zbow" field="TEXT" name="UNIQUE_NAME" value="row4"/>
+    <elementParameter xmi:id="_liDTp0AdEeSuoJy_45zbow" field="CHECK" name="RESUMING_CHECKPOINT" value="false"/>
+    <elementParameter xmi:id="_liDTqEAdEeSuoJy_45zbow" field="TEXT" name="RESUMLABEL" value=""/>
+    <elementParameter xmi:id="_liDTqUAdEeSuoJy_45zbow" field="MEMO" name="FAILURE_INSTRUCTIONS" value=""/>
+    <elementParameter xmi:id="_liDTqkAdEeSuoJy_45zbow" field="CHECK" name="ACTIVEBREAKPOINT" value="false"/>
+    <elementParameter xmi:id="_liDTq0AdEeSuoJy_45zbow" field="CLOSED_LIST" name="LOGICAL_OP" value="&amp;&amp;"/>
+    <elementParameter xmi:id="_liDTrEAdEeSuoJy_45zbow" field="TABLE" name="CONDITIONS"/>
+    <elementParameter xmi:id="_liDTrUAdEeSuoJy_45zbow" field="CHECK" name="USE_ADVANCED" value="false"/>
+    <elementParameter xmi:id="_liDTrkAdEeSuoJy_45zbow" field="MEMO_JAVA" name="ADVANCED_COND" value="// code sample : use input_row to define the condition.&#xA;// input_row.columnName1.equals(&quot;foo&quot;) ||!(input_row.columnName2.equals(&quot;bar&quot;))&#xA;// replace the following expression by your own filter condition &#xA;input_row.columnName1.equals(input_row.columnName2)&#xA;&#x9;&#x9;&#x9;"/>
+  </connection>
+  <connection xmi:id="_liDTr0AdEeSuoJy_45zbow" connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tJava_1" offsetLabelX="0" offsetLabelY="0" source="tJava_1" target="tPobase-de-dadosresqlInput_1">
+    <elementParameter xmi:id="_liDTsEAdEeSuoJy_45zbow" field="CHECK" name="ACTIVATE" value="true"/>
+    <elementParameter xmi:id="_liDTsUAdEeSuoJy_45zbow" field="TEXT" name="UNIQUE_NAME" value="OnSubjobOk1"/>
+    <elementParameter xmi:id="_liDTskAdEeSuoJy_45zbow" field="CHECK" name="RESUMING_CHECKPOINT" value="false"/>
+    <elementParameter xmi:id="_liDTs0AdEeSuoJy_45zbow" field="TEXT" name="RESUMLABEL" value=""/>
+    <elementParameter xmi:id="_liDTtEAdEeSuoJy_45zbow" field="MEMO" name="FAILURE_INSTRUCTIONS" value=""/>
+  </connection>
+  <connection xmi:id="_liDTtUAdEeSuoJy_45zbow" connectorName="FLOW" label="existe_NI" lineStyle="0" metaname="tPobase-de-dadosresqlInput_5" offsetLabelX="0" offsetLabelY="0" source="tPobase-de-dadosresqlInput_5" target="tJavaRow_1">
+    <elementParameter xmi:id="_liDTtkAdEeSuoJy_45zbow" field="CHECK" name="TRACES_CONNECTION_ENABLE" value="true"/>
+    <elementParameter xmi:id="_liDTt0AdEeSuoJy_45zbow" field="TABLE" name="TRACES_CONNECTION_FILTER">
+      <elementValue xmi:id="_liDTuEAdEeSuoJy_45zbow" elementRef="TRACE_COLUMN" value="count"/>
+      <elementValue xmi:id="_liDTuUAdEeSuoJy_45zbow" elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue xmi:id="_liDTukAdEeSuoJy_45zbow" elementRef="TRACE_COLUMN_CONDITION" value=""/>
+    </elementParameter>
+    <elementParameter xmi:id="_liDTu0AdEeSuoJy_45zbow" field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter xmi:id="_liDTvEAdEeSuoJy_45zbow" field="CHECK" name="USEROWLABEL" value="true"/>
+    <elementParameter xmi:id="_liDTvUAdEeSuoJy_45zbow" field="TEXT" name="METTERLABEL" value="&quot;MyLabel&quot;"/>
+    <elementParameter xmi:id="_liDTvkAdEeSuoJy_45zbow" field="CLOSED_LIST" name="ABSOLUTE" value="Absolute"/>
+    <elementParameter xmi:id="_liDTv0AdEeSuoJy_45zbow" field="CONNECTION_LIST" name="CONNECTIONS" value=""/>
+    <elementParameter xmi:id="_liDTwEAdEeSuoJy_45zbow" field="TABLE" name="THRESHLODS"/>
+    <elementParameter xmi:id="_liDTwUAdEeSuoJy_45zbow" field="CHECK" name="ACTIVATE" value="true"/>
+    <elementParameter xmi:id="_liDTwkAdEeSuoJy_45zbow" field="TEXT" name="UNIQUE_NAME" value="existe_NI"/>
+    <elementParameter xmi:id="_liDTw0AdEeSuoJy_45zbow" field="CHECK" name="RESUMING_CHECKPOINT" value="false"/>
+    <elementParameter xmi:id="_liDTxEAdEeSuoJy_45zbow" field="TEXT" name="RESUMLABEL" value=""/>
+    <elementParameter xmi:id="_liDTxUAdEeSuoJy_45zbow" field="MEMO" name="FAILURE_INSTRUCTIONS" value=""/>
+    <elementParameter xmi:id="_liDTxkAdEeSuoJy_45zbow" field="CHECK" name="ACTIVEBREAKPOINT" value="false"/>
+    <elementParameter xmi:id="_liDTx0AdEeSuoJy_45zbow" field="CLOSED_LIST" name="LOGICAL_OP" value="&amp;&amp;"/>
+    <elementParameter xmi:id="_liDTyEAdEeSuoJy_45zbow" field="TABLE" name="CONDITIONS"/>
+    <elementParameter xmi:id="_liDTyUAdEeSuoJy_45zbow" field="CHECK" name="USE_ADVANCED" value="false"/>
+    <elementParameter xmi:id="_liDTykAdEeSuoJy_45zbow" field="MEMO_JAVA" name="ADVANCED_COND" value="// code sample : use input_row to define the condition.&#xA;// input_row.columnName1.equals(&quot;foo&quot;) ||!(input_row.columnName2.equals(&quot;bar&quot;))&#xA;// replace the following expression by your own filter condition &#xA;input_row.columnName1.equals(input_row.columnName2)&#xA;&#x9;&#x9;&#x9;"/>
+  </connection>
+  <connection xmi:id="_liDTy0AdEeSuoJy_45zbow" connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tPobase-de-dadosresqlInput_5" offsetLabelX="0" offsetLabelY="0" source="tPobase-de-dadosresqlInput_5" target="tJava_2">
+    <elementParameter xmi:id="_liDTzEAdEeSuoJy_45zbow" field="CHECK" name="ACTIVATE" value="true"/>
+    <elementParameter xmi:id="_liDTzUAdEeSuoJy_45zbow" field="TEXT" name="UNIQUE_NAME" value="OnSubjobOk3"/>
+    <elementParameter xmi:id="_liDTzkAdEeSuoJy_45zbow" field="CHECK" name="RESUMING_CHECKPOINT" value="false"/>
+    <elementParameter xmi:id="_liDTz0AdEeSuoJy_45zbow" field="TEXT" name="RESUMLABEL" value=""/>
+    <elementParameter xmi:id="_liDT0EAdEeSuoJy_45zbow" field="MEMO" name="FAILURE_INSTRUCTIONS" value=""/>
+  </connection>
+  <connection xmi:id="_liDT0UAdEeSuoJy_45zbow" connectorName="RUN_IF" label="nao_existe" lineStyle="6" metaname="tJavaRow_1" offsetLabelX="0" offsetLabelY="0" source="tJavaRow_1" target="tPobase-de-dadosresqlRow_1">
+    <elementParameter xmi:id="_liDT0kAdEeSuoJy_45zbow" field="MEMO_JAVA" name="CONDITION" value="// Verifica se não existe valor 'Não Informado' na tabela. Caso exista, não ocorrerá nenhuma ação. Caso contrário, o valor 'Não Informado' será inserido no banco.&#xA;context.count != 1"/>
+    <elementParameter xmi:id="_liDT00AdEeSuoJy_45zbow" field="CHECK" name="ACTIVATE" value="true"/>
+    <elementParameter xmi:id="_liDT1EAdEeSuoJy_45zbow" field="TEXT" name="UNIQUE_NAME" value="nao_existe"/>
+    <elementParameter xmi:id="_liDT1UAdEeSuoJy_45zbow" field="CHECK" name="RESUMING_CHECKPOINT" value="false"/>
+    <elementParameter xmi:id="_liDT1kAdEeSuoJy_45zbow" field="TEXT" name="RESUMLABEL" value=""/>
+    <elementParameter xmi:id="_liDT10AdEeSuoJy_45zbow" field="MEMO" name="FAILURE_INSTRUCTIONS" value=""/>
+  </connection>
+  <subjob xmi:id="_liDT2EAdEeSuoJy_45zbow">
+    <elementParameter xmi:id="_liDT2UAdEeSuoJy_45zbow" field="CHECK" name="SHOW_SUBJOB_TITLE" value="true"/>
+    <elementParameter xmi:id="_liDT2kAdEeSuoJy_45zbow" field="TEXT" name="UNIQUE_NAME" value="tPobase-de-dadosresqlInput_1"/>
+    <elementParameter xmi:id="_liDT20AdEeSuoJy_45zbow" field="TEXT" name="SUBJOB_TITLE" value="Processo de Carga da Tabela Dimensão dm_orgao_siape"/>
+    <elementParameter xmi:id="_liDT3EAdEeSuoJy_45zbow" field="COLOR" name="SUBJOB_TITLE_COLOR" value="160;190;240"/>
+    <elementParameter xmi:id="_liDT3UAdEeSuoJy_45zbow" field="COLOR" name="SUBJOB_COLOR" value="220;220;250"/>
+  </subjob>
+  <subjob xmi:id="_liDT3kAdEeSuoJy_45zbow">
+    <elementParameter xmi:id="_liDT30AdEeSuoJy_45zbow" field="CHECK" name="SHOW_SUBJOB_TITLE" value="true"/>
+    <elementParameter xmi:id="_liDT4EAdEeSuoJy_45zbow" field="TEXT" name="UNIQUE_NAME" value="tJava_1"/>
+    <elementParameter xmi:id="_liDT4UAdEeSuoJy_45zbow" field="TEXT" name="SUBJOB_TITLE" value="Inicio"/>
+    <elementParameter xmi:id="_liDT4kAdEeSuoJy_45zbow" field="COLOR" name="SUBJOB_TITLE_COLOR" value="160;190;240"/>
+    <elementParameter xmi:id="_liDT40AdEeSuoJy_45zbow" field="COLOR" name="SUBJOB_COLOR" value="220;220;250"/>
+  </subjob>
+  <subjob xmi:id="_liDT5EAdEeSuoJy_45zbow">
+    <elementParameter xmi:id="_liDT5UAdEeSuoJy_45zbow" field="CHECK" name="SHOW_SUBJOB_TITLE" value="true"/>
+    <elementParameter xmi:id="_liDT5kAdEeSuoJy_45zbow" field="TEXT" name="UNIQUE_NAME" value="tPobase-de-dadosresqlInput_5"/>
+    <elementParameter xmi:id="_liDT50AdEeSuoJy_45zbow" field="TEXT" name="SUBJOB_TITLE" value="Verifica se já existe o valor 'Nao Informado' na tabela  dm_orgao_siape"/>
+    <elementParameter xmi:id="_liDT6EAdEeSuoJy_45zbow" field="COLOR" name="SUBJOB_TITLE_COLOR" value="160;190;240"/>
+    <elementParameter xmi:id="_liDT6UAdEeSuoJy_45zbow" field="COLOR" name="SUBJOB_COLOR" value="220;220;250"/>
+  </subjob>
+  <subjob xmi:id="_liDT6kAdEeSuoJy_45zbow">
+    <elementParameter xmi:id="_liDT60AdEeSuoJy_45zbow" field="CHECK" name="SHOW_SUBJOB_TITLE" value="true"/>
+    <elementParameter xmi:id="_liDT7EAdEeSuoJy_45zbow" field="TEXT" name="UNIQUE_NAME" value="tPobase-de-dadosresqlRow_1"/>
+    <elementParameter xmi:id="_liDT7UAdEeSuoJy_45zbow" field="TEXT" name="SUBJOB_TITLE" value="Insere o valor 'Não Informado' caso não exista na tabela dm_orgao_siape"/>
+    <elementParameter xmi:id="_liDT7kAdEeSuoJy_45zbow" field="COLOR" name="SUBJOB_TITLE_COLOR" value="160;190;240"/>
+    <elementParameter xmi:id="_liDT70AdEeSuoJy_45zbow" field="COLOR" name="SUBJOB_COLOR" value="220;220;250"/>
+  </subjob>
+  <subjob xmi:id="_liDT8EAdEeSuoJy_45zbow">
+    <elementParameter xmi:id="_liDT8UAdEeSuoJy_45zbow" field="CHECK" name="COLLAPSED" value="true"/>
+    <elementParameter xmi:id="_liDT8kAdEeSuoJy_45zbow" field="CHECK" name="SHOW_SUBJOB_TITLE" value="true"/>
+    <elementParameter xmi:id="_liDT80AdEeSuoJy_45zbow" field="TEXT" name="UNIQUE_NAME" value="tJava_2"/>
+    <elementParameter xmi:id="_liDT9EAdEeSuoJy_45zbow" field="TEXT" name="SUBJOB_TITLE" value="Fim"/>
+    <elementParameter xmi:id="_liDT9UAdEeSuoJy_45zbow" field="COLOR" name="SUBJOB_TITLE_COLOR" value="160;190;240"/>
+    <elementParameter xmi:id="_liDT9kAdEeSuoJy_45zbow" field="COLOR" name="SUBJOB_COLOR" value="220;220;250"/>
+  </subjob>
+  <subjob xmi:id="_liDT90AdEeSuoJy_45zbow">
+    <elementParameter xmi:id="_liDT-EAdEeSuoJy_45zbow" field="CHECK" name="SHOW_SUBJOB_TITLE" value="true"/>
+    <elementParameter xmi:id="_liDT-UAdEeSuoJy_45zbow" field="TEXT" name="UNIQUE_NAME" value="jbl_rh_log_1"/>
+    <elementParameter xmi:id="_liDT-kAdEeSuoJy_45zbow" field="TEXT" name="SUBJOB_TITLE" value="Captura Log Execução"/>
+    <elementParameter xmi:id="_liDT-0AdEeSuoJy_45zbow" field="COLOR" name="SUBJOB_TITLE_COLOR" value="160;190;240"/>
+    <elementParameter xmi:id="_liDT_EAdEeSuoJy_45zbow" field="COLOR" name="SUBJOB_COLOR" value="220;220;250"/>
+  </subjob>
+</talendfile:ProcessType>

@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<talendfile:ProcessType xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" xmi:id="_lif9s0AdEeSuoJy_45zbow" defaultContext="Default">
+  <context xmi:id="_lif9tEAdEeSuoJy_45zbow" confirmationNeeded="false" name="Default">
+    <contextParameter xmi:id="_lif9tUAdEeSuoJy_45zbow" comment="" name="con_base-de-dados_public_Database" prompt="con_base-de-dados_public_Database?" promptNeeded="false" repositoryContextId="_YK75ELzSEeKsz-mcbsXGEw" type="id_String" value="base-de-dados"/>
+    <contextParameter xmi:id="_lif9tkAdEeSuoJy_45zbow" comment="" name="con_base-de-dados_public_Login" prompt="con_base-de-dados_public_Login?" promptNeeded="false" repositoryContextId="_YK75ELzSEeKsz-mcbsXGEw" type="id_String" value="login"/>
+    <contextParameter xmi:id="_lif9t0AdEeSuoJy_45zbow" comment="" name="con_base-de-dados_public_Password" prompt="con_base-de-dados_public_Password?" promptNeeded="false" repositoryContextId="_YK75ELzSEeKsz-mcbsXGEw" type="id_Password" value="eIxHCG/BsaAoHUN6ER8BU65TP2OLlq3p"/>
+    <contextParameter xmi:id="_lif9uEAdEeSuoJy_45zbow" comment="" name="con_base-de-dados_public_Port" prompt="con_base-de-dados_public_Port?" promptNeeded="false" repositoryContextId="_YK75ELzSEeKsz-mcbsXGEw" type="id_String" value="porta"/>
+    <contextParameter xmi:id="_lif9uUAdEeSuoJy_45zbow" comment="" name="con_base-de-dados_public_Schema" prompt="con_base-de-dados_public_Schema?" promptNeeded="false" repositoryContextId="_YK75ELzSEeKsz-mcbsXGEw" type="id_String" value="public"/>
+    <contextParameter xmi:id="_lif9ukAdEeSuoJy_45zbow" comment="" name="con_base-de-dados_public_Server" prompt="con_base-de-dados_public_Server?" promptNeeded="false" repositoryContextId="_YK75ELzSEeKsz-mcbsXGEw" type="id_String" value="ip-servidor"/>
+    <contextParameter xmi:id="_lif9u0AdEeSuoJy_45zbow" comment="" name="con_base-de-dados_rh_Database" prompt="con_base-de-dados_rh_Database?" promptNeeded="false" repositoryContextId="_1TAOgNd4EeK9hOB4LuISCg" type="id_String" value="base-de-dados"/>
+    <contextParameter xmi:id="_lif9vEAdEeSuoJy_45zbow" comment="" name="con_base-de-dados_rh_Login" prompt="con_base-de-dados_rh_Login?" promptNeeded="false" repositoryContextId="_1TAOgNd4EeK9hOB4LuISCg" type="id_String" value="login"/>
+    <contextParameter xmi:id="_lif9vUAdEeSuoJy_45zbow" comment="" name="con_base-de-dados_rh_Password" prompt="con_base-de-dados_rh_Password?" promptNeeded="false" repositoryContextId="_1TAOgNd4EeK9hOB4LuISCg" type="id_Password" value="KVHdxy7ZsTQKIlkN2bprSOnsvlnMmx+p"/>
+    <contextParameter xmi:id="_lif9vkAdEeSuoJy_45zbow" comment="" name="con_base-de-dados_rh_Port" prompt="con_base-de-dados_rh_Port?" promptNeeded="false" repositoryContextId="_1TAOgNd4EeK9hOB4LuISCg" type="id_String" value="porta"/>
+    <contextParameter xmi:id="_lif9v0AdEeSuoJy_45zbow" comment="" name="con_base-de-dados_rh_Schema" prompt="con_base-de-dados_rh_Schema?" promptNeeded="false" repositoryContextId="_1TAOgNd4EeK9hOB4LuISCg" type="id_String" value="rh"/>
+    <contextParameter xmi:id="_lif9wEAdEeSuoJy_45zbow" comment="" name="con_base-de-dados_rh_Server" prompt="con_base-de-dados_rh_Server?" promptNeeded="false" repositoryContextId="_1TAOgNd4EeK9hOB4LuISCg" type="id_String" value="ip-servidor"/>
+    <contextParameter xmi:id="_lif9wUAdEeSuoJy_45zbow" comment="" name="con_base-de-dados_base-de-dados_database" prompt="con_base-de-dados_base-de-dados_database?" promptNeeded="false" type="id_String" value="base-de-dados"/>
+    <contextParameter xmi:id="_lif9wkAdEeSuoJy_45zbow" comment="" name="con_base-de-dados_base-de-dados_login" prompt="con_base-de-dados_base-de-dados_login?" promptNeeded="false" type="id_String" value="login"/>
+    <contextParameter xmi:id="_lif9w0AdEeSuoJy_45zbow" comment="" name="con_base-de-dados_base-de-dados_parametros" prompt="con_base-de-dados_base-de-dados_parametros?" promptNeeded="false" type="id_String" value="noDatetimeStringSync=true"/>
+    <contextParameter xmi:id="_lif9xEAdEeSuoJy_45zbow" comment="" name="con_base-de-dados_base-de-dados_password" prompt="con_base-de-dados_base-de-dados_password?" promptNeeded="false" type="id_Password" value="Ao15Vsj6d/p/KwPwJosW6A=="/>
+    <contextParameter xmi:id="_lif9xUAdEeSuoJy_45zbow" comment="" name="con_base-de-dados_base-de-dados_port" prompt="con_base-de-dados_base-de-dados_port?" promptNeeded="false" type="id_String" value="porta"/>
+    <contextParameter xmi:id="_lif9xkAdEeSuoJy_45zbow" comment="" name="con_base-de-dados_base-de-dados_server" prompt="con_base-de-dados_base-de-dados_server?" promptNeeded="false" type="id_String" value="ip-servidor"/>
+    <contextParameter xmi:id="_lif9x0AdEeSuoJy_45zbow" comment="" name="dir_entrada" prompt="dir_entrada?" promptNeeded="false" type="id_String" value="/entrada/dwconv/"/>
+    <contextParameter xmi:id="_lif9yEAdEeSuoJy_45zbow" comment="" name="dir_log" prompt="dir_log?" promptNeeded="false" type="id_String" value="/processo_etl/log/siconv/"/>
+    <contextParameter xmi:id="_lif9yUAdEeSuoJy_45zbow" comment="" name="dir_saida" prompt="dir_saida?" promptNeeded="false" type="id_String" value="/processo_etl/cbi/siconv/"/>
+    <contextParameter xmi:id="_lif9ykAdEeSuoJy_45zbow" comment="" name="dir_work" prompt="dir_work?" promptNeeded="false" type="id_String" value="/work/dwconv/"/>
+  </context>
+  <parameters xmi:id="_lif9y0AdEeSuoJy_45zbow">
+    <elementParameter xmi:id="_lif9zEAdEeSuoJy_45zbow" field="TEXT" name="JOB_RUN_VM_ARGUMENTS" value=" -Xms256M -Xmx1024M"/>
+    <elementParameter xmi:id="_lif9zUAdEeSuoJy_45zbow" field="CHECK" name="JOB_RUN_VM_ARGUMENTS_OPTION" value="false"/>
+    <elementParameter xmi:id="_lif9zkAdEeSuoJy_45zbow" field="TEXT" name="SCREEN_OFFSET_X" value="0"/>
+    <elementParameter xmi:id="_lif9z0AdEeSuoJy_45zbow" field="TEXT" name="SCREEN_OFFSET_Y" value="32"/>
+    <elementParameter xmi:id="_lif90EAdEeSuoJy_45zbow" field="TEXT" name="SCHEMA_OPTIONS" value="none"/>
+    <elementParameter xmi:id="_lif90UAdEeSuoJy_45zbow" field="TEXT" name="OEM_CUSTOM_ATTRIBUTE" value=""/>
+    <elementParameter xmi:id="_lif90kAdEeSuoJy_45zbow" field="CHECK" name="IMPLICITCONTEXT_USE_PROJECT_SETTINGS" value="true"/>
+    <elementParameter xmi:id="_lif900AdEeSuoJy_45zbow" field="CHECK" name="STATANDLOG_USE_PROJECT_SETTINGS" value="true"/>
+    <elementParameter xmi:id="_lif91EAdEeSuoJy_45zbow" field="FILE" name="IMPLICIT_TCONTEXTLOAD_FILE" value="&quot;&quot;"/>
+    <elementParameter xmi:id="_lif91UAdEeSuoJy_45zbow" field="TEXT" name="FIELDSEPARATOR" value="&quot;&quot;"/>
+    <elementParameter xmi:id="_lif91kAdEeSuoJy_45zbow" field="CLOSED_LIST" name="DB_VERSION_IMPLICIT_CONTEXT" value=""/>
+    <elementParameter xmi:id="_lif910AdEeSuoJy_45zbow" field="CHECK" name="DISABLE_WARNINGS" value="false"/>
+    <elementParameter xmi:id="_lif92EAdEeSuoJy_45zbow" field="CHECK" name="DISABLE_INFO" value="false"/>
+    <elementParameter xmi:id="_lif92UAdEeSuoJy_45zbow" field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter xmi:id="_lif92kAdEeSuoJy_45zbow" field="CLOSED_LIST" name="DB_VERSION" value="ojdbc14-10g.jar"/>
+    <routinesParameter xmi:id="_lif920AdEeSuoJy_45zbow" id="_nm6ksNdGEeK9hOB4LuISCg" name="DQTechnical"/>
+    <routinesParameter xmi:id="_lif93EAdEeSuoJy_45zbow" id="_niOR8NdGEeK9hOB4LuISCg" name="DataOperation"/>
+    <routinesParameter xmi:id="_lif93UAdEeSuoJy_45zbow" id="_nmef0NdGEeK9hOB4LuISCg" name="DataQuality"/>
+    <routinesParameter xmi:id="_lif93kAdEeSuoJy_45zbow" id="_nmwzsNdGEeK9hOB4LuISCg" name="DqStringHandling"/>
+    <routinesParameter xmi:id="_lif930AdEeSuoJy_45zbow" id="_nlUpQNdGEeK9hOB4LuISCg" name="Mathematical"/>
+    <routinesParameter xmi:id="_lif94EAdEeSuoJy_45zbow" id="_nldMINdGEeK9hOB4LuISCg" name="Numeric"/>
+    <routinesParameter xmi:id="_lif94UAdEeSuoJy_45zbow" id="_nlfoYNdGEeK9hOB4LuISCg" name="Relational"/>
+    <routinesParameter xmi:id="_lif94kAdEeSuoJy_45zbow" id="_nnDHkNdGEeK9hOB4LuISCg" name="SQLike"/>
+    <routinesParameter xmi:id="_lif940AdEeSuoJy_45zbow" id="_nltq0NdGEeK9hOB4LuISCg" name="StringHandling"/>
+    <routinesParameter xmi:id="_lif95EAdEeSuoJy_45zbow" id="_nl_-sNdGEeK9hOB4LuISCg" name="TalendDataGenerator"/>
+    <routinesParameter xmi:id="_lif95UAdEeSuoJy_45zbow" id="_nmNaENdGEeK9hOB4LuISCg" name="TalendDate"/>
+    <routinesParameter xmi:id="_lif95kAdEeSuoJy_45zbow" id="_nmWkANdGEeK9hOB4LuISCg" name="TalendString"/>
+    <routinesParameter xmi:id="_lif950AdEeSuoJy_45zbow" id="_AntRMS-bEeSx3JA33D57rA" name="ano_mes_ref"/>
+    <routinesParameter xmi:id="_lif96EAdEeSuoJy_45zbow" id="_AntRMC-bEeSx3JA33D57rA" name="data_referencia"/>
+    <routinesParameter xmi:id="_lif96UAdEeSuoJy_45zbow" id="_iE3UQLV0Ed-jS_ykRTUezQ" name="Conversie"/>
+  </parameters>
+  <node xmi:id="_lif96kAdEeSuoJy_45zbow" componentName="tJava" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="96" posY="32">
+    <elementParameter xmi:id="_lif960AdEeSuoJy_45zbow" field="TEXT" name="UNIQUE_NAME" value="tJava_1"/>
+    <elementParameter xmi:id="_lif97EAdEeSuoJy_45zbow" field="CHECK" name="START" value="true"/>
+    <elementParameter xmi:id="_lif97UAdEeSuoJy_45zbow" field="MEMO_JAVA" name="CODE" value="System.out.println(&quot;\nProcesso de ETL &quot; + jobName + &quot; iniciado!!!  \n&quot;);"/>
+    <elementParameter xmi:id="_lif97kAdEeSuoJy_45zbow" field="MEMO_IMPORT" name="IMPORT" value="//import java.util.List;"/>
+    <elementParameter xmi:id="_lif970AdEeSuoJy_45zbow" field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <elementParameter xmi:id="_lif98EAdEeSuoJy_45zbow" field="CHECK" name="INFORMATION" value="true"/>
+    <elementParameter xmi:id="_lif98UAdEeSuoJy_45zbow" field="MEMO" name="COMMENT" value="Componente responsável por imprimir a mensagem inicial de execução do processo ETL."/>
+    <elementParameter xmi:id="_lif98kAdEeSuoJy_45zbow" field="CHECK" name="VALIDATION_RULES" value="false"/>
+    <metadata xmi:id="_lif980AdEeSuoJy_45zbow" connector="FLOW" name="tJava_1"/>
+  </node>
+  <node xmi:id="_lif99EAdEeSuoJy_45zbow" componentName="tJava" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="288" posY="32">
+    <elementParameter xmi:id="_lif99UAdEeSuoJy_45zbow" field="TEXT" name="UNIQUE_NAME" value="tJava_2"/>
+    <elementParameter xmi:id="_lif99kAdEeSuoJy_45zbow" field="MEMO_JAVA" name="CODE" value="System.out.println(&quot;\nProcesso de ETL &quot; + jobName + &quot; finalizado com sucesso!!!  \n&quot;);"/>
+    <elementParameter xmi:id="_lif990AdEeSuoJy_45zbow" field="MEMO_IMPORT" name="IMPORT" value="//import java.util.List;"/>
+    <elementParameter xmi:id="_lif9-EAdEeSuoJy_45zbow" field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <elementParameter xmi:id="_lif9-UAdEeSuoJy_45zbow" field="CHECK" name="INFORMATION" value="true"/>
+    <elementParameter xmi:id="_lif9-kAdEeSuoJy_45zbow" field="MEMO" name="COMMENT" value="Componente responsável por imprimir a mensagem de término da execução do processo ETL."/>
+    <elementParameter xmi:id="_lif9-0AdEeSuoJy_45zbow" field="CHECK" name="VALIDATION_RULES" value="false"/>
+    <metadata xmi:id="_lif9_EAdEeSuoJy_45zbow" connector="FLOW" name="tJava_2"/>
+  </node>
+  <node xmi:id="_lif9_UAdEeSuoJy_45zbow" componentName="jbl_rh_log" componentVersion="1.0" offsetLabelX="0" offsetLabelY="0" posX="96" posY="192">
+    <elementParameter xmi:id="_lif9_kAdEeSuoJy_45zbow" field="TEXT" name="UNIQUE_NAME" value="jbl_rh_log_1"/>
+    <elementParameter xmi:id="_lif9_0AdEeSuoJy_45zbow" field="TEXT" name="FAMILY" value="Joblets"/>
+    <elementParameter xmi:id="_lif-AEAdEeSuoJy_45zbow" field="CHECK" name="ACTIVATE" value="true"/>
+    <elementParameter xmi:id="_lif-AUAdEeSuoJy_45zbow" field="CHECK" name="DUMMY" value="false"/>
+    <elementParameter xmi:id="_lif-AkAdEeSuoJy_45zbow" field="CHECK" name="STARTABLE" value="true"/>
+    <elementParameter xmi:id="_lif-A0AdEeSuoJy_45zbow" field="CHECK" name="START" value="true"/>
+    <elementParameter xmi:id="_lif-BEAdEeSuoJy_45zbow" field="CLOSED_LIST" name="PROCESS_TYPE_VERSION" value="Latest"/>
+    <elementParameter xmi:id="_lif-BUAdEeSuoJy_45zbow" field="TEXT" name="LABEL" value="jbl_rh_log"/>
+    <elementParameter xmi:id="_lif-BkAdEeSuoJy_45zbow" field="TEXT" name="HINT" value="&lt;b>__UNIQUE_NAME__&lt;/b>&lt;br>__COMMENT__"/>
+    <elementParameter xmi:id="_lif-B0AdEeSuoJy_45zbow" field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <elementParameter xmi:id="_lif-CEAdEeSuoJy_45zbow" field="CHECK" name="INFORMATION" value="false"/>
+    <elementParameter xmi:id="_lif-CUAdEeSuoJy_45zbow" field="MEMO" name="COMMENT" value=""/>
+  </node>
+  <connection xmi:id="_lif-CkAdEeSuoJy_45zbow" connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tJava_1" offsetLabelX="0" offsetLabelY="0" source="tJava_1" target="tJava_2">
+    <elementParameter xmi:id="_lif-C0AdEeSuoJy_45zbow" field="CHECK" name="ACTIVATE" value="true"/>
+    <elementParameter xmi:id="_lif-DEAdEeSuoJy_45zbow" field="TEXT" name="UNIQUE_NAME" value="OnSubjobOk1"/>
+    <elementParameter xmi:id="_lif-DUAdEeSuoJy_45zbow" field="CHECK" name="RESUMING_CHECKPOINT" value="false"/>
+    <elementParameter xmi:id="_lif-DkAdEeSuoJy_45zbow" field="TEXT" name="RESUMLABEL" value=""/>
+    <elementParameter xmi:id="_lif-D0AdEeSuoJy_45zbow" field="MEMO" name="FAILURE_INSTRUCTIONS" value=""/>
+  </connection>
+  <subjob xmi:id="_lif-EEAdEeSuoJy_45zbow">
+    <elementParameter xmi:id="_lif-EUAdEeSuoJy_45zbow" field="CHECK" name="SHOW_SUBJOB_TITLE" value="true"/>
+    <elementParameter xmi:id="_lif-EkAdEeSuoJy_45zbow" field="TEXT" name="UNIQUE_NAME" value="tJava_1"/>
+    <elementParameter xmi:id="_lif-E0AdEeSuoJy_45zbow" field="TEXT" name="SUBJOB_TITLE" value="Inicio"/>
+    <elementParameter xmi:id="_lif-FEAdEeSuoJy_45zbow" field="COLOR" name="SUBJOB_TITLE_COLOR" value="160;190;240"/>
+    <elementParameter xmi:id="_lif-FUAdEeSuoJy_45zbow" field="COLOR" name="SUBJOB_COLOR" value="220;220;250"/>
+  </subjob>
+  <subjob xmi:id="_lif-FkAdEeSuoJy_45zbow">
+    <elementParameter xmi:id="_lif-F0AdEeSuoJy_45zbow" field="CHECK" name="SHOW_SUBJOB_TITLE" value="true"/>
+    <elementParameter xmi:id="_lif-GEAdEeSuoJy_45zbow" field="TEXT" name="UNIQUE_NAME" value="tJava_2"/>
+    <elementParameter xmi:id="_lif-GUAdEeSuoJy_45zbow" field="TEXT" name="SUBJOB_TITLE" value="Fim"/>
+    <elementParameter xmi:id="_lif-GkAdEeSuoJy_45zbow" field="COLOR" name="SUBJOB_TITLE_COLOR" value="160;190;240"/>
+    <elementParameter xmi:id="_lif-G0AdEeSuoJy_45zbow" field="COLOR" name="SUBJOB_COLOR" value="220;220;250"/>
+  </subjob>
+  <subjob xmi:id="_lif-HEAdEeSuoJy_45zbow">
+    <elementParameter xmi:id="_lif-HUAdEeSuoJy_45zbow" field="CHECK" name="SHOW_SUBJOB_TITLE" value="true"/>
+    <elementParameter xmi:id="_lif-HkAdEeSuoJy_45zbow" field="TEXT" name="UNIQUE_NAME" value="jbl_rh_log_1"/>
+    <elementParameter xmi:id="_lif-H0AdEeSuoJy_45zbow" field="TEXT" name="SUBJOB_TITLE" value="Captura Log Execução"/>
+    <elementParameter xmi:id="_lif-IEAdEeSuoJy_45zbow" field="COLOR" name="SUBJOB_TITLE_COLOR" value="160;190;240"/>
+    <elementParameter xmi:id="_lif-IUAdEeSuoJy_45zbow" field="COLOR" name="SUBJOB_COLOR" value="220;220;250"/>
+  </subjob>
+</talendfile:ProcessType>

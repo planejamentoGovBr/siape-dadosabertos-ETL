@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<talendfile:ContextType xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" xmi:id="_ljVrM0AdEeSuoJy_45zbow" confirmationNeeded="false" name="Default">
+  <contextParameter xmi:id="_ljVrNEAdEeSuoJy_45zbow" comment="" name="con_base-de-dados_siape_Server" prompt="con_base-de-dados_siape_Server?" promptNeeded="false" type="id_String" value="ip-servidor"/>
+  <contextParameter xmi:id="_ljVrNUAdEeSuoJy_45zbow" comment="" name="con_base-de-dados_siape_Port" prompt="con_base-de-dados_siape_Port?" promptNeeded="false" type="id_String" value="porta"/>
+  <contextParameter xmi:id="_ljVrNkAdEeSuoJy_45zbow" comment="" name="con_base-de-dados_siape_Database" prompt="con_base-de-dados_siape_Database?" promptNeeded="false" type="id_String" value="base-de-dados"/>
+  <contextParameter xmi:id="_ljVrN0AdEeSuoJy_45zbow" comment="" name="con_base-de-dados_siape_Password" prompt="con_base-de-dados_siape_Password?" promptNeeded="false" type="id_Password" value="eIxHCG/BsaAoHUN6ER8BU65TP2OLlq3p"/>
+  <contextParameter xmi:id="_ljVrOEAdEeSuoJy_45zbow" comment="" name="con_base-de-dados_siape_Login" prompt="con_base-de-dados_siape_Login?" promptNeeded="false" type="id_String" value="login"/>
+  <contextParameter xmi:id="_ljVrOUAdEeSuoJy_45zbow" comment="" name="con_base-de-dados_siape_Schema" prompt="con_base-de-dados_siape_Schema?" promptNeeded="false" type="id_String" value="siape"/>
+</talendfile:ContextType>

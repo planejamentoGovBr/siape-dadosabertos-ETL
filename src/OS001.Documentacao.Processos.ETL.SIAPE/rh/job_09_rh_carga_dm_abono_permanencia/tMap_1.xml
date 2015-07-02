@@ -1,0 +1,364 @@
+<?xml version="1.1" encoding="UTF-8"?>
+
+<externalNode i18n.job.component.parameters="Component Parameters:" i18n.job.properties="Propriedades" i18n.job.values="Values" i18n.mapper.table.for="Mapper table for " i18n.mapper.table.properties="Mapper table Properties" i18n.job.name="Nome" i18n.tmap.matching.mode="Matching-mode" i18n.mapper.table.isminimized="isMinimized" i18n.tmap.isreject="isReject" i18n.tmap.isrejectinnnerjoin="isRejectInnerJoin" i18n.tmap.isinnerjoin="isInnerJoin" i18n.tmap.expressionfilter="expressionFilter" i18n.mapper.table.metadata.entries="Metadata Table Entries" i18n.job.type="Type" i18n.mapper.table.expression="Expressão" i18n.tmap.isnullable="isNullable" i18n.tmap.constraint.entries="Constraint Table Entries" name="tMap_1" preview="pictures/_YmxPYOiWEeKuvqkJGnZ1GA-tMap_1-PREVIEW.bmp">
+  <parameters>
+    <column name="tStatCatcher Statistics">false</column>
+    <column name="Permitir execução em paralelo">false</column>
+    <column name="Mapping links display as: ">AUTO</column>
+    <column name="Temp data directory path: "></column>
+    <column name="Max buffer size (nb of rows): ">2000000</column>
+    <column name="Visualizar informações">false</column>
+    <column name="Comentário"><![CDATA[]]></column>
+    <column name="Use an existing validation rule">false</column>
+  </parameters>
+  <mapperTable type="input">
+    <table name="siape_servidor_extrato_base" matching-mode="UNIQUE_MATCH" lookup-mode="LOAD_ONCE" isMinimized="false" isReject="false" isRejectInnerJoin="false" isInnerJoin="false" isPersistent="false" expressionFilter="null" activateExpressionFilter="false" activateCondensedTool="false">
+      <metadataTableEntries>
+        <entry name="gr_matricula" type="String" expression="" isNullable="true"/>
+        <entry name="it_co_sexo" type="String" expression="" isNullable="true"/>
+        <entry name="it_sg_regime_juridico" type="String" expression="" isNullable="true"/>
+        <entry name="it_co_situacao_servidor" type="String" expression="" isNullable="true"/>
+        <entry name="it_co_grupo_cargo_emprego" type="String" expression="" isNullable="true"/>
+        <entry name="it_co_cargo_emprego" type="String" expression="" isNullable="true"/>
+        <entry name="it_sg_funcao" type="String" expression="" isNullable="true"/>
+        <entry name="it_da_ingresso_funcao" type="String" expression="" isNullable="true"/>
+        <entry name="it_da_saida_funcao" type="String" expression="" isNullable="true"/>
+        <entry name="it_co_nivel_funcao" type="String" expression="" isNullable="true"/>
+        <entry name="it_co_nivel_escolaridade" type="String" expression="" isNullable="true"/>
+        <entry name="it_da_nascimento" type="Integer" expression="" isNullable="true"/>
+        <entry name="it_co_grupo_ocor_afastamento" type="String" expression="" isNullable="true"/>
+        <entry name="it_co_ocor_afastamento" type="String" expression="" isNullable="true"/>
+        <entry name="it_da_inicio_ocor_afastamento" type="String" expression="" isNullable="true"/>
+        <entry name="it_da_termino_ocor_afastamento" type="String" expression="" isNullable="true"/>
+        <entry name="it_co_uorg_emissao" type="String" expression="" isNullable="true"/>
+        <entry name="it_co_jornada_trabalho" type="String" expression="" isNullable="true"/>
+        <entry name="it_co_orgao_localizacao_serv" type="String" expression="" isNullable="true"/>
+        <entry name="it_co_uorg_localizacao_serv" type="String" expression="" isNullable="true"/>
+      </metadataTableEntries>
+    </table>
+    <table name="dm_orgao_exercicio" matching-mode="UNIQUE_MATCH" lookup-mode="LOAD_ONCE" isMinimized="false" isReject="false" isRejectInnerJoin="false" isInnerJoin="false" isPersistent="false" expressionFilter="null" activateExpressionFilter="false" activateCondensedTool="false">
+      <metadataTableEntries>
+        <entry name="sk_orgao_siape" type="int" expression="" isNullable="false"/>
+        <entry name="dt_inicio" type="java.util.Date" expression="" isNullable="true"/>
+        <entry name="dt_fim" type="java.util.Date" expression="" isNullable="true"/>
+        <entry name="ic_versao" type="Integer" expression="" isNullable="true"/>
+        <entry name="ic_status" type="Boolean" expression="" isNullable="true"/>
+        <entry name="co_orgao_siape_superior" type="String" expression="" isNullable="true"/>
+        <entry name="no_orgao_siape_superior" type="String" expression="" isNullable="true"/>
+        <entry name="sg_orgao_siape_superior" type="String" expression="" isNullable="true"/>
+        <entry name="sg_uf_orgao_siape_superior" type="String" expression="" isNullable="true"/>
+        <entry name="co_natureza_juridica_orgao_siape_superior" type="String" expression="" isNullable="true"/>
+        <entry name="no_natureza_juridica_orgao_siape_superior" type="String" expression="" isNullable="true"/>
+        <entry name="co_orgao_siape" type="Integer" expression="Integer.parseInt(siape_servidor_extrato_base.gr_matricula.substring(0,5))   " isNullable="true"/>
+        <entry name="no_orgao_siape" type="String" expression="" isNullable="true"/>
+        <entry name="sg_orgao_siape" type="String" expression="" isNullable="true"/>
+        <entry name="sg_uf_orgao_siape" type="String" expression="" isNullable="true"/>
+        <entry name="co_natureza_juridica_orgao_siape" type="String" expression="" isNullable="true"/>
+        <entry name="no_natureza_juridica_orgao_siape" type="String" expression="" isNullable="true"/>
+      </metadataTableEntries>
+    </table>
+    <table name="dm_jornada_trabalho" matching-mode="UNIQUE_MATCH" lookup-mode="LOAD_ONCE" isMinimized="true" isReject="false" isRejectInnerJoin="false" isInnerJoin="false" isPersistent="false" expressionFilter="null" activateExpressionFilter="false" activateCondensedTool="false">
+      <metadataTableEntries>
+        <entry name="sk_jornada_trabalho" type="int" expression="" isNullable="false"/>
+        <entry name="co_jornada_trabalho" type="String" expression="siape_servidor_extrato_base.it_co_jornada_trabalho " isNullable="true"/>
+        <entry name="no_jornada_trabalho" type="String" expression=" " isNullable="true"/>
+      </metadataTableEntries>
+    </table>
+    <table name="dm_funcao" matching-mode="UNIQUE_MATCH" lookup-mode="LOAD_ONCE" isMinimized="true" isReject="false" isRejectInnerJoin="false" isInnerJoin="false" isPersistent="false" expressionFilter="null" activateExpressionFilter="false" activateCondensedTool="false">
+      <metadataTableEntries>
+        <entry name="sk_funcao" type="int" expression="" isNullable="false"/>
+        <entry name="sg_funcao" type="String" expression="!siape_servidor_extrato_base.it_da_ingresso_funcao.equals(&quot;00000000&quot;)  &amp;&amp; 
+siape_servidor_extrato_base.it_da_saida_funcao.equals(&quot;00000000&quot;) &amp;&amp;
+!siape_servidor_extrato_base.it_sg_funcao.trim().equals(&quot;&quot;) ? 
+siape_servidor_extrato_base.it_sg_funcao : &quot;NI&quot;
+
+
+
+
+        " isNullable="true"/>
+        <entry name="no_funcao" type="String" expression=" " isNullable="true"/>
+        <entry name="co_nivel_funcao" type="String" expression="siape_servidor_extrato_base.it_co_nivel_funcao " isNullable="true"/>
+      </metadataTableEntries>
+    </table>
+    <table name="dm_nivel_escolaridade" matching-mode="UNIQUE_MATCH" lookup-mode="LOAD_ONCE" isMinimized="true" isReject="false" isRejectInnerJoin="false" isInnerJoin="false" isPersistent="false" expressionFilter="null" activateExpressionFilter="false" activateCondensedTool="false">
+      <metadataTableEntries>
+        <entry name="sk_nivel_escolaridade" type="int" expression="" isNullable="false"/>
+        <entry name="co_nivel_escolaridade" type="String" expression="siape_servidor_extrato_base.it_co_nivel_escolaridade " isNullable="true"/>
+        <entry name="no_nivel_escolaridade" type="String" expression="" isNullable="true"/>
+      </metadataTableEntries>
+    </table>
+    <table name="siape_aux_grupo_cargo" matching-mode="UNIQUE_MATCH" lookup-mode="LOAD_ONCE" isMinimized="true" isReject="false" isRejectInnerJoin="false" isInnerJoin="false" isPersistent="false" expressionFilter="null" activateExpressionFilter="false" activateCondensedTool="false">
+      <metadataTableEntries>
+        <entry name="it_in_status_registro_tabela" type="Integer" expression="" isNullable="true"/>
+        <entry name="it_co_grupo_cargo_emprego" type="String" expression="siape_servidor_extrato_base.it_co_grupo_cargo_emprego.substring(0, 3)    " isNullable="true"/>
+        <entry name="it_sg_grupo_cargo_emprego" type="String" expression="" isNullable="true"/>
+        <entry name="it_no_grupo_cargo_emprego" type="String" expression="" isNullable="true"/>
+        <entry name="it_co_situacao_funcional1" type="String" expression="" isNullable="true"/>
+        <entry name="it_co_situacao_funcional2" type="String" expression="" isNullable="true"/>
+        <entry name="it_co_situacao_funcional3" type="String" expression="" isNullable="true"/>
+        <entry name="it_co_situacao_funcional4" type="String" expression="" isNullable="true"/>
+        <entry name="it_co_situacao_funcional5" type="String" expression="" isNullable="true"/>
+        <entry name="it_co_situacao_funcional6" type="String" expression="" isNullable="true"/>
+        <entry name="it_co_situacao_funcional7" type="String" expression="" isNullable="true"/>
+        <entry name="it_co_situacao_funcional8" type="String" expression="" isNullable="true"/>
+        <entry name="it_co_situacao_funcional9" type="String" expression="" isNullable="true"/>
+        <entry name="it_co_situacao_funcional10" type="String" expression="" isNullable="true"/>
+        <entry name="it_in_param_aposentadoria" type="Integer" expression="" isNullable="true"/>
+        <entry name="ic_forca_trabalho" type="boolean" expression="" isNullable="false"/>
+        <entry name="ic_servidor_ativo" type="boolean" expression="" isNullable="false"/>
+        <entry name="ic_vinculo_valido" type="boolean" expression="" isNullable="false"/>
+      </metadataTableEntries>
+    </table>
+    <table name="siape_aux_ocorrencia" matching-mode="UNIQUE_MATCH" lookup-mode="LOAD_ONCE" isMinimized="true" isReject="false" isRejectInnerJoin="false" isInnerJoin="false" isPersistent="false" expressionFilter="null" activateExpressionFilter="false" activateCondensedTool="false">
+      <metadataTableEntries>
+        <entry name="co_grupo_ocor_exclusao" type="String" expression="!siape_servidor_extrato_base.it_da_inicio_ocor_afastamento.equals(&quot;00000000&quot;)  &amp;&amp; 
+siape_servidor_extrato_base.it_da_termino_ocor_afastamento.equals(&quot;00000000&quot;) ? 
+siape_servidor_extrato_base.it_co_grupo_ocor_afastamento : &quot;00&quot;       " isNullable="false"/>
+        <entry name="co_ocor_exclusao" type="String" expression="!siape_servidor_extrato_base.it_da_inicio_ocor_afastamento.equals(&quot;00000000&quot;)  &amp;&amp; 
+siape_servidor_extrato_base.it_da_termino_ocor_afastamento.equals(&quot;00000000&quot;) ? 
+siape_servidor_extrato_base.it_co_ocor_afastamento : &quot;000&quot;      " isNullable="false"/>
+        <entry name="no_ocorrencia" type="String" expression="" isNullable="false"/>
+        <entry name="co_sexo" type="String" expression="" isNullable="false"/>
+        <entry name="in_ocorrencia_excl_pgto" type="String" expression="" isNullable="false"/>
+        <entry name="co_situacao_funcional" type="String" expression="" isNullable="false"/>
+        <entry name="gr_ocorrencia_hist" type="String" expression="" isNullable="false"/>
+        <entry name="dt_atua_anterior" type="int" expression="" isNullable="false"/>
+        <entry name="co_exclusao_vaga" type="String" expression="" isNullable="false"/>
+        <entry name="in_inclusao_serv" type="String" expression="" isNullable="false"/>
+        <entry name="co_origem_vaga_ocorrencia" type="String" expression="" isNullable="false"/>
+        <entry name="in_exclusao_serv" type="String" expression="" isNullable="false"/>
+        <entry name="in_liberacao_serv" type="String" expression="" isNullable="false"/>
+        <entry name="in_rever_ativ_canc_apos" type="String" expression="" isNullable="false"/>
+        <entry name="nu_cpf_autorizado" type="String" expression="" isNullable="false"/>
+        <entry name="in_ocorrencia_excl_funcao" type="String" expression="" isNullable="false"/>
+        <entry name="co_orgao" type="String" expression="" isNullable="false"/>
+        <entry name="in_ocorrencia_excl_ir" type="String" expression="" isNullable="false"/>
+        <entry name="co_evento_vaga" type="String" expression="" isNullable="false"/>
+        <entry name="nu_carencia_admissao" type="String" expression="" isNullable="false"/>
+        <entry name="dt_inicio_validacao_ocor" type="String" expression="" isNullable="false"/>
+        <entry name="dt_termino_validacao_ocor" type="String" expression="" isNullable="false"/>
+        <entry name="in_fundamento_aposentadoria" type="String" expression="" isNullable="false"/>
+        <entry name="in_isencao_ir" type="String" expression="" isNullable="false"/>
+        <entry name="in_autorizacao_suplementar" type="int" expression="" isNullable="false"/>
+        <entry name="in_exclusao_pss" type="String" expression="" isNullable="false"/>
+        <entry name="in_interrompe_gozo_ferias" type="String" expression="" isNullable="false"/>
+        <entry name="in_inte_peri_aqui_ferias" type="String" expression="" isNullable="false"/>
+        <entry name="in_ocor_calc_pss_l9783_99" type="String" expression="" isNullable="false"/>
+        <entry name="tx_informacao_complementar" type="String" expression="" isNullable="false"/>
+        <entry name="in_opcao_reducao_jornada" type="String" expression="" isNullable="false"/>
+        <entry name="in_permite_funcao_aposentado" type="String" expression="" isNullable="false"/>
+        <entry name="in_desc_auxilio_alimentacao" type="int" expression="" isNullable="false"/>
+        <entry name="in_desc_auxilio_transporte" type="int" expression="" isNullable="false"/>
+        <entry name="in_permite_repr_legal" type="int" expression="" isNullable="false"/>
+        <entry name="in_autor_supl_interna" type="int" expression="" isNullable="false"/>
+        <entry name="in_encerra_adicionais" type="int" expression="" isNullable="false"/>
+        <entry name="co_desligamento_rais" type="String" expression="" isNullable="false"/>
+        <entry name="ic_forca_trabalho" type="Boolean" expression="" isNullable="true"/>
+        <entry name="ic_servidor_ativo" type="Boolean" expression="" isNullable="true"/>
+        <entry name="ic_vinculo_valido" type="Boolean" expression="" isNullable="true"/>
+      </metadataTableEntries>
+    </table>
+    <table name="dm_regime_situacao" matching-mode="UNIQUE_MATCH" lookup-mode="LOAD_ONCE" isMinimized="false" isReject="false" isRejectInnerJoin="false" isInnerJoin="false" isPersistent="false" expressionFilter="null" activateExpressionFilter="false" activateCondensedTool="true">
+      <metadataTableEntries>
+        <entry name="sk_regime_situacao" type="int" expression="" isNullable="false"/>
+        <entry name="dt_inicio" type="java.util.Date" expression="" isNullable="true"/>
+        <entry name="dt_fim" type="java.util.Date" expression="" isNullable="true"/>
+        <entry name="ic_versao" type="Integer" expression="" isNullable="true"/>
+        <entry name="ic_status" type="Boolean" expression="" isNullable="true"/>
+        <entry name="co_regime_situacao" type="String" expression="siape_servidor_extrato_base.it_sg_regime_juridico + siape_servidor_extrato_base.it_co_situacao_servidor    " isNullable="true"/>
+        <entry name="no_vinculo_servidor" type="String" expression="" isNullable="true"/>
+        <entry name="no_situacao_vinculo" type="String" expression="" isNullable="true"/>
+        <entry name="no_origem_regime" type="String" expression="" isNullable="true"/>
+        <entry name="no_ind_vinculo_apf" type="String" expression="" isNullable="true"/>
+        <entry name="no_ind_exercicio" type="String" expression="" isNullable="true"/>
+        <entry name="no_regime_situacao_siape" type="String" expression="" isNullable="true"/>
+        <entry name="ic_ft_situacao_vinculo" type="Boolean" expression="" isNullable="true"/>
+        <entry name="ic_qs_situacao_vinculo" type="Boolean" expression="" isNullable="true"/>
+        <entry name="ic_qv_situacao_vinculo" type="Boolean" expression="" isNullable="true"/>
+      </metadataTableEntries>
+    </table>
+    <table name="dm_servidor" matching-mode="UNIQUE_MATCH" lookup-mode="LOAD_ONCE" isMinimized="true" isReject="false" isRejectInnerJoin="false" isInnerJoin="false" isPersistent="false" expressionFilter="null" activateExpressionFilter="false" activateCondensedTool="false">
+      <metadataTableEntries>
+        <entry name="sk_servidor" type="int" expression=" " isNullable="false"/>
+        <entry name="dt_inicio" type="java.util.Date" expression="" isNullable="true"/>
+        <entry name="dt_fim" type="java.util.Date" expression="" isNullable="true"/>
+        <entry name="ic_versao" type="Integer" expression="" isNullable="true"/>
+        <entry name="ic_status" type="Boolean" expression="" isNullable="true"/>
+        <entry name="nu_matricula" type="String" expression="siape_servidor_extrato_base.gr_matricula  " isNullable="true"/>
+        <entry name="no_servidor" type="String" expression="" isNullable="true"/>
+        <entry name="no_mae" type="String" expression="" isNullable="true"/>
+        <entry name="dt_nascimento" type="java.util.Date" expression="" isNullable="true"/>
+        <entry name="nu_cpf" type="String" expression="" isNullable="true"/>
+        <entry name="nu_pis_pasep" type="String" expression="" isNullable="true"/>
+        <entry name="co_sexo" type="String" expression="" isNullable="true"/>
+        <entry name="co_nacionalidade" type="String" expression="" isNullable="true"/>
+        <entry name="no_nacionalidade" type="String" expression="" isNullable="true"/>
+        <entry name="sg_uf_naturalidade_servidor" type="String" expression="" isNullable="true"/>
+        <entry name="co_pais" type="String" expression="" isNullable="true"/>
+        <entry name="no_pais" type="String" expression="" isNullable="true"/>
+      </metadataTableEntries>
+    </table>
+    <table name="dm_cargo_emprego" matching-mode="UNIQUE_MATCH" lookup-mode="LOAD_ONCE" isMinimized="true" isReject="false" isRejectInnerJoin="false" isInnerJoin="false" isPersistent="false" expressionFilter="null" activateExpressionFilter="false" activateCondensedTool="false">
+      <metadataTableEntries>
+        <entry name="sk_cargo_emprego" type="int" expression="" isNullable="false"/>
+        <entry name="co_grupo_cargo_emprego" type="String" expression="siape_servidor_extrato_base.it_co_grupo_cargo_emprego + siape_servidor_extrato_base.it_co_cargo_emprego " isNullable="true"/>
+        <entry name="sg_grupo_cargo_emprego" type="String" expression="" isNullable="true"/>
+        <entry name="no_grupo_cargo_emprego" type="String" expression="" isNullable="true"/>
+        <entry name="no_cargo_emprego" type="String" expression="" isNullable="true"/>
+        <entry name="sg_escolaridade" type="String" expression="" isNullable="true"/>
+        <entry name="no_escolaridade" type="String" expression="" isNullable="true"/>
+        <entry name="co_jornada_basica_cemp" type="String" expression="" isNullable="true"/>
+      </metadataTableEntries>
+    </table>
+    <table name="dm_ocorrencia" matching-mode="UNIQUE_MATCH" lookup-mode="LOAD_ONCE" isMinimized="true" isReject="false" isRejectInnerJoin="false" isInnerJoin="false" isPersistent="false" expressionFilter="null" activateExpressionFilter="false" activateCondensedTool="false">
+      <metadataTableEntries>
+        <entry name="sk_ocorrencia" type="int" expression="" isNullable="false"/>
+        <entry name="co_grupo_ocorrencia" type="String" expression="!siape_servidor_extrato_base.it_da_inicio_ocor_afastamento.equals(&quot;00000000&quot;)  &amp;&amp; 
+siape_servidor_extrato_base.it_da_termino_ocor_afastamento.equals(&quot;00000000&quot;) ? 
+siape_servidor_extrato_base.it_co_grupo_ocor_afastamento : &quot;-1&quot;  " isNullable="true"/>
+        <entry name="no_grupo_ocorrencia" type="String" expression="" isNullable="true"/>
+        <entry name="co_ocorrencia" type="String" expression="!siape_servidor_extrato_base.it_da_inicio_ocor_afastamento.equals(&quot;00000000&quot;)  &amp;&amp; 
+siape_servidor_extrato_base.it_da_termino_ocor_afastamento.equals(&quot;00000000&quot;) ? 
+siape_servidor_extrato_base.it_co_ocor_afastamento : &quot;-1&quot;   " isNullable="true"/>
+        <entry name="no_ocorrencia" type="String" expression="" isNullable="true"/>
+      </metadataTableEntries>
+    </table>
+    <table name="dm_tempo_anomes" matching-mode="UNIQUE_MATCH" lookup-mode="LOAD_ONCE" isMinimized="false" isReject="false" isRejectInnerJoin="false" isInnerJoin="false" isPersistent="false" expressionFilter="null" activateExpressionFilter="false" activateCondensedTool="false">
+      <metadataTableEntries>
+        <entry name="sk_tempo_ano_mes" type="int" expression="Integer.parseInt(Integer.toString(context.anomes_ref_siape))  " isNullable="false"/>
+        <entry name="nu_calendario_ano" type="Integer" expression="" isNullable="true"/>
+        <entry name="nu_calendario_mes" type="Integer" expression="" isNullable="true"/>
+        <entry name="nu_calendario_trimestre" type="Integer" expression="" isNullable="true"/>
+        <entry name="no_mes" type="String" expression="" isNullable="true"/>
+        <entry name="no_abrev_mes" type="String" expression="" isNullable="true"/>
+        <entry name="ic_ano_bissexto" type="String" expression="" isNullable="true"/>
+        <entry name="no_temporada_norte" type="String" expression="" isNullable="true"/>
+        <entry name="no_temporada_sul" type="String" expression="" isNullable="true"/>
+      </metadataTableEntries>
+    </table>
+    <table name="dm_orgao_lotacao" matching-mode="UNIQUE_MATCH" lookup-mode="LOAD_ONCE" isMinimized="false" isReject="false" isRejectInnerJoin="false" isInnerJoin="false" isPersistent="false" expressionFilter="null" activateExpressionFilter="false" activateCondensedTool="false">
+      <metadataTableEntries>
+        <entry name="sk_orgao_siape" type="int" expression="" isNullable="false"/>
+        <entry name="dt_inicio" type="java.util.Date" expression="" isNullable="true"/>
+        <entry name="dt_fim" type="java.util.Date" expression="" isNullable="true"/>
+        <entry name="ic_versao" type="Integer" expression="" isNullable="true"/>
+        <entry name="ic_status" type="Boolean" expression="" isNullable="true"/>
+        <entry name="co_orgao_siape_superior" type="String" expression=" " isNullable="true"/>
+        <entry name="no_orgao_siape_superior" type="String" expression="" isNullable="true"/>
+        <entry name="sg_orgao_siape_superior" type="String" expression="" isNullable="true"/>
+        <entry name="sg_uf_orgao_siape_superior" type="String" expression="" isNullable="true"/>
+        <entry name="co_natureza_juridica_orgao_siape_superior" type="String" expression="" isNullable="true"/>
+        <entry name="no_natureza_juridica_orgao_siape_superior" type="String" expression="" isNullable="true"/>
+        <entry name="co_orgao_siape" type="Integer" expression="Integer.parseInt(siape_servidor_extrato_base.it_co_orgao_localizacao_serv)   " isNullable="true"/>
+        <entry name="no_orgao_siape" type="String" expression="" isNullable="true"/>
+        <entry name="sg_orgao_siape" type="String" expression="" isNullable="true"/>
+        <entry name="sg_uf_orgao_siape" type="String" expression="" isNullable="true"/>
+        <entry name="co_natureza_juridica_orgao_siape" type="String" expression="" isNullable="true"/>
+        <entry name="no_natureza_juridica_orgao_siape" type="String" expression="" isNullable="true"/>
+      </metadataTableEntries>
+    </table>
+    <table name="dm_uorg_exercicio" matching-mode="UNIQUE_MATCH" lookup-mode="LOAD_ONCE" isMinimized="false" isReject="false" isRejectInnerJoin="false" isInnerJoin="false" isPersistent="false" expressionFilter="null" activateExpressionFilter="false" activateCondensedTool="false">
+      <metadataTableEntries>
+        <entry name="sk_uorg" type="int" expression="" isNullable="false"/>
+        <entry name="dt_inicio" type="java.util.Date" expression="" isNullable="true"/>
+        <entry name="dt_fim" type="java.util.Date" expression="" isNullable="true"/>
+        <entry name="ic_versao" type="Integer" expression="" isNullable="true"/>
+        <entry name="ic_status" type="Boolean" expression="" isNullable="true"/>
+        <entry name="co_uorg" type="String" expression="siape_servidor_extrato_base.gr_matricula.substring(0,5) + siape_servidor_extrato_base.it_co_uorg_emissao  " isNullable="true"/>
+        <entry name="no_uorg" type="String" expression="" isNullable="true"/>
+        <entry name="sg_uorg" type="String" expression="" isNullable="true"/>
+        <entry name="sg_uf_uorg" type="String" expression="" isNullable="true"/>
+        <entry name="co_area_atuacao_uorg" type="String" expression="" isNullable="true"/>
+        <entry name="ic_uorg_administrativa" type="Boolean" expression="" isNullable="true"/>
+        <entry name="ic_uorg_regimentada" type="Boolean" expression="" isNullable="true"/>
+      </metadataTableEntries>
+    </table>
+    <table name="dm_uorg_lotacao" matching-mode="UNIQUE_MATCH" lookup-mode="LOAD_ONCE" isMinimized="false" isReject="false" isRejectInnerJoin="false" isInnerJoin="false" isPersistent="false" expressionFilter="null" activateExpressionFilter="false" activateCondensedTool="false">
+      <metadataTableEntries>
+        <entry name="sk_uorg" type="int" expression="" isNullable="false"/>
+        <entry name="dt_inicio" type="java.util.Date" expression="" isNullable="true"/>
+        <entry name="dt_fim" type="java.util.Date" expression="" isNullable="true"/>
+        <entry name="ic_versao" type="Integer" expression="" isNullable="true"/>
+        <entry name="ic_status" type="Boolean" expression="" isNullable="true"/>
+        <entry name="co_uorg" type="String" expression="siape_servidor_extrato_base.it_co_orgao_localizacao_serv + siape_servidor_extrato_base.it_co_uorg_localizacao_serv " isNullable="true"/>
+        <entry name="no_uorg" type="String" expression="" isNullable="true"/>
+        <entry name="sg_uorg" type="String" expression="" isNullable="true"/>
+        <entry name="sg_uf_uorg" type="String" expression="" isNullable="true"/>
+        <entry name="co_area_atuacao_uorg" type="String" expression="" isNullable="true"/>
+        <entry name="ic_uorg_administrativa" type="Boolean" expression="" isNullable="true"/>
+        <entry name="ic_uorg_regimentada" type="Boolean" expression="" isNullable="true"/>
+      </metadataTableEntries>
+    </table>
+  </mapperTable>
+  <mapperTable type="output">
+    <table name="ft_servidor" isMinimized="false" isReject="false" isRejectInnerJoin="false" isInnerJoin="false" isPersistent="false" expressionFilter="null" activateExpressionFilter="false" activateCondensedTool="false">
+      <metadataTableEntries>
+        <entry name="sk_tempo" type="int" expression=" dm_tempo_anomes.sk_tempo_ano_mes " isNullable="false"/>
+        <entry name="sk_servidor" type="int" expression="dm_servidor.sk_servidor " isNullable="false"/>
+        <entry name="sk_ocorrencia" type="int" expression="dm_ocorrencia.sk_ocorrencia " isNullable="false"/>
+        <entry name="sk_funcao" type="int" expression="dm_funcao.sk_funcao " isNullable="false"/>
+        <entry name="sk_cargo_emprego" type="int" expression="dm_cargo_emprego.sk_cargo_emprego " isNullable="false"/>
+        <entry name="sk_regime_situacao" type="int" expression="dm_regime_situacao.sk_regime_situacao  " isNullable="false"/>
+        <entry name="sk_nivel_escolaridade" type="int" expression="dm_nivel_escolaridade.sk_nivel_escolaridade " isNullable="false"/>
+        <entry name="sk_jornada_trabalho" type="int" expression="dm_jornada_trabalho.sk_jornada_trabalho   " isNullable="false"/>
+        <entry name="sk_orgao_exercicio" type="int" expression="dm_orgao_exercicio.sk_orgao_siape " isNullable="false"/>
+        <entry name="sk_uorg_exercicio" type="int" expression="dm_uorg_exercicio.sk_uorg " isNullable="false"/>
+        <entry name="sk_orgao_lotacao" type="int" expression="dm_orgao_lotacao.sk_orgao_siape " isNullable="false"/>
+        <entry name="sk_uorg_lotacao" type="int" expression="dm_uorg_lotacao.sk_uorg " isNullable="false"/>
+        <entry name="sk_abono_permanencia" type="int" expression="0" isNullable="false"/>
+        <entry name="sk_faixa_etaria" type="int" expression="Var.idade  &lt;= 20 ? 1 : 
+Var.idade  &lt;= 25 ? 2 : 
+Var.idade  &lt;= 30 ? 3 : 
+Var.idade  &lt;= 35 ? 4 : 
+Var.idade  &lt;= 40 ? 5 : 
+Var.idade  &lt;= 45 ? 6 : 
+Var.idade  &lt;= 50 ? 7 : 
+Var.idade  &lt;= 55 ? 8 : 
+Var.idade  &lt;= 60 ? 9 : 
+Var.idade  &lt;= 65 ? 10 : 
+Var.idade  &lt;= 70 ? 11 : 
+12  " isNullable="false"/>
+        <entry name="nu_idade" type="int" expression="Integer.parseInt(Long.toString(Var.idade))
+
+
+
+   " isNullable="false"/>
+        <entry name="ic_criterio_forca_trabalho" type="int" expression="//se algum dos campos abaixo for false, o critério é considerado como false. 
+// 0 -false -- 1 -true
+
+Var.ic_forca_trabalho_situa_serv==true&amp;&amp;
+Var.ic_forca_trabalho_grupo_cargo==true&amp;&amp;
+Var.ic_forca_trabalho_ocorrencia==true&amp;&amp;
+Var.ic_forca_trabaho_nat_jur==true?1:0 
+    " isNullable="false"/>
+      </metadataTableEntries>
+    </table>
+  </mapperTable>
+  <mapperTable type="var">
+    <table name="Var" isMinimized="false" isReject="false" isRejectInnerJoin="false" isInnerJoin="false" isPersistent="false" expressionFilter="null" activateExpressionFilter="false" activateCondensedTool="false">
+      <metadataTableEntries>
+        <entry name="idade" type="long" expression="//data de nascimento nao pode ser zero
+siape_servidor_extrato_base.it_da_nascimento!=0 &amp;&amp; 
+//data de nascimento nao pode ser menor que 1/1/1500
+	siape_servidor_extrato_base.it_da_nascimento&gt;=15000101 &amp;&amp; 
+//data de nascimento nao pode ser maior que 31/12/2099
+		siape_servidor_extrato_base.it_da_nascimento&lt;=20991231 ?
+TalendDate.diffDate(
+	TalendDate.parseDate(&quot;yyyyMM&quot;,context.anomes_ref_siape.toString()), 	TalendDate.parseDate(&quot;yyyyMM&quot;,siape_servidor_extrato_base.it_da_nascimento.toString().substring(0, 6)),
+	&quot;yyyy&quot;
+)      
+:
+Long.parseLong(&quot;0&quot;)            " isNullable="false"/>
+        <entry name="ic_forca_trabalho_situa_serv" type="boolean" expression="dm_regime_situacao.co_regime_situacao != null ?
+dm_regime_situacao.ic_ft_situacao_vinculo : true   
+         " isNullable="false"/>
+        <entry name="ic_forca_trabalho_grupo_cargo" type="boolean" expression="siape_aux_grupo_cargo.it_co_grupo_cargo_emprego != null ?
+siape_aux_grupo_cargo.ic_forca_trabalho  :
+true       " isNullable="false"/>
+        <entry name="ic_forca_trabalho_ocorrencia" type="boolean" expression="siape_aux_ocorrencia.co_grupo_ocor_exclusao != null ?
+siape_aux_ocorrencia.ic_forca_trabalho : true     " isNullable="false"/>
+        <entry name="ic_forca_trabaho_nat_jur" type="boolean" expression="true " isNullable="false"/>
+      </metadataTableEntries>
+    </table>
+  </mapperTable>
+</externalNode>

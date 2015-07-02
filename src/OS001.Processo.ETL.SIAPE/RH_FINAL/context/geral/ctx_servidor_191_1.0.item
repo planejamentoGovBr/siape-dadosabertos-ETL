@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd">
+  <talendfile:ContextType xmi:id="_llsbo0AdEeSuoJy_45zbow" confirmationNeeded="false" name="Desenvolvimento">
+    <contextParameter xmi:id="_llsbpEAdEeSuoJy_45zbow" comment="" name="servidor" prompt="servidor?" promptNeeded="false" type="id_String" value="ip-servidor"/>
+    <contextParameter xmi:id="_llsbpUAdEeSuoJy_45zbow" comment="" name="porta" prompt="porta?" promptNeeded="false" type="id_String" value="22"/>
+    <contextParameter xmi:id="_llsbpkAdEeSuoJy_45zbow" comment="" name="usuario" prompt="usuario?" promptNeeded="false" type="id_String" value="login"/>
+    <contextParameter xmi:id="_llsbp0AdEeSuoJy_45zbow" comment="" name="senha" prompt="senha?" promptNeeded="false" type="id_Password" value="KVHdxy7ZsTQKIlkN2bprSOnsvlnMmx+p"/>
+  </talendfile:ContextType>
+  <talendfile:ContextType xmi:id="_llsbqEAdEeSuoJy_45zbow" confirmationNeeded="false" name="Homologacao">
+    <contextParameter xmi:id="_llsbqUAdEeSuoJy_45zbow" comment="" name="servidor" prompt="servidor?" promptNeeded="false" type="id_String" value="ip-servidor"/>
+    <contextParameter xmi:id="_llsbqkAdEeSuoJy_45zbow" comment="" name="porta" prompt="porta?" promptNeeded="false" type="id_String" value="22"/>
+    <contextParameter xmi:id="_llsbq0AdEeSuoJy_45zbow" comment="" name="usuario" prompt="usuario?" promptNeeded="false" type="id_String" value="login"/>
+    <contextParameter xmi:id="_llsbrEAdEeSuoJy_45zbow" comment="" name="senha" prompt="senha?" promptNeeded="false" type="id_Password" value="KVHdxy7ZsTQKIlkN2bprSOnsvlnMmx+p"/>
+  </talendfile:ContextType>
+  <talendfile:ContextType xmi:id="_llsbrUAdEeSuoJy_45zbow" confirmationNeeded="false" name="Producao">
+    <contextParameter xmi:id="_llsbrkAdEeSuoJy_45zbow" comment="" name="servidor" prompt="servidor?" promptNeeded="false" type="id_String" value="ip-servidor"/>
+    <contextParameter xmi:id="_llsbr0AdEeSuoJy_45zbow" comment="" name="porta" prompt="porta?" promptNeeded="false" type="id_String" value="22"/>
+    <contextParameter xmi:id="_llsbsEAdEeSuoJy_45zbow" comment="" name="usuario" prompt="usuario?" promptNeeded="false" type="id_String" value="login"/>
+    <contextParameter xmi:id="_llsbsUAdEeSuoJy_45zbow" comment="" name="senha" prompt="senha?" promptNeeded="false" type="id_Password" value="PY8zYkZQoGwpCMGRaoO55Q=="/>
+  </talendfile:ContextType>
+</xmi:XMI>

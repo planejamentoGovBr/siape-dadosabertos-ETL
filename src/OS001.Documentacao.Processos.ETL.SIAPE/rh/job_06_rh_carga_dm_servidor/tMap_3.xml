@@ -1,0 +1,77 @@
+<?xml version="1.1" encoding="UTF-8"?>
+
+<externalNode i18n.job.component.parameters="Component Parameters:" i18n.job.properties="Propriedades" i18n.job.values="Values" i18n.mapper.table.for="Mapper table for " i18n.mapper.table.properties="Mapper table Properties" i18n.job.name="Nome" i18n.tmap.matching.mode="Matching-mode" i18n.mapper.table.isminimized="isMinimized" i18n.tmap.isreject="isReject" i18n.tmap.isrejectinnnerjoin="isRejectInnerJoin" i18n.tmap.isinnerjoin="isInnerJoin" i18n.tmap.expressionfilter="expressionFilter" i18n.mapper.table.metadata.entries="Metadata Table Entries" i18n.job.type="Type" i18n.mapper.table.expression="Expressão" i18n.tmap.isnullable="isNullable" i18n.tmap.constraint.entries="Constraint Table Entries" name="tMap_3" preview="pictures/_k5dAYNqdEeKJbqNqXNumRg-tMap_3-PREVIEW.bmp">
+  <parameters>
+    <column name="tStatCatcher Statistics">false</column>
+    <column name="Permitir execução em paralelo">false</column>
+    <column name="Mapping links display as: ">AUTO</column>
+    <column name="Temp data directory path: "></column>
+    <column name="Max buffer size (nb of rows): ">2000000</column>
+    <column name="Visualizar informações">true</column>
+    <column name="Comentário"><![CDATA[Componente responsavel por mapear os dados provenientes da Tabela "siape_servidor_estrato_base; Tabela  "siape_funcao" com a Tabela "dm_funcao" e fazer os tratamentos da informaÃ§Ã£o.]]></column>
+    <column name="Use an existing validation rule">false</column>
+  </parameters>
+  <mapperTable type="input">
+    <table name="Dados" matching-mode="UNIQUE_MATCH" lookup-mode="LOAD_ONCE" isMinimized="false" isReject="false" isRejectInnerJoin="false" isInnerJoin="false" isPersistent="false" expressionFilter="null" activateExpressionFilter="false" activateCondensedTool="false">
+      <metadataTableEntries>
+        <entry name="sg_funcao" type="String" expression="" isNullable="true"/>
+        <entry name="no_funcao" type="String" expression="" isNullable="true"/>
+        <entry name="co_nivel_funcao" type="String" expression="" isNullable="true"/>
+        <entry name="nu_categoria" type="String" expression="" isNullable="true"/>
+        <entry name="nu_nivel" type="String" expression="" isNullable="true"/>
+      </metadataTableEntries>
+    </table>
+  </mapperTable>
+  <mapperTable type="output">
+    <table name="Dados2" isMinimized="false" isReject="false" isRejectInnerJoin="false" isInnerJoin="false" isPersistent="false" expressionFilter="null" activateExpressionFilter="false" activateCondensedTool="false">
+      <metadataTableEntries>
+        <entry name="sg_funcao" type="String" expression="Dados.sg_funcao " isNullable="true"/>
+        <entry name="no_funcao" type="String" expression="Dados.no_funcao " isNullable="true"/>
+        <entry name="co_nivel_funcao" type="String" expression="Dados.co_nivel_funcao " isNullable="true"/>
+        <entry name="nu_categoria" type="String" expression="Dados.nu_categoria " isNullable="true"/>
+        <entry name="nu_nivel" type="String" expression="Dados.nu_nivel " isNullable="true"/>
+        <entry name="no_funcao_categoria_nivel" type="String" expression="Var.funcao + Var.categoria + Var.nivel   " isNullable="true"/>
+        <entry name="no_funcao_nivel" type="String" expression="Var.funcao + Var.nivel2  " isNullable="true"/>
+      </metadataTableEntries>
+    </table>
+  </mapperTable>
+  <mapperTable type="var">
+    <table name="Var" isMinimized="false" isReject="false" isRejectInnerJoin="false" isInnerJoin="false" isPersistent="false" expressionFilter="null" activateExpressionFilter="false" activateCondensedTool="false">
+      <metadataTableEntries>
+        <entry name="funcao" type="String" expression="Dados.sg_funcao.trim().length() == 0 ?
+Dados.sg_funcao.trim() + &quot;   &quot; :
+Dados.sg_funcao.trim().length() == 1 ?
+Dados.sg_funcao.trim() + &quot;  &quot; :
+Dados.sg_funcao.trim().length() == 2 ?
+Dados.sg_funcao.trim() + &quot; &quot; :
+Dados.sg_funcao.trim()                " isNullable="false"/>
+        <entry name="categoria" type="String" expression="Dados.nu_categoria.trim().length() == 0 ?
+Dados.nu_categoria.trim() + &quot;   &quot;:
+Dados.nu_categoria.trim().length() == 1 ?
+Dados.nu_categoria.trim() + &quot;  &quot; :
+Dados.nu_categoria.trim().length() == 2 ?
+Dados.nu_categoria.trim() + &quot; &quot; :
+Dados.nu_categoria.trim() 
+      " isNullable="false"/>
+        <entry name="nivel" type="String" expression="Dados.nu_nivel.trim().length() == 1 ?
+&quot;    &quot; + Dados.nu_nivel.trim() :
+Dados.nu_nivel.trim().length() == 2 ? 
+&quot;   &quot; + Dados.nu_nivel.trim() :
+Dados.nu_nivel.trim().length() == 3 ? 
+&quot;  &quot; + Dados.nu_nivel.trim() : 
+Dados.nu_nivel.trim().length() == 4 ? 
+&quot; &quot; + Dados.nu_nivel.trim() :
+Dados.nu_nivel.trim() 
+           " isNullable="false"/>
+        <entry name="nivel2" type="String" expression="Dados.nu_nivel.trim().length() == 1 ?
+&quot;   &quot; + Dados.nu_nivel.trim() :
+Dados.nu_nivel.trim().length() == 2 ? 
+&quot;  &quot; + Dados.nu_nivel.trim() :
+Dados.nu_nivel.trim().length() == 3 ? 
+&quot; &quot; + Dados.nu_nivel.trim() :
+Dados.nu_nivel.trim() 
+          " isNullable="false"/>
+      </metadataTableEntries>
+    </table>
+  </mapperTable>
+</externalNode>

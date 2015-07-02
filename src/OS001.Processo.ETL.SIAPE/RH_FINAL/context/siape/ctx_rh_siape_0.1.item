@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd">
+  <talendfile:ContextType xmi:id="_liv1U0AdEeSuoJy_45zbow" confirmationNeeded="false" name="Desenvolvimento">
+    <contextParameter xmi:id="_liv1VEAdEeSuoJy_45zbow" comment="" name="con_rh_siape_Login" prompt="con_rh_siape_Login?" promptNeeded="false" type="id_String" value="login"/>
+    <contextParameter xmi:id="_liv1VUAdEeSuoJy_45zbow" comment="" name="con_rh_siape_Schema" prompt="con_rh_siape_Schema?" promptNeeded="false" type="id_String" value="siape"/>
+    <contextParameter xmi:id="_liv1VkAdEeSuoJy_45zbow" comment="" name="con_rh_siape_Password" prompt="con_rh_siape_Password?" promptNeeded="false" type="id_Password" value="KVHdxy7ZsTQKIlkN2bprSOnsvlnMmx+p"/>
+    <contextParameter xmi:id="_liv1V0AdEeSuoJy_45zbow" comment="" name="con_rh_siape_Database" prompt="con_rh_siape_Database?" promptNeeded="false" type="id_String" value="base-de-dados"/>
+    <contextParameter xmi:id="_liv1WEAdEeSuoJy_45zbow" comment="" name="con_rh_siape_Server" prompt="con_rh_siape_Server?" promptNeeded="false" type="id_String" value="ip-servidor"/>
+    <contextParameter xmi:id="_liv1WUAdEeSuoJy_45zbow" comment="" name="con_rh_siape_Port" prompt="con_rh_siape_Port?" promptNeeded="false" type="id_String" value="porta"/>
+  </talendfile:ContextType>
+  <talendfile:ContextType xmi:id="_liv1WkAdEeSuoJy_45zbow" confirmationNeeded="false" name="Homologacao">
+    <contextParameter xmi:id="_liv1W0AdEeSuoJy_45zbow" comment="" name="con_rh_siape_Login" prompt="con_rh_siape_Login?" promptNeeded="false" type="id_String" value="login"/>
+    <contextParameter xmi:id="_liv1XEAdEeSuoJy_45zbow" comment="" name="con_rh_siape_Schema" prompt="con_rh_siape_Schema?" promptNeeded="false" type="id_String" value="siape"/>
+    <contextParameter xmi:id="_liv1XUAdEeSuoJy_45zbow" comment="" name="con_rh_siape_Password" prompt="con_rh_siape_Password?" promptNeeded="false" type="id_Password" value="KVHdxy7ZsTQKIlkN2bprSOnsvlnMmx+p"/>
+    <contextParameter xmi:id="_liv1XkAdEeSuoJy_45zbow" comment="" name="con_rh_siape_Database" prompt="con_rh_siape_Database?" promptNeeded="false" type="id_String" value="base-de-dados"/>
+    <contextParameter xmi:id="_liv1X0AdEeSuoJy_45zbow" comment="" name="con_rh_siape_Server" prompt="con_rh_siape_Server?" promptNeeded="false" type="id_String" value="ip-servidor"/>
+    <contextParameter xmi:id="_liv1YEAdEeSuoJy_45zbow" comment="" name="con_rh_siape_Port" prompt="con_rh_siape_Port?" promptNeeded="false" type="id_String" value="porta"/>
+  </talendfile:ContextType>
+  <talendfile:ContextType xmi:id="_liv1YUAdEeSuoJy_45zbow" confirmationNeeded="false" name="Producao">
+    <contextParameter xmi:id="_liv1YkAdEeSuoJy_45zbow" comment="" name="con_rh_siape_Login" prompt="con_rh_siape_Login?" promptNeeded="false" type="id_String" value="login"/>
+    <contextParameter xmi:id="_liv1Y0AdEeSuoJy_45zbow" comment="" name="con_rh_siape_Schema" prompt="con_rh_siape_Schema?" promptNeeded="false" type="id_String" value="siape"/>
+    <contextParameter xmi:id="_liv1ZEAdEeSuoJy_45zbow" comment="" name="con_rh_siape_Password" prompt="con_rh_siape_Password?" promptNeeded="false" type="id_Password" value="KVHdxy7ZsTQKIlkN2bprSOnsvlnMmx+p"/>
+    <contextParameter xmi:id="_liv1ZUAdEeSuoJy_45zbow" comment="" name="con_rh_siape_Database" prompt="con_rh_siape_Database?" promptNeeded="false" type="id_String" value="base-de-dados"/>
+    <contextParameter xmi:id="_liv1ZkAdEeSuoJy_45zbow" comment="" name="con_rh_siape_Server" prompt="con_rh_siape_Server?" promptNeeded="false" type="id_String" value="ip-servidor"/>
+    <contextParameter xmi:id="_liv1Z0AdEeSuoJy_45zbow" comment="" name="con_rh_siape_Port" prompt="con_rh_siape_Port?" promptNeeded="false" type="id_String" value="porta"/>
+  </talendfile:ContextType>
+</xmi:XMI>
